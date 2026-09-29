@@ -1,12 +1,12 @@
-{
+﻿{
   "name": "server",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "concurrently -n client,server -c cyan,green \"npm run dev --prefix client\" \"npm run dev --prefix server\"",
-    "install:all": "npm install && npm install --prefix client && npm install --prefix server"
+    "dev": "node --dns-result-order=ipv4first --network-family-autoselection-attempt-timeout=1000 --watch index.js",
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
