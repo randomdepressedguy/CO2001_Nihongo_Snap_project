@@ -20,7 +20,8 @@
   },
   "homepage": "https://github.com/randomdepressedguy/CO2001_Nihongo_Snap_project#readme",
   "devDependencies": {
-    "concurrently": "^10.0.5"
+    "concurrently": "^10.0.5",
+    "prettier": "^3.9.9"
   },
   "dependencies": {
     "ansi-regex": "^6.4.0",
