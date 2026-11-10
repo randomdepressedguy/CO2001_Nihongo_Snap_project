@@ -1,5 +1,5 @@
 # Dependencies
-/node_modules/
+node_modules/
 /.pnp
 .pnp.*
 # Keep authored Yarn tooling if the project adopts Yarn.
@@ -25,6 +25,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
+/package-lock.json
 
 # Local environment and keys
 .env*

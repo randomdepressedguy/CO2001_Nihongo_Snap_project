@@ -16,6 +16,7 @@ export default async function RootLayout({ children }: {
     catch { }
     const platform = await getChatGPTUser();
     const legacyKey = platform?.userId ?? 'guest';
-    const status = { ai: false, cloud: !!env.DB, user: account, localKey: account ? `account:${account.id}` : legacyKey, legacyKey };
+    const config = env as Cloudflare.Env & { GEMINI_API_KEY?: string; GEMINI_MODEL?: string };
+    const status = { ai: !!config.GEMINI_API_KEY && !!config.GEMINI_MODEL, cloud: !!env.DB, user: account, localKey: account ? `account:${account.id}` : legacyKey, legacyKey };
     return <html lang="vi"><body><a href="#main-content" className="skip-link">Bỏ qua điều hướng</a><AppFrame status={status}>{children}</AppFrame></body></html>;
 }

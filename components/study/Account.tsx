@@ -28,7 +28,7 @@ export function AccountPage({ account }: {
         if (!response.ok)
             throw Error(data.error || t('Yêu cầu chưa hoàn tất.', 'The request could not complete.'));
         if (kind === 'logout') {
-            location.assign('/');
+            location.replace('/');
             return;
         }
         if (kind === 'profile') {

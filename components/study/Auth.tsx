@@ -44,7 +44,7 @@ export function AuthPage({ mode }: {
       <button className="btn full" disabled={busy} type="submit">{busy ? t('Đang xử lý…', 'Processing…') : registering ? t('Tạo tài khoản', 'Create account') : t('Đăng nhập', 'Sign in')}{!busy && <ArrowRight size={17}/>}</button>
     </form>
     <p className="auth-switch">{registering ? t('Đã có tài khoản?', 'Already registered?') : t('Chưa có tài khoản?', 'New to Nihongo Snap?')} <Link href={`${registering ? '/login' : '/register'}?next=${encodeURIComponent(next)}`}>{registering ? t('Đăng nhập', 'Sign in') : t('Đăng ký', 'Create an account')}</Link></p>
-    <div className="auth-service-note"><LockKeyhole size={16}/><p>{t('Email dùng làm tên đăng nhập. Hiện chưa hỗ trợ đăng nhập Google hoặc đặt lại mật khẩu qua email.', 'Email is the sign-in identifier. Google sign-in and email password reset are not enabled yet.')}</p></div>
-    <Link className="auth-guest" href="/cards">{t('Tiếp tục ở chế độ khách', 'Continue as guest')}<ArrowRight size={15}/></Link>
+    <div className="auth-service-note"><LockKeyhole size={16}/><p>{t('Email chỉ dùng làm tên đăng nhập. Không có bước xác nhận hay gửi email; hãy lưu mật khẩu vì hiện chưa có cách đặt lại qua email.', 'Email is only a sign-in identifier. No confirmation email is sent; keep your password because email reset is unavailable.')}</p></div>
+    <Link className="auth-guest" href={next === "/account" ? "/cards" : next}>{t('Tiếp tục ở chế độ khách', 'Continue as guest')}<ArrowRight size={15}/></Link>
   </div><aside className="auth-art"><div><span className="jp" lang="ja">学びを、<br />日々に。</span><p>{t('Từ ngữ được ghi lại.\nKiến thức được giữ lâu.', 'Words collected.\nKnowledge remembered.')}</p><span className="auth-seal jp" lang="ja">日本語</span></div></aside></div></section>;
 }

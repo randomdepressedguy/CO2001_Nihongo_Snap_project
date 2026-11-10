@@ -1,8 +1,8 @@
 'use client';
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { ArrowLeft, ArrowRight, BookOpen, Check, CircleCheck, Headphones, Keyboard, Layers, ListChecks, RotateCcw, Volume2, X } from 'lucide-react';
+import { ArrowRight, BookOpen, Check, CircleCheck, Headphones, Keyboard, Layers, ListChecks, RotateCcw, Volume2, X } from 'lucide-react';
 import { WORDS } from '@/lib/study/data';
-import { type Card, matches, record, schedule } from '@/lib/study/core';
+import { matches, record, schedule } from '@/lib/study/core';
 import { dueCards, shuffled } from '@/lib/study/collection';
 import { useStudy, useStudyClock } from './context';
 import { Modal, PageHead } from './shared';
@@ -52,13 +52,15 @@ export function Review({ go }: {
         }) => s.settings.lang === 'vi' ? w.vi || w.en : w.en || w.vi;
         const right = meaning(card);
         return shuffled([right, ...shuffled([...new Set([...s.cards, ...WORDS].map(meaning).filter(x => x && x !== right))]).slice(0, 3)]);
+    // Choices stay fixed while the learner answers this question.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [card?.id, index, s.settings.lang]);
     useEffect(() => { lock.current = false; if (card) {
         if (mode === 'typed' || mode === 'listen')
             answerInput.current?.focus();
         else if (mode === 'flash')
             revealButton.current?.focus();
-    } }, [index, queue === null]);
+    } }, [index, queue, card, mode]);
     useEffect(() => { if (revealed)
         gradeButton.current?.focus(); }, [revealed]);
     function start() {

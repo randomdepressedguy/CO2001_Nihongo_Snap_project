@@ -109,7 +109,7 @@ export async function authAction(request: Request, action: Action): Promise<Resp
                 throw new AuthError(401, 'Email hoặc mật khẩu chưa đúng.');
             const seconds = input.remember === true ? 30 * 86400 : 86400;
             const token = await session(account.id, seconds, account.password_hash);
-            const { password_hash: _, ...user } = account;
+            const user = { id: account.id, email: account.email, name: account.name, createdAt: account.createdAt };
             return json({ user }, 200, cookieFor(request, token, seconds));
         }
         const account = await sessionAccount(request, env.DB);

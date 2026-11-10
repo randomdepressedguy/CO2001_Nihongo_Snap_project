@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {defaultState,makeCard,schedule,mergeWords,validateState,validateWord,normalize,matches,searchWords,streak,record,localDate} from '../lib/study/core.ts';
+import {defaultState,makeCard,schedule,mergeWords,validateState,validateWord,normalize,matches,searchWords,streak,record} from '../lib/study/core.ts';
 import {WORDS,LESSONS,KANA,KANJI} from '../lib/study/data.ts';
 const word=WORDS.find(w=>w.jp==='猫');
 test('review schedules grow, failed recall returns soon, input remains immutable',()=>{const now=1700000000000;const c=makeCard(word);const good=schedule(c,2,now);assert.equal(good.due,now+86400000);assert.equal(c.reps,0);const second=schedule(good,2,now);assert.equal(second.interval,3);const third=schedule(second,2,now);assert.ok(third.interval>second.interval);const fail=schedule(third,0,now);assert.equal(fail.due,now+60000);assert.equal(fail.reps,0);assert.equal(fail.lapses,1);assert.ok(fail.ease>=1.3);assert.ok(schedule(c,3,now).due>good.due);});

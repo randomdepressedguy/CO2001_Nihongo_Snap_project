@@ -27,6 +27,7 @@ test('account fields and redirect targets are constrained', () => {
   assert.equal(safeReturnPath('/\\evil.example'),'/account');
   assert.equal(safeReturnPath('/login'),'/account');
   assert.equal(safeReturnPath('/review?deck=test'),'/review?deck=test');
+  assert.equal(safeReturnPath('/snap'),'/snap');
 });
 test('cloud initialization loads account data while preserving unsynced local edits', () => {
   const local=defaultState();local.settings.name='local';const cloud=defaultState();cloud.settings.name='cloud';

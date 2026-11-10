@@ -1,6 +1,6 @@
 'use client';
 import {useRef,useState} from 'react';
-import {ArrowRight,Flame,BookOpen,Layers3,Clock,CloudUpload,CloudDownload,Download,Upload,AlertCircle,CheckCircle2,Settings,Trash2,ShieldCheck,Globe2} from 'lucide-react';
+import {ArrowRight,Flame,BookOpen,Layers3,Clock,CloudUpload,CloudDownload,Download,Upload,AlertCircle,CheckCircle2,Trash2,ShieldCheck} from 'lucide-react';
 import {LESSONS} from '@/lib/study/data';
 import {localDate,streak,validateState} from '@/lib/study/core';
 import {useStudy} from './context';

@@ -43,7 +43,8 @@ async function remoteState() {
 }
 const emptyStatus: StudyStatus = { ai: false, cloud: false, user: null };
 export function StudyProvider({ children, initialStatus }: { children: React.ReactNode; initialStatus?: StudyStatus }) {
-  const [s, setS] = useState<State>(defaultState); const current = useRef(s); current.current = s;
+  const [s, setS] = useState<State>(defaultState); const current = useRef(s);
+  useEffect(() => { current.current = s; }, [s]);
   const [status, setStatus] = useState(initialStatus ?? emptyStatus);
   const [ready, setReady] = useState(false); const [loadError, setLoadError] = useState(false); const [recovery, setRecovery] = useState<unknown>();
   const [storage, setStorage] = useState<'saving' | 'saved' | 'error'>('saved'); const [syncStatus, setSyncStatus] = useState<SyncStatus>(initialStatus?.user ? 'loading' : 'local');
@@ -109,13 +110,15 @@ export function StudyProvider({ children, initialStatus }: { children: React.Rea
       if (active) setReady(true);
     })();
     return () => { active = false; };
-  }, []);
+  }, [initialStatus]);
   useEffect(() => {
     if (!ready || !canPersist.current) return;
     if (firstPersist.current) { firstPersist.current = false; if (dirty.current) void syncNow(); return; }
     dirty.current = !!status.user;
     void cache(s, dirty.current);
     if (status.user) { const timer = setTimeout(() => { void syncNow(); }, 650); return () => clearTimeout(timer); }
+  // This persistence effect follows state changes; helper closures use the same render.
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [s, ready, retry]);
   useEffect(() => { document.documentElement.lang = s.settings.lang; }, [s.settings.lang]);
   useEffect(() => { const online = () => { void syncNow(); }; window.addEventListener('online', online); return () => window.removeEventListener('online', online); });
@@ -161,4 +164,14 @@ export function StudyProvider({ children, initialStatus }: { children: React.Rea
   return <Context.Provider value={{ s, set, t, notify, save, speak, status, ready, storage, syncStatus, loadError, recovery, toast, backup, clear, importLegacy, navigate, retrySave: () => { setRetry(n => n + 1); void syncNow(); } }}>{children}{toast && <div className="toast" role="status">{toast}</div>}</Context.Provider>;
 }
 export const useStudy = () => useContext(Context);
-export function useStudyClock() { const start = useRef(Date.now()); return () => { const elapsed = Math.floor((Date.now() - start.current) / 1000); start.current = Date.now(); return Math.max(1, Math.min(300, elapsed)); }; }
+export function useStudyNow() {
+  const [now, setNow] = useState(Date.now);
+  useEffect(() => {
+    const refresh = () => setNow(Date.now());
+    const timer = window.setInterval(refresh, 15000);
+    document.addEventListener('visibilitychange', refresh);
+    return () => { window.clearInterval(timer); document.removeEventListener('visibilitychange', refresh); };
+  }, []);
+  return now;
+}
+export function useStudyClock() { const [started] = useState(Date.now); const start = useRef(started); return () => { const elapsed = Math.floor((Date.now() - start.current) / 1000); start.current = Date.now(); return Math.max(1, Math.min(300, elapsed)); }; }
