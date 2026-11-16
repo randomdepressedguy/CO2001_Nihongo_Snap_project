@@ -64,7 +64,7 @@ export function SearchField({ value, onChange, label }: {
 
     useEffect(() => {
         if (!drawOpen) return;
-        const onPointerDown = (e: MouseEvent) => {
+        const onPointerDown = (e: Event) => {
             if (wrapRef.current && !wrapRef.current.contains(e.target as Node)) {
                 setDrawOpen(false);
             }
@@ -75,9 +75,11 @@ export function SearchField({ value, onChange, label }: {
             }
         };
         document.addEventListener('mousedown', onPointerDown);
+        document.addEventListener('touchstart', onPointerDown, { passive: true });
         document.addEventListener('keydown', onKeyDown);
         return () => {
             document.removeEventListener('mousedown', onPointerDown);
+            document.removeEventListener('touchstart', onPointerDown);
             document.removeEventListener('keydown', onKeyDown);
         };
     }, [drawOpen]);

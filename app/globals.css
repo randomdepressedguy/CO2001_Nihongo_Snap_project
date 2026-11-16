@@ -6480,6 +6480,8 @@ h1,h2,h3 {
 }
 .handwriting-candidates {
   display: flex;
+  flex-wrap: wrap;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   gap: 8px;
@@ -6498,6 +6500,45 @@ h1,h2,h3 {
   min-width: 0;
   scrollbar-width: thin;
   padding: 2px 0;
+}
+.handwriting-candidate-list.expanded {
+  flex-basis: 100%;
+  flex-wrap: wrap;
+  max-height: 150px;
+  overflow-y: auto;
+}
+.handwriting-more-btn {
+  flex-basis: 100%;
+  padding: 5px 8px;
+  font-size: 12px;
+  color: var(--primary);
+  text-align: left;
+}
+.handwriting-pad .handwriting-service-note {
+  display: block;
+  margin: 0;
+  font-size: 11px;
+  line-height: 1.5;
+  color: var(--muted);
+}
+.handwriting-candidate-list.expanded {
+  flex-basis: 100%;
+  flex-wrap: wrap;
+  max-height: 144px;
+  overflow-y: auto;
+}
+.handwriting-more-btn {
+  flex-basis: 100%;
+  padding: 5px;
+  color: var(--primary);
+  font-size: 12px;
+  text-align: left;
+}
+.handwriting-service-note {
+  margin: 0;
+  color: #676d60;
+  font-size: 11px;
+  line-height: 1.5;
 }
 .handwriting-candidate-btn {
   display: inline-flex;

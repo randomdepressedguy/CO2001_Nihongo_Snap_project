@@ -4,6 +4,7 @@ import { Delete, Eraser, PenTool, Undo2, X } from 'lucide-react';
 import {
     type HandwritingStroke,
     recognizeHandwriting,
+    MAX_HANDWRITING_CANDIDATES,
 } from '@/lib/study/handwritingService';
 import { CandidateBar } from './CandidateBar';
 import { useStudy } from './context';
@@ -45,6 +46,7 @@ export function HandwritingCanvas({
     const lastTouchTimeRef = useRef(0);
     const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
     const abortRef = useRef<AbortController | null>(null);
+    const recognitionVersion = useRef(0);
 
     const drawCanvas = useCallback((completedStrokes: HandwritingStroke[], current?: { xs: number[]; ys: number[] }) => {
         const canvas = canvasRef.current;
@@ -150,7 +152,8 @@ export function HandwritingCanvas({
         };
     }, []);
 
-    const scheduleRecognition = (nextStrokes: HandwritingStroke[]) => {
+    const invalidateRecognition = () => {
+        recognitionVersion.current++;
         if (debounceRef.current) {
             clearTimeout(debounceRef.current);
             debounceRef.current = null;
@@ -159,6 +162,13 @@ export function HandwritingCanvas({
             abortRef.current.abort();
             abortRef.current = null;
         }
+        setCandidates([]);
+        setLoading(false);
+    };
+
+    const scheduleRecognition = (nextStrokes: HandwritingStroke[]) => {
+        invalidateRecognition();
+        const version = recognitionVersion.current;
 
         if (nextStrokes.length === 0) {
             setCandidates([]);
@@ -175,10 +185,10 @@ export function HandwritingCanvas({
                 const res = await recognizeHandwriting(nextStrokes, {
                     width: CANVAS_WIDTH,
                     height: CANVAS_HEIGHT,
-                    maxResults: 8,
+                    maxResults: MAX_HANDWRITING_CANDIDATES,
                     signal: controller.signal,
                 });
-                if (!controller.signal.aborted) {
+                if (!controller.signal.aborted && version === recognitionVersion.current) {
                     setCandidates(res.candidates);
                     setSource(res.source);
                     setLoading(false);
@@ -187,7 +197,7 @@ export function HandwritingCanvas({
                 if (err && typeof err === 'object' && 'name' in err && (err as { name: string }).name === 'AbortError') {
                     return;
                 }
-                if (!controller.signal.aborted) {
+                if (!controller.signal.aborted && version === recognitionVersion.current) {
                     setLoading(false);
                 }
             }
@@ -221,6 +231,8 @@ export function HandwritingCanvas({
     };
 
     const beginStroke = (clientX: number, clientY: number) => {
+        invalidateRecognition();
+        setLoading(true);
         const now = Date.now();
         if (strokes.length === 0 && !activeStrokeRef.current.originTime) {
             activeStrokeRef.current.originTime = now;
@@ -334,6 +346,7 @@ export function HandwritingCanvas({
     };
 
     const handleSelectCandidate = (char: string) => {
+        if (loading || activeStrokeRef.current.drawing || !candidates.includes(char)) return;
         onChange(value + char);
         handleClear();
     };
@@ -437,6 +450,9 @@ export function HandwritingCanvas({
                     <span>{t('Đóng', 'Close')}</span>
                 </button>
             </div>
+            <p className="handwriting-service-note">
+                {t('Nét viết được gửi đến Google để nhận diện. Nếu dịch vụ không phản hồi, ứng dụng gợi ý theo số nét trên thiết bị.', 'Strokes are sent to Google for recognition. If the service is unavailable, the app suggests characters locally by stroke count.')}
+            </p>
         </div>
     );
 }

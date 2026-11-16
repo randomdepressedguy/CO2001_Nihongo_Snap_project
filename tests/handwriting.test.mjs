@@ -7,6 +7,7 @@ import {
     parseHandwritingResponse,
     recognizeFallback,
     recognizeHandwriting,
+    MAX_HANDWRITING_CANDIDATES,
 } from '../lib/study/handwritingService.ts';
 
 test('sanitizeStrokes formats stroke coordinates as [[x_coords], [y_coords], [timestamps]]', () => {
@@ -21,6 +22,53 @@ test('sanitizeStrokes formats stroke coordinates as [[x_coords], [y_coords], [ti
         [20, 22, 22],
         [0, 18, 36],
     ]);
+});
+
+const sampleInk = [[[40, 270], [110, 110], [0, 80]]];
+
+test('a stalled fetch or response body times out and cancels the provider request', async () => {
+    for (const stalledBody of [false, true]) {
+        let providerSignal;
+        const result = await recognizeHandwriting(sampleInk, {
+            timeoutMs: 15,
+            fetchImpl: async (_, { signal }) => {
+                providerSignal = signal;
+                return stalledBody
+                    ? { ok: true, json: () => new Promise(() => {}) }
+                    : new Promise(() => {});
+            },
+        });
+        assert.equal(result.source, 'fallback');
+        assert.match(result.error, /timed out/);
+        assert.equal(providerSignal.aborted, true);
+    }
+});
+
+test('caller cancellation rejects without returning unrelated fallback suggestions', async () => {
+    const controller = new AbortController();
+    let providerSignal;
+    const pending = recognizeHandwriting(sampleInk, {
+        signal: controller.signal,
+        fetchImpl: async (_, { signal }) => {
+            providerSignal = signal;
+            return new Promise(() => {});
+        },
+    });
+    controller.abort();
+    await assert.rejects(pending, { name: 'AbortError' });
+    assert.equal(providerSignal.aborted, true);
+    await assert.rejects(recognizeHandwriting(sampleInk, { signal: controller.signal }), { name: 'AbortError' });
+});
+
+test('fallback exposes later candidates such as 土 when the pad asks for the full list', async () => {
+    const result = await recognizeHandwriting([sampleInk[0], sampleInk[0], sampleInk[0]], {
+        maxResults: MAX_HANDWRITING_CANDIDATES,
+        fetchImpl: async () => new Response('', { status: 429 }),
+    });
+    assert.equal(result.source, 'fallback');
+    assert.ok(result.candidates.includes('土'));
+    assert.ok(result.candidates.length > 8);
+    assert.equal(new Set(result.candidates).size, result.candidates.length);
 });
 
 test('buildHandwritingPayload constructs valid Google Input Tools IME request payload', () => {

@@ -1,5 +1,5 @@
 // Japanese handwriting recognition service (Mazii-style draw-to-search)
-// Supports Google Input Tools IME Handwriting API with an offline geometric heuristic fallback.
+// Uses Google Input Tools, with local stroke-count suggestions when unavailable.
 
 export type HandwritingStroke = [number[], number[], number[]];
 
@@ -11,6 +11,12 @@ export type HandwritingRecognitionResult = {
 
 export const GOOGLE_HANDWRITING_ENDPOINT =
     'https://inputtools.google.com/request?itc=ja-t-i0-handwrit&app=demopage';
+export const HANDWRITING_TIMEOUT_MS = 5000;
+export const MAX_HANDWRITING_CANDIDATES = 64;
+
+function resultLimit(value: number) {
+    return Number.isFinite(value) ? Math.max(1, Math.min(MAX_HANDWRITING_CANDIDATES, Math.round(value))) : 8;
+}
 
 export function sanitizeStrokes(strokes: HandwritingStroke[]): HandwritingStroke[] {
     if (!Array.isArray(strokes)) return [];
@@ -71,6 +77,7 @@ export function buildHandwritingPayload(
 }
 
 export function parseHandwritingResponse(raw: unknown, maxResults = 8): string[] {
+    const limit = resultLimit(maxResults);
     if (!Array.isArray(raw) || raw[0] !== 'SUCCESS' || !Array.isArray(raw[1])) {
         return [];
     }
@@ -87,12 +94,12 @@ export function parseHandwritingResponse(raw: unknown, maxResults = 8): string[]
         if (!trimmed || seen.has(trimmed)) continue;
         seen.add(trimmed);
         results.push(trimmed);
-        if (results.length >= maxResults) break;
+        if (results.length >= limit) break;
     }
     return results;
 }
 
-// Offline heuristic fallback grouped by stroke count and primary stroke geometry
+// These are suggestions, not a general-purpose offline handwriting recognizer.
 const FALLBACK_BY_STROKES: Record<number, string[]> = {
     1: ['一', 'ノ', 'し', 'つ', 'く', 'へ', 'ん', '乙'],
     2: ['二', '人', '十', '七', '八', '入', '力', 'い', 'こ', 'り', 'う', '刀'],
@@ -117,6 +124,7 @@ export function recognizeFallback(
     height = 240,
     maxResults = 8
 ): string[] {
+    const limit = resultLimit(maxResults);
     const clean = sanitizeStrokes(strokes);
     if (clean.length === 0) return [];
     const count = clean.length;
@@ -158,7 +166,7 @@ export function recognizeFallback(
         if (!seen.has(ch)) {
             seen.add(ch);
             results.push(ch);
-            if (results.length >= maxResults) break;
+            if (results.length >= limit) break;
         }
     }
     return results;
@@ -172,12 +180,15 @@ export async function recognizeHandwriting(
         maxResults?: number;
         signal?: AbortSignal;
         fetchImpl?: typeof fetch;
+        timeoutMs?: number;
     }
 ): Promise<HandwritingRecognitionResult> {
     const width = options?.width ?? 280;
     const height = options?.height ?? 240;
-    const maxResults = options?.maxResults ?? 8;
+    const maxResults = resultLimit(options?.maxResults ?? 8);
     const cleanStrokes = sanitizeStrokes(strokes);
+    const abortError = () => new DOMException('Handwriting recognition cancelled', 'AbortError');
+    if (options?.signal?.aborted) throw abortError();
 
     if (cleanStrokes.length === 0) {
         return { candidates: [], source: 'google-ime' };
@@ -192,23 +203,40 @@ export async function recognizeHandwriting(
     }
 
     const payload = buildHandwritingPayload(cleanStrokes, width, height, maxResults);
+    const controller = new AbortController();
+    const requestedTimeout = options?.timeoutMs ?? HANDWRITING_TIMEOUT_MS;
+    const timeoutMs = Number.isFinite(requestedTimeout) && requestedTimeout > 0
+        ? requestedTimeout : HANDWRITING_TIMEOUT_MS;
+    let interrupt: (error: Error) => void = () => {};
+    const interrupted = new Promise<never>((_, reject) => { interrupt = reject; });
+    const cancel = () => {
+        const error = abortError();
+        controller.abort(error);
+        interrupt(error);
+    };
+    options?.signal?.addEventListener('abort', cancel, { once: true });
+    const timer = setTimeout(() => {
+        const error = new DOMException('Handwriting recognition timed out', 'TimeoutError');
+        controller.abort(error);
+        interrupt(error);
+    }, timeoutMs);
 
     try {
-        const response = await fetcher(GOOGLE_HANDWRITING_ENDPOINT, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(payload),
-            signal: options?.signal,
-        });
+        // Race the whole response, including JSON, so even a stalled body ends.
+        const candidates = await Promise.race([(async () => {
+            const response = await fetcher(GOOGLE_HANDWRITING_ENDPOINT, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload),
+                signal: controller.signal,
+            });
 
-        if (!response.ok) {
-            throw new Error(`HTTP ${response.status}`);
-        }
+            if (!response.ok) throw new Error(`HTTP ${response.status}`);
 
-        const data: unknown = await response.json();
-        const candidates = parseHandwritingResponse(data, maxResults);
+            const data: unknown = await response.json();
+            return parseHandwritingResponse(data, maxResults);
+        })(), interrupted]);
+        if (options?.signal?.aborted) throw abortError();
         if (candidates.length > 0) {
             return { candidates, source: 'google-ime' };
         }
@@ -217,13 +245,14 @@ export async function recognizeHandwriting(
             source: 'fallback',
         };
     } catch (error) {
-        if (error && typeof error === 'object' && 'name' in error && (error as { name: string }).name === 'AbortError') {
-            throw error;
-        }
+        if (options?.signal?.aborted) throw abortError();
         return {
             candidates: recognizeFallback(cleanStrokes, width, height, maxResults),
             source: 'fallback',
             error: error instanceof Error ? error.message : 'Recognition request failed',
         };
+    } finally {
+        clearTimeout(timer);
+        options?.signal?.removeEventListener('abort', cancel);
     }
 }

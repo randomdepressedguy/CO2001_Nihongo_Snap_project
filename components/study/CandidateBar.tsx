@@ -1,4 +1,5 @@
 'use client';
+import { useState } from 'react';
 import { Sparkles } from 'lucide-react';
 
 export function CandidateBar({
@@ -16,21 +17,23 @@ export function CandidateBar({
     onSelect: (char: string) => void;
     t: (vi: string, en: string) => string;
 }) {
+    const [expanded, setExpanded] = useState(false);
+    const visible = expanded ? candidates : candidates.slice(0, 8);
     return (
         <div
             className="handwriting-candidates"
             role="region"
             aria-label={t('Chữ gợi ý từ nét vẽ', 'Recognized character candidates')}
             aria-live="polite"
+            aria-busy={loading}
         >
             {candidates.length > 0 ? (
-                <div className="handwriting-candidate-list" role="listbox" aria-label={t('Chọn chữ nhận diện', 'Select recognized character')}>
-                    {candidates.map((char, idx) => (
+                <div className={`handwriting-candidate-list ${expanded ? 'expanded' : ''}`} role="group" aria-label={t('Chọn chữ nhận diện', 'Select recognized character')}>
+                    {visible.map((char, idx) => (
                         <button
                             key={`${char}-${idx}`}
                             type="button"
-                            role="option"
-                            aria-selected={idx === 0}
+                            disabled={loading}
                             className={`handwriting-candidate-btn jp ${idx === 0 ? 'primary-candidate' : ''}`}
                             lang="ja"
                             title={t(`Chèn "${char}" vào ô tìm kiếm`, `Insert "${char}" into search`)}
@@ -60,10 +63,15 @@ export function CandidateBar({
             {!loading && source === 'fallback' && candidates.length > 0 && (
                 <span
                     className="handwriting-status-pill offline"
-                    title={t('Đang gợi ý theo số nét trên thiết bị', 'Using local stroke-count suggestions')}
+                    title={t('Dịch vụ chưa có kết quả; đang gợi ý theo số nét trên thiết bị', 'Service unavailable or no result; using local stroke-count suggestions')}
                 >
-                    {t('Ngoại tuyến', 'Offline')}
+                    {t('Theo số nét', 'Stroke count')}
                 </span>
+            )}
+            {candidates.length > 8 && (
+                <button type="button" className="handwriting-more-btn" disabled={loading} onClick={() => setExpanded(value => !value)}>
+                    {expanded ? t('Thu gọn', 'Show less') : t(`Xem thêm ${candidates.length - 8} gợi ý`, `Show ${candidates.length - 8} more suggestions`)}
+                </button>
             )}
         </div>
     );
