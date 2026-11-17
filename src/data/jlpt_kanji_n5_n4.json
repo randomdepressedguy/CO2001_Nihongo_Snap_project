@@ -1,0 +1,8956 @@
+[
+  {
+    "character": "一",
+    "hanViet": "NHẤT",
+    "jlpt": "N5",
+    "strokes": 1,
+    "radical": "一",
+    "onyomi": [
+      "イチ",
+      "イツ"
+    ],
+    "kunyomi": [
+      "ひと",
+      "ひと.つ"
+    ],
+    "meanings": {
+      "vi": [
+        "Một",
+        "Số một"
+      ],
+      "en": [
+        "one",
+        "single"
+      ]
+    },
+    "examples": [
+      "一つ",
+      "一人",
+      "一日",
+      "一番"
+    ]
+  },
+  {
+    "character": "二",
+    "hanViet": "NHỊ",
+    "jlpt": "N5",
+    "strokes": 2,
+    "radical": "二",
+    "onyomi": [
+      "ニ",
+      "ジ"
+    ],
+    "kunyomi": [
+      "ふた",
+      "ふた.つ"
+    ],
+    "meanings": {
+      "vi": [
+        "Hai",
+        "Số hai"
+      ],
+      "en": [
+        "two",
+        "second"
+      ]
+    },
+    "examples": [
+      "二つ",
+      "二人",
+      "二月",
+      "二日"
+    ]
+  },
+  {
+    "character": "三",
+    "hanViet": "TAM",
+    "jlpt": "N5",
+    "strokes": 3,
+    "radical": "一",
+    "onyomi": [
+      "サン",
+      "ゾウ"
+    ],
+    "kunyomi": [
+      "み",
+      "み.つ",
+      "みっ.つ"
+    ],
+    "meanings": {
+      "vi": [
+        "Ba",
+        "Số ba"
+      ],
+      "en": [
+        "three",
+        "third"
+      ]
+    },
+    "examples": [
+      "三つ",
+      "三人",
+      "三月",
+      "三日"
+    ]
+  },
+  {
+    "character": "四",
+    "hanViet": "TỨ",
+    "jlpt": "N5",
+    "strokes": 5,
+    "radical": "囗",
+    "onyomi": [
+      "シ"
+    ],
+    "kunyomi": [
+      "よ",
+      "よ.つ",
+      "よっ.つ",
+      "よん"
+    ],
+    "meanings": {
+      "vi": [
+        "Bốn",
+        "Số bốn"
+      ],
+      "en": [
+        "four",
+        "fourth"
+      ]
+    },
+    "examples": [
+      "四つ",
+      "四人",
+      "四月",
+      "四日"
+    ]
+  },
+  {
+    "character": "五",
+    "hanViet": "NGŨ",
+    "jlpt": "N5",
+    "strokes": 4,
+    "radical": "二",
+    "onyomi": [
+      "ゴ"
+    ],
+    "kunyomi": [
+      "いつ",
+      "いつ.つ"
+    ],
+    "meanings": {
+      "vi": [
+        "Năm",
+        "Số năm"
+      ],
+      "en": [
+        "five",
+        "fifth"
+      ]
+    },
+    "examples": [
+      "五つ",
+      "五人",
+      "五月",
+      "五日"
+    ]
+  },
+  {
+    "character": "六",
+    "hanViet": "LỤC",
+    "jlpt": "N5",
+    "strokes": 4,
+    "radical": "八",
+    "onyomi": [
+      "ロク",
+      "リク"
+    ],
+    "kunyomi": [
+      "む",
+      "む.つ",
+      "むっ.つ",
+      "むい"
+    ],
+    "meanings": {
+      "vi": [
+        "Sáu",
+        "Số sáu"
+      ],
+      "en": [
+        "six",
+        "sixth"
+      ]
+    },
+    "examples": [
+      "六つ",
+      "六人",
+      "六月",
+      "六日"
+    ]
+  },
+  {
+    "character": "七",
+    "hanViet": "THẤT",
+    "jlpt": "N5",
+    "strokes": 2,
+    "radical": "一",
+    "onyomi": [
+      "シチ"
+    ],
+    "kunyomi": [
+      "なな",
+      "なな.つ",
+      "なの"
+    ],
+    "meanings": {
+      "vi": [
+        "Bảy",
+        "Số bảy"
+      ],
+      "en": [
+        "seven",
+        "seventh"
+      ]
+    },
+    "examples": [
+      "七つ",
+      "七人",
+      "七月",
+      "七日"
+    ]
+  },
+  {
+    "character": "八",
+    "hanViet": "BÁT",
+    "jlpt": "N5",
+    "strokes": 2,
+    "radical": "八",
+    "onyomi": [
+      "ハチ"
+    ],
+    "kunyomi": [
+      "や",
+      "や.つ",
+      "やっ.つ",
+      "よう"
+    ],
+    "meanings": {
+      "vi": [
+        "Tám",
+        "Số tám"
+      ],
+      "en": [
+        "eight",
+        "eighth"
+      ]
+    },
+    "examples": [
+      "八つ",
+      "八人",
+      "八月",
+      "八日"
+    ]
+  },
+  {
+    "character": "九",
+    "hanViet": "CỬU",
+    "jlpt": "N5",
+    "strokes": 2,
+    "radical": "乙",
+    "onyomi": [
+      "キュウ",
+      "ク"
+    ],
+    "kunyomi": [
+      "ここの",
+      "ここの.つ"
+    ],
+    "meanings": {
+      "vi": [
+        "Chín",
+        "Số chín"
+      ],
+      "en": [
+        "nine",
+        "ninth"
+      ]
+    },
+    "examples": [
+      "九つ",
+      "九人",
+      "九月",
+      "九日"
+    ]
+  },
+  {
+    "character": "十",
+    "hanViet": "THẬP",
+    "jlpt": "N5",
+    "strokes": 2,
+    "radical": "十",
+    "onyomi": [
+      "ジュウ",
+      "ジッ"
+    ],
+    "kunyomi": [
+      "とお",
+      "と"
+    ],
+    "meanings": {
+      "vi": [
+        "Mười",
+        "Số mười"
+      ],
+      "en": [
+        "ten",
+        "tenth"
+      ]
+    },
+    "examples": [
+      "十",
+      "十人",
+      "十月",
+      "十日"
+    ]
+  },
+  {
+    "character": "百",
+    "hanViet": "BÁCH",
+    "jlpt": "N5",
+    "strokes": 6,
+    "radical": "白",
+    "onyomi": [
+      "ヒャク",
+      "ビャク"
+    ],
+    "kunyomi": [
+      "もも"
+    ],
+    "meanings": {
+      "vi": [
+        "Một trăm"
+      ],
+      "en": [
+        "hundred"
+      ]
+    },
+    "examples": [
+      "百",
+      "三百",
+      "六百",
+      "百貨店"
+    ]
+  },
+  {
+    "character": "千",
+    "hanViet": "THIÊN",
+    "jlpt": "N5",
+    "strokes": 3,
+    "radical": "十",
+    "onyomi": [
+      "セン"
+    ],
+    "kunyomi": [
+      "ち"
+    ],
+    "meanings": {
+      "vi": [
+        "Một nghìn"
+      ],
+      "en": [
+        "thousand"
+      ]
+    },
+    "examples": [
+      "千",
+      "三千",
+      "千円",
+      "千葉"
+    ]
+  },
+  {
+    "character": "万",
+    "hanViet": "VẠN",
+    "jlpt": "N5",
+    "strokes": 3,
+    "radical": "一",
+    "onyomi": [
+      "マン",
+      "バン"
+    ],
+    "kunyomi": [
+      "よろず"
+    ],
+    "meanings": {
+      "vi": [
+        "Mười nghìn",
+        "Vạn"
+      ],
+      "en": [
+        "ten thousand",
+        "myriad"
+      ]
+    },
+    "examples": [
+      "一万",
+      "万円",
+      "万年筆",
+      "万国"
+    ]
+  },
+  {
+    "character": "円",
+    "hanViet": "VIÊN",
+    "jlpt": "N5",
+    "strokes": 4,
+    "radical": "囗",
+    "onyomi": [
+      "エン"
+    ],
+    "kunyomi": [
+      "まる.い"
+    ],
+    "meanings": {
+      "vi": [
+        "Yên Nhật",
+        "Hình tròn"
+      ],
+      "en": [
+        "yen",
+        "circle",
+        "round"
+      ]
+    },
+    "examples": [
+      "百円",
+      "一万円",
+      "円高",
+      "円い"
+    ]
+  },
+  {
+    "character": "日",
+    "hanViet": "NHẬT",
+    "jlpt": "N5",
+    "strokes": 4,
+    "radical": "日",
+    "onyomi": [
+      "ニチ",
+      "ジツ"
+    ],
+    "kunyomi": [
+      "ひ",
+      "-び",
+      "-か"
+    ],
+    "meanings": {
+      "vi": [
+        "Mặt trời",
+        "Ngày",
+        "Nhật Bản"
+      ],
+      "en": [
+        "sun",
+        "day",
+        "Japan"
+      ]
+    },
+    "examples": [
+      "日本",
+      "日曜日",
+      "毎日",
+      "今日"
+    ]
+  },
+  {
+    "character": "月",
+    "hanViet": "NGUYỆT",
+    "jlpt": "N5",
+    "strokes": 4,
+    "radical": "月",
+    "onyomi": [
+      "ゲツ",
+      "ガツ"
+    ],
+    "kunyomi": [
+      "つき"
+    ],
+    "meanings": {
+      "vi": [
+        "Mặt trăng",
+        "Tháng"
+      ],
+      "en": [
+        "moon",
+        "month"
+      ]
+    },
+    "examples": [
+      "月曜日",
+      "一月",
+      "今月",
+      "来月"
+    ]
+  },
+  {
+    "character": "火",
+    "hanViet": "HỎA",
+    "jlpt": "N5",
+    "strokes": 4,
+    "radical": "火",
+    "onyomi": [
+      "カ"
+    ],
+    "kunyomi": [
+      "ひ",
+      "-び",
+      "ほ-"
+    ],
+    "meanings": {
+      "vi": [
+        "Lửa",
+        "Thứ Ba"
+      ],
+      "en": [
+        "fire",
+        "Tuesday"
+      ]
+    },
+    "examples": [
+      "火曜日",
+      "火山",
+      "火事",
+      "花火"
+    ]
+  },
+  {
+    "character": "水",
+    "hanViet": "THỦY",
+    "jlpt": "N5",
+    "strokes": 4,
+    "radical": "水",
+    "onyomi": [
+      "スイ"
+    ],
+    "kunyomi": [
+      "みず"
+    ],
+    "meanings": {
+      "vi": [
+        "Nước",
+        "Thứ Tư"
+      ],
+      "en": [
+        "water",
+        "Wednesday"
+      ]
+    },
+    "examples": [
+      "水曜日",
+      "水",
+      "水泳",
+      "水道"
+    ]
+  },
+  {
+    "character": "木",
+    "hanViet": "MỘC",
+    "jlpt": "N5",
+    "strokes": 4,
+    "radical": "木",
+    "onyomi": [
+      "ボク",
+      "モク"
+    ],
+    "kunyomi": [
+      "き",
+      "こ-"
+    ],
+    "meanings": {
+      "vi": [
+        "Cây",
+        "Gỗ",
+        "Thứ Năm"
+      ],
+      "en": [
+        "tree",
+        "wood",
+        "Thursday"
+      ]
+    },
+    "examples": [
+      "木曜日",
+      "木",
+      "木村",
+      "大木"
+    ]
+  },
+  {
+    "character": "金",
+    "hanViet": "KIM",
+    "jlpt": "N5",
+    "strokes": 8,
+    "radical": "金",
+    "onyomi": [
+      "キン",
+      "コン"
+    ],
+    "kunyomi": [
+      "かね",
+      "かな-"
+    ],
+    "meanings": {
+      "vi": [
+        "Vàng",
+        "Tiền",
+        "Kim loại",
+        "Thứ Sáu"
+      ],
+      "en": [
+        "gold",
+        "money",
+        "metal",
+        "Friday"
+      ]
+    },
+    "examples": [
+      "金曜日",
+      "お金",
+      "料金",
+      "金持ち"
+    ]
+  },
+  {
+    "character": "土",
+    "hanViet": "THỔ",
+    "jlpt": "N5",
+    "strokes": 3,
+    "radical": "土",
+    "onyomi": [
+      "ド",
+      "ト"
+    ],
+    "kunyomi": [
+      "つち"
+    ],
+    "meanings": {
+      "vi": [
+        "Đất",
+        "Thứ Bảy"
+      ],
+      "en": [
+        "soil",
+        "earth",
+        "Saturday"
+      ]
+    },
+    "examples": [
+      "土曜日",
+      "土",
+      "土地",
+      "お土産"
+    ]
+  },
+  {
+    "character": "年",
+    "hanViet": "NIÊN",
+    "jlpt": "N5",
+    "strokes": 6,
+    "radical": "干",
+    "onyomi": [
+      "ネン"
+    ],
+    "kunyomi": [
+      "とし"
+    ],
+    "meanings": {
+      "vi": [
+        "Năm",
+        "Tuổi"
+      ],
+      "en": [
+        "year",
+        "age"
+      ]
+    },
+    "examples": [
+      "今年",
+      "来年",
+      "去年",
+      "一年"
+    ]
+  },
+  {
+    "character": "時",
+    "hanViet": "THỜI",
+    "jlpt": "N5",
+    "strokes": 10,
+    "radical": "日",
+    "onyomi": [
+      "ジ"
+    ],
+    "kunyomi": [
+      "とき"
+    ],
+    "meanings": {
+      "vi": [
+        "Thời gian",
+        "Giờ"
+      ],
+      "en": [
+        "time",
+        "hour"
+      ]
+    },
+    "examples": [
+      "時間",
+      "時計",
+      "一時",
+      "時々"
+    ]
+  },
+  {
+    "character": "間",
+    "hanViet": "GIAN",
+    "jlpt": "N5",
+    "strokes": 12,
+    "radical": "門",
+    "onyomi": [
+      "カン",
+      "ケン"
+    ],
+    "kunyomi": [
+      "あいだ",
+      "ま"
+    ],
+    "meanings": {
+      "vi": [
+        "Khoảng cách",
+        "Thời gian",
+        "Giữa"
+      ],
+      "en": [
+        "interval",
+        "space",
+        "between"
+      ]
+    },
+    "examples": [
+      "時間",
+      "一週間",
+      "人間",
+      "間に合う"
+    ]
+  },
+  {
+    "character": "分",
+    "hanViet": "PHÂN",
+    "jlpt": "N5",
+    "strokes": 4,
+    "radical": "刀",
+    "onyomi": [
+      "ブン",
+      "フン",
+      "ブ"
+    ],
+    "kunyomi": [
+      "わ.ける",
+      "わ.かる"
+    ],
+    "meanings": {
+      "vi": [
+        "Phút",
+        "Phần",
+        "Hiểu",
+        "Chia"
+      ],
+      "en": [
+        "minute",
+        "part",
+        "understand",
+        "divide"
+      ]
+    },
+    "examples": [
+      "五分",
+      "半分",
+      "自分",
+      "分かる"
+    ]
+  },
+  {
+    "character": "半",
+    "hanViet": "BÁN",
+    "jlpt": "N5",
+    "strokes": 5,
+    "radical": "十",
+    "onyomi": [
+      "ハン"
+    ],
+    "kunyomi": [
+      "なか.ば"
+    ],
+    "meanings": {
+      "vi": [
+        "Một nửa",
+        "Rưỡi"
+      ],
+      "en": [
+        "half",
+        "middle"
+      ]
+    },
+    "examples": [
+      "半分",
+      "一時半",
+      "半年",
+      "半日"
+    ]
+  },
+  {
+    "character": "今",
+    "hanViet": "KIM",
+    "jlpt": "N5",
+    "strokes": 4,
+    "radical": "人",
+    "onyomi": [
+      "コン",
+      "キン"
+    ],
+    "kunyomi": [
+      "いま"
+    ],
+    "meanings": {
+      "vi": [
+        "Bây giờ",
+        "Hiện tại"
+      ],
+      "en": [
+        "now",
+        "present"
+      ]
+    },
+    "examples": [
+      "今",
+      "今日",
+      "今月",
+      "今年"
+    ]
+  },
+  {
+    "character": "先",
+    "hanViet": "TIÊN",
+    "jlpt": "N5",
+    "strokes": 6,
+    "radical": "儿",
+    "onyomi": [
+      "セン"
+    ],
+    "kunyomi": [
+      "さき",
+      "ま.ず"
+    ],
+    "meanings": {
+      "vi": [
+        "Trước",
+        "Tiên sinh"
+      ],
+      "en": [
+        "before",
+        "ahead",
+        "previous"
+      ]
+    },
+    "examples": [
+      "先生",
+      "先週",
+      "先月",
+      "先に"
+    ]
+  },
+  {
+    "character": "来",
+    "hanViet": "LAI",
+    "jlpt": "N5",
+    "strokes": 7,
+    "radical": "木",
+    "onyomi": [
+      "ライ",
+      "タイ"
+    ],
+    "kunyomi": [
+      "く.る",
+      "きた.る"
+    ],
+    "meanings": {
+      "vi": [
+        "Đến",
+        "Tương lai",
+        "Tuần/tháng sau"
+      ],
+      "en": [
+        "come",
+        "next",
+        "future"
+      ]
+    },
+    "examples": [
+      "来る",
+      "来週",
+      "来月",
+      "来年"
+    ]
+  },
+  {
+    "character": "毎",
+    "hanViet": "MỖI",
+    "jlpt": "N5",
+    "strokes": 6,
+    "radical": "毋",
+    "onyomi": [
+      "マイ"
+    ],
+    "kunyomi": [
+      "ごと"
+    ],
+    "meanings": {
+      "vi": [
+        "Mỗi",
+        "Hằng"
+      ],
+      "en": [
+        "every",
+        "each"
+      ]
+    },
+    "examples": [
+      "毎日",
+      "毎週",
+      "毎月",
+      "毎年"
+    ]
+  },
+  {
+    "character": "週",
+    "hanViet": "CHU",
+    "jlpt": "N5",
+    "strokes": 11,
+    "radical": "辵",
+    "onyomi": [
+      "シュウ"
+    ],
+    "kunyomi": [],
+    "meanings": {
+      "vi": [
+        "Tuần lễ"
+      ],
+      "en": [
+        "week"
+      ]
+    },
+    "examples": [
+      "今週",
+      "来週",
+      "先週",
+      "毎週"
+    ]
+  },
+  {
+    "character": "午",
+    "hanViet": "NGỌ",
+    "jlpt": "N5",
+    "strokes": 4,
+    "radical": "十",
+    "onyomi": [
+      "ゴ"
+    ],
+    "kunyomi": [
+      "うま"
+    ],
+    "meanings": {
+      "vi": [
+        "Buổi trưa"
+      ],
+      "en": [
+        "noon"
+      ]
+    },
+    "examples": [
+      "午前",
+      "午後",
+      "正午"
+    ]
+  },
+  {
+    "character": "前",
+    "hanViet": "TIỀN",
+    "jlpt": "N5",
+    "strokes": 9,
+    "radical": "刀",
+    "onyomi": [
+      "ゼン"
+    ],
+    "kunyomi": [
+      "まえ"
+    ],
+    "meanings": {
+      "vi": [
+        "Phía trước",
+        "Trước đây"
+      ],
+      "en": [
+        "in front",
+        "before"
+      ]
+    },
+    "examples": [
+      "午前",
+      "名前",
+      "前",
+      "三日前"
+    ]
+  },
+  {
+    "character": "後",
+    "hanViet": "HẬU",
+    "jlpt": "N5",
+    "strokes": 9,
+    "radical": "彳",
+    "onyomi": [
+      "ゴ",
+      "コウ"
+    ],
+    "kunyomi": [
+      "のち",
+      "うし.ろ",
+      "あと"
+    ],
+    "meanings": {
+      "vi": [
+        "Phía sau",
+        "Sau khi"
+      ],
+      "en": [
+        "behind",
+        "after",
+        "later"
+      ]
+    },
+    "examples": [
+      "午後",
+      "後ろ",
+      "後で",
+      "最後"
+    ]
+  },
+  {
+    "character": "人",
+    "hanViet": "NHÂN",
+    "jlpt": "N5",
+    "strokes": 2,
+    "radical": "人",
+    "onyomi": [
+      "ジン",
+      "ニン"
+    ],
+    "kunyomi": [
+      "ひと"
+    ],
+    "meanings": {
+      "vi": [
+        "Người",
+        "Con người"
+      ],
+      "en": [
+        "person",
+        "human"
+      ]
+    },
+    "examples": [
+      "人",
+      "日本人",
+      "一人",
+      "大人"
+    ]
+  },
+  {
+    "character": "男",
+    "hanViet": "NAM",
+    "jlpt": "N5",
+    "strokes": 7,
+    "radical": "田",
+    "onyomi": [
+      "ダン",
+      "ナン"
+    ],
+    "kunyomi": [
+      "おとこ"
+    ],
+    "meanings": {
+      "vi": [
+        "Đàn ông",
+        "Nam giới"
+      ],
+      "en": [
+        "man",
+        "male"
+      ]
+    },
+    "examples": [
+      "男の人",
+      "男の子",
+      "男子",
+      "長男"
+    ]
+  },
+  {
+    "character": "女",
+    "hanViet": "NỮ",
+    "jlpt": "N5",
+    "strokes": 3,
+    "radical": "女",
+    "onyomi": [
+      "ジョ",
+      "ニョ"
+    ],
+    "kunyomi": [
+      "おんな",
+      "め"
+    ],
+    "meanings": {
+      "vi": [
+        "Phụ nữ",
+        "Nữ giới"
+      ],
+      "en": [
+        "woman",
+        "female"
+      ]
+    },
+    "examples": [
+      "女の人",
+      "女の子",
+      "女子",
+      "彼女"
+    ]
+  },
+  {
+    "character": "子",
+    "hanViet": "TỬ",
+    "jlpt": "N5",
+    "strokes": 3,
+    "radical": "子",
+    "onyomi": [
+      "シ",
+      "ス"
+    ],
+    "kunyomi": [
+      "こ"
+    ],
+    "meanings": {
+      "vi": [
+        "Con",
+        "Đứa trẻ"
+      ],
+      "en": [
+        "child",
+        "kid"
+      ]
+    },
+    "examples": [
+      "子供",
+      "女の子",
+      "男の子",
+      "椅子"
+    ]
+  },
+  {
+    "character": "父",
+    "hanViet": "PHỤ",
+    "jlpt": "N5",
+    "strokes": 4,
+    "radical": "父",
+    "onyomi": [
+      "フ"
+    ],
+    "kunyomi": [
+      "ちち"
+    ],
+    "meanings": {
+      "vi": [
+        "Cha",
+        "Bố"
+      ],
+      "en": [
+        "father"
+      ]
+    },
+    "examples": [
+      "父",
+      "お父さん",
+      "父母",
+      "祖父"
+    ]
+  },
+  {
+    "character": "母",
+    "hanViet": "MẪU",
+    "jlpt": "N5",
+    "strokes": 5,
+    "radical": "毋",
+    "onyomi": [
+      "ボ"
+    ],
+    "kunyomi": [
+      "はは"
+    ],
+    "meanings": {
+      "vi": [
+        "Mẹ",
+        "Má"
+      ],
+      "en": [
+        "mother"
+      ]
+    },
+    "examples": [
+      "母",
+      "お母さん",
+      "父母",
+      "祖母"
+    ]
+  },
+  {
+    "character": "友",
+    "hanViet": "HỮU",
+    "jlpt": "N5",
+    "strokes": 4,
+    "radical": "又",
+    "onyomi": [
+      "ユウ"
+    ],
+    "kunyomi": [
+      "とも"
+    ],
+    "meanings": {
+      "vi": [
+        "Bạn bè",
+        "Bằng hữu"
+      ],
+      "en": [
+        "friend",
+        "companion"
+      ]
+    },
+    "examples": [
+      "友達",
+      "友人",
+      "親友",
+      "学友"
+    ]
+  },
+  {
+    "character": "私",
+    "hanViet": "TƯ",
+    "jlpt": "N5",
+    "strokes": 7,
+    "radical": "禾",
+    "onyomi": [
+      "シ"
+    ],
+    "kunyomi": [
+      "わたくし",
+      "わたし"
+    ],
+    "meanings": {
+      "vi": [
+        "Tôi",
+        "Cá nhân",
+        "Riêng tư"
+      ],
+      "en": [
+        "I",
+        "me",
+        "private"
+      ]
+    },
+    "examples": [
+      "私",
+      "私立",
+      "私生活"
+    ]
+  },
+  {
+    "character": "目",
+    "hanViet": "MỤC",
+    "jlpt": "N5",
+    "strokes": 5,
+    "radical": "目",
+    "onyomi": [
+      "モク",
+      "ボク"
+    ],
+    "kunyomi": [
+      "め",
+      "ま-"
+    ],
+    "meanings": {
+      "vi": [
+        "Mắt",
+        "Mục tiêu",
+        "Thứ tự"
+      ],
+      "en": [
+        "eye",
+        "item",
+        "look"
+      ]
+    },
+    "examples": [
+      "目",
+      "一日目",
+      "目的",
+      "注目"
+    ]
+  },
+  {
+    "character": "耳",
+    "hanViet": "NHĨ",
+    "jlpt": "N5",
+    "strokes": 6,
+    "radical": "耳",
+    "onyomi": [
+      "ジ"
+    ],
+    "kunyomi": [
+      "みみ"
+    ],
+    "meanings": {
+      "vi": [
+        "Tai",
+        "Lắng nghe"
+      ],
+      "en": [
+        "ear",
+        "hearing"
+      ]
+    },
+    "examples": [
+      "耳",
+      "初耳",
+      "耳鼻科"
+    ]
+  },
+  {
+    "character": "口",
+    "hanViet": "KHẨU",
+    "jlpt": "N5",
+    "strokes": 3,
+    "radical": "口",
+    "onyomi": [
+      "コウ",
+      "ク"
+    ],
+    "kunyomi": [
+      "くち"
+    ],
+    "meanings": {
+      "vi": [
+        "Miệng",
+        "Cửa",
+        "Lối"
+      ],
+      "en": [
+        "mouth",
+        "entrance",
+        "exit"
+      ]
+    },
+    "examples": [
+      "口",
+      "入口",
+      "出口",
+      "人口"
+    ]
+  },
+  {
+    "character": "手",
+    "hanViet": "THỦ",
+    "jlpt": "N5",
+    "strokes": 4,
+    "radical": "手",
+    "onyomi": [
+      "シュ",
+      "ズ"
+    ],
+    "kunyomi": [
+      "て",
+      "た-"
+    ],
+    "meanings": {
+      "vi": [
+        "Tay",
+        "Bàn tay",
+        "Người làm"
+      ],
+      "en": [
+        "hand",
+        "arm",
+        "skill"
+      ]
+    },
+    "examples": [
+      "手",
+      "手紙",
+      "上手",
+      "下手"
+    ]
+  },
+  {
+    "character": "足",
+    "hanViet": "TÚC",
+    "jlpt": "N5",
+    "strokes": 7,
+    "radical": "足",
+    "onyomi": [
+      "ソク"
+    ],
+    "kunyomi": [
+      "あし",
+      "た.りる",
+      "た.す"
+    ],
+    "meanings": {
+      "vi": [
+        "Chân",
+        "Đầy đủ",
+        "Cộng thêm"
+      ],
+      "en": [
+        "foot",
+        "leg",
+        "be sufficient"
+      ]
+    },
+    "examples": [
+      "足",
+      "一足",
+      "足りる",
+      "遠足"
+    ]
+  },
+  {
+    "character": "山",
+    "hanViet": "SƠN",
+    "jlpt": "N5",
+    "strokes": 3,
+    "radical": "山",
+    "onyomi": [
+      "サン",
+      "セン"
+    ],
+    "kunyomi": [
+      "やま"
+    ],
+    "meanings": {
+      "vi": [
+        "Núi",
+        "Đồi"
+      ],
+      "en": [
+        "mountain",
+        "hill"
+      ]
+    },
+    "examples": [
+      "山",
+      "富士山",
+      "火山",
+      "登山"
+    ]
+  },
+  {
+    "character": "川",
+    "hanViet": "XUYÊN",
+    "jlpt": "N5",
+    "strokes": 3,
+    "radical": "巛",
+    "onyomi": [
+      "セン"
+    ],
+    "kunyomi": [
+      "かわ"
+    ],
+    "meanings": {
+      "vi": [
+        "Sông",
+        "Suối"
+      ],
+      "en": [
+        "river",
+        "stream"
+      ]
+    },
+    "examples": [
+      "川",
+      "小川",
+      "河川"
+    ]
+  },
+  {
+    "character": "空",
+    "hanViet": "KHÔNG",
+    "jlpt": "N5",
+    "strokes": 8,
+    "radical": "穴",
+    "onyomi": [
+      "クウ"
+    ],
+    "kunyomi": [
+      "そら",
+      "あ.く",
+      "から"
+    ],
+    "meanings": {
+      "vi": [
+        "Bầu trời",
+        "Trống rỗng"
+      ],
+      "en": [
+        "sky",
+        "empty",
+        "vacant"
+      ]
+    },
+    "examples": [
+      "空",
+      "空気",
+      "空港",
+      "空く"
+    ]
+  },
+  {
+    "character": "天",
+    "hanViet": "THIÊN",
+    "jlpt": "N5",
+    "strokes": 4,
+    "radical": "大",
+    "onyomi": [
+      "テン"
+    ],
+    "kunyomi": [
+      "あまつ",
+      "あめ"
+    ],
+    "meanings": {
+      "vi": [
+        "Trời",
+        "Thiên nhiên"
+      ],
+      "en": [
+        "heavens",
+        "sky"
+      ]
+    },
+    "examples": [
+      "天気",
+      "天ぷら",
+      "天才",
+      "天気予報"
+    ]
+  },
+  {
+    "character": "気",
+    "hanViet": "KHÍ",
+    "jlpt": "N5",
+    "strokes": 6,
+    "radical": "气",
+    "onyomi": [
+      "キ",
+      "ケ"
+    ],
+    "kunyomi": [
+      "いき"
+    ],
+    "meanings": {
+      "vi": [
+        "Khí",
+        "Tinh thần",
+        "Tâm trạng"
+      ],
+      "en": [
+        "spirit",
+        "mind",
+        "air",
+        "mood"
+      ]
+    },
+    "examples": [
+      "天気",
+      "元気",
+      "気をつける",
+      "電気"
+    ]
+  },
+  {
+    "character": "雨",
+    "hanViet": "VŨ",
+    "jlpt": "N5",
+    "strokes": 8,
+    "radical": "雨",
+    "onyomi": [
+      "ウ"
+    ],
+    "kunyomi": [
+      "あめ",
+      "あま-"
+    ],
+    "meanings": {
+      "vi": [
+        "Mưa",
+        "Cơn mưa"
+      ],
+      "en": [
+        "rain"
+      ]
+    },
+    "examples": [
+      "雨",
+      "大雨",
+      "雨天",
+      "梅雨"
+    ]
+  },
+  {
+    "character": "花",
+    "hanViet": "HOA",
+    "jlpt": "N5",
+    "strokes": 7,
+    "radical": "艸",
+    "onyomi": [
+      "カ",
+      "ケ"
+    ],
+    "kunyomi": [
+      "はな"
+    ],
+    "meanings": {
+      "vi": [
+        "Hoa",
+        "Bông hoa"
+      ],
+      "en": [
+        "flower",
+        "blossom"
+      ]
+    },
+    "examples": [
+      "花",
+      "花見",
+      "花火",
+      "生け花"
+    ]
+  },
+  {
+    "character": "草",
+    "hanViet": "THẢO",
+    "jlpt": "N5",
+    "strokes": 9,
+    "radical": "艸",
+    "onyomi": [
+      "ソウ"
+    ],
+    "kunyomi": [
+      "くさ"
+    ],
+    "meanings": {
+      "vi": [
+        "Cỏ",
+        "Thực vật"
+      ],
+      "en": [
+        "grass",
+        "herb",
+        "weed"
+      ]
+    },
+    "examples": [
+      "草",
+      "草原",
+      "雑草"
+    ]
+  },
+  {
+    "character": "虫",
+    "hanViet": "TRÙNG",
+    "jlpt": "N5",
+    "strokes": 6,
+    "radical": "虫",
+    "onyomi": [
+      "チュウ",
+      "キ"
+    ],
+    "kunyomi": [
+      "むし"
+    ],
+    "meanings": {
+      "vi": [
+        "Côn trùng",
+        "Sâu bọ"
+      ],
+      "en": [
+        "insect",
+        "bug",
+        "worm"
+      ]
+    },
+    "examples": [
+      "虫",
+      "虫歯",
+      "毛虫"
+    ]
+  },
+  {
+    "character": "犬",
+    "hanViet": "KHUYỂN",
+    "jlpt": "N5",
+    "strokes": 4,
+    "radical": "犬",
+    "onyomi": [
+      "ケン"
+    ],
+    "kunyomi": [
+      "いぬ"
+    ],
+    "meanings": {
+      "vi": [
+        "Con chó"
+      ],
+      "en": [
+        "dog"
+      ]
+    },
+    "examples": [
+      "犬",
+      "子犬",
+      "番犬"
+    ]
+  },
+  {
+    "character": "魚",
+    "hanViet": "NGƯ",
+    "jlpt": "N5",
+    "strokes": 11,
+    "radical": "魚",
+    "onyomi": [
+      "ギョ"
+    ],
+    "kunyomi": [
+      "うお",
+      "さかな"
+    ],
+    "meanings": {
+      "vi": [
+        "Con cá"
+      ],
+      "en": [
+        "fish"
+      ]
+    },
+    "examples": [
+      "魚",
+      "金魚",
+      "焼き魚",
+      "魚屋"
+    ]
+  },
+  {
+    "character": "上",
+    "hanViet": "THƯỢNG",
+    "jlpt": "N5",
+    "strokes": 3,
+    "radical": "一",
+    "onyomi": [
+      "ジョウ",
+      "ショウ"
+    ],
+    "kunyomi": [
+      "うえ",
+      "あ.げる",
+      "のぼ.る"
+    ],
+    "meanings": {
+      "vi": [
+        "Trên",
+        "Phía trên",
+        "Lên",
+        "Giỏi"
+      ],
+      "en": [
+        "up",
+        "above",
+        "top",
+        "skilled"
+      ]
+    },
+    "examples": [
+      "上",
+      "上手",
+      "上着",
+      "上がる"
+    ]
+  },
+  {
+    "character": "下",
+    "hanViet": "HẠ",
+    "jlpt": "N5",
+    "strokes": 3,
+    "radical": "一",
+    "onyomi": [
+      "カ",
+      "ゲ"
+    ],
+    "kunyomi": [
+      "した",
+      "さ.げる",
+      "くだ.る"
+    ],
+    "meanings": {
+      "vi": [
+        "Dưới",
+        "Phía dưới",
+        "Xuống"
+      ],
+      "en": [
+        "down",
+        "below",
+        "under"
+      ]
+    },
+    "examples": [
+      "下",
+      "下手",
+      "地下鉄",
+      "下がる"
+    ]
+  },
+  {
+    "character": "中",
+    "hanViet": "TRUNG",
+    "jlpt": "N5",
+    "strokes": 4,
+    "radical": "丨",
+    "onyomi": [
+      "チュウ"
+    ],
+    "kunyomi": [
+      "なか",
+      "うち"
+    ],
+    "meanings": {
+      "vi": [
+        "Ở giữa",
+        "Bên trong",
+        "Đang"
+      ],
+      "en": [
+        "in",
+        "inside",
+        "middle",
+        "center"
+      ]
+    },
+    "examples": [
+      "中",
+      "中学校",
+      "一日中",
+      "中国"
+    ]
+  },
+  {
+    "character": "外",
+    "hanViet": "NGOẠI",
+    "jlpt": "N5",
+    "strokes": 5,
+    "radical": "夕",
+    "onyomi": [
+      "ガイ",
+      "ゲ"
+    ],
+    "kunyomi": [
+      "そと",
+      "ほか",
+      "はず.す"
+    ],
+    "meanings": {
+      "vi": [
+        "Bên ngoài",
+        "Nước ngoài",
+        "Khác"
+      ],
+      "en": [
+        "outside",
+        "foreign",
+        "other"
+      ]
+    },
+    "examples": [
+      "外",
+      "外国",
+      "外国人",
+      "外出"
+    ]
+  },
+  {
+    "character": "右",
+    "hanViet": "HỮU",
+    "jlpt": "N5",
+    "strokes": 5,
+    "radical": "口",
+    "onyomi": [
+      "ウ",
+      "ユウ"
+    ],
+    "kunyomi": [
+      "みぎ"
+    ],
+    "meanings": {
+      "vi": [
+        "Bên phải"
+      ],
+      "en": [
+        "right"
+      ]
+    },
+    "examples": [
+      "右",
+      "右手",
+      "右側",
+      "左右"
+    ]
+  },
+  {
+    "character": "左",
+    "hanViet": "TẢ",
+    "jlpt": "N5",
+    "strokes": 5,
+    "radical": "工",
+    "onyomi": [
+      "サ",
+      "シャ"
+    ],
+    "kunyomi": [
+      "ひだり"
+    ],
+    "meanings": {
+      "vi": [
+        "Bên trái"
+      ],
+      "en": [
+        "left"
+      ]
+    },
+    "examples": [
+      "左",
+      "左手",
+      "左側",
+      "左右"
+    ]
+  },
+  {
+    "character": "東",
+    "hanViet": "ĐÔNG",
+    "jlpt": "N5",
+    "strokes": 8,
+    "radical": "木",
+    "onyomi": [
+      "トウ"
+    ],
+    "kunyomi": [
+      "ひがし"
+    ],
+    "meanings": {
+      "vi": [
+        "Phía Đông"
+      ],
+      "en": [
+        "east"
+      ]
+    },
+    "examples": [
+      "東",
+      "東京",
+      "東口",
+      "中東"
+    ]
+  },
+  {
+    "character": "西",
+    "hanViet": "TÂY",
+    "jlpt": "N5",
+    "strokes": 6,
+    "radical": "襾",
+    "onyomi": [
+      "セイ",
+      "サイ"
+    ],
+    "kunyomi": [
+      "にし"
+    ],
+    "meanings": {
+      "vi": [
+        "Phía Tây"
+      ],
+      "en": [
+        "west"
+      ]
+    },
+    "examples": [
+      "西",
+      "西口",
+      "関西",
+      "東西"
+    ]
+  },
+  {
+    "character": "南",
+    "hanViet": "NAM",
+    "jlpt": "N5",
+    "strokes": 9,
+    "radical": "十",
+    "onyomi": [
+      "ナン",
+      "ナ"
+    ],
+    "kunyomi": [
+      "みなみ"
+    ],
+    "meanings": {
+      "vi": [
+        "Phía Nam"
+      ],
+      "en": [
+        "south"
+      ]
+    },
+    "examples": [
+      "南",
+      "南口",
+      "東南アジア"
+    ]
+  },
+  {
+    "character": "北",
+    "hanViet": "BẮC",
+    "jlpt": "N5",
+    "strokes": 5,
+    "radical": "匕",
+    "onyomi": [
+      "ホク"
+    ],
+    "kunyomi": [
+      "きた"
+    ],
+    "meanings": {
+      "vi": [
+        "Phía Bắc"
+      ],
+      "en": [
+        "north"
+      ]
+    },
+    "examples": [
+      "北",
+      "北口",
+      "北海道",
+      "東北"
+    ]
+  },
+  {
+    "character": "大",
+    "hanViet": "ĐẠI",
+    "jlpt": "N5",
+    "strokes": 3,
+    "radical": "大",
+    "onyomi": [
+      "ダイ",
+      "タイ"
+    ],
+    "kunyomi": [
+      "おお",
+      "おお.きい"
+    ],
+    "meanings": {
+      "vi": [
+        "To",
+        "Lớn",
+        "Đại học"
+      ],
+      "en": [
+        "big",
+        "large",
+        "great"
+      ]
+    },
+    "examples": [
+      "大きい",
+      "大学",
+      "大人",
+      "大切"
+    ]
+  },
+  {
+    "character": "小",
+    "hanViet": "TIỂU",
+    "jlpt": "N5",
+    "strokes": 3,
+    "radical": "小",
+    "onyomi": [
+      "ショウ"
+    ],
+    "kunyomi": [
+      "ちい.さい",
+      "こ-",
+      "お-"
+    ],
+    "meanings": {
+      "vi": [
+        "Nhỏ",
+        "Bé",
+        "Tiểu học"
+      ],
+      "en": [
+        "small",
+        "little"
+      ]
+    },
+    "examples": [
+      "小さい",
+      "小学校",
+      "小川",
+      "小説"
+    ]
+  },
+  {
+    "character": "長",
+    "hanViet": "TRƯỞNG",
+    "jlpt": "N5",
+    "strokes": 8,
+    "radical": "長",
+    "onyomi": [
+      "チョウ"
+    ],
+    "kunyomi": [
+      "なが.い",
+      "おさ"
+    ],
+    "meanings": {
+      "vi": [
+        "Dài",
+        "Trưởng",
+        "Đứng đầu"
+      ],
+      "en": [
+        "long",
+        "leader",
+        "chief"
+      ]
+    },
+    "examples": [
+      "長い",
+      "社長",
+      "校長",
+      "長男"
+    ]
+  },
+  {
+    "character": "高",
+    "hanViet": "CAO",
+    "jlpt": "N5",
+    "strokes": 10,
+    "radical": "高",
+    "onyomi": [
+      "コウ"
+    ],
+    "kunyomi": [
+      "たか.い",
+      "たか"
+    ],
+    "meanings": {
+      "vi": [
+        "Cao",
+        "Đắt tiền",
+        "Trung học phổ thông"
+      ],
+      "en": [
+        "tall",
+        "high",
+        "expensive"
+      ]
+    },
+    "examples": [
+      "高い",
+      "高校",
+      "高校生",
+      "最高"
+    ]
+  },
+  {
+    "character": "安",
+    "hanViet": "AN",
+    "jlpt": "N5",
+    "strokes": 6,
+    "radical": "宀",
+    "onyomi": [
+      "アン"
+    ],
+    "kunyomi": [
+      "やす.い"
+    ],
+    "meanings": {
+      "vi": [
+        "Rẻ",
+        "An toàn",
+        "Yên tâm"
+      ],
+      "en": [
+        "cheap",
+        "peaceful",
+        "safe"
+      ]
+    },
+    "examples": [
+      "安い",
+      "安心",
+      "安全",
+      "不安"
+    ]
+  },
+  {
+    "character": "新",
+    "hanViet": "TÂN",
+    "jlpt": "N5",
+    "strokes": 13,
+    "radical": "斤",
+    "onyomi": [
+      "シン"
+    ],
+    "kunyomi": [
+      "あたら.しい",
+      "あら.た"
+    ],
+    "meanings": {
+      "vi": [
+        "Mới",
+        "Tươi mới"
+      ],
+      "en": [
+        "new",
+        "fresh"
+      ]
+    },
+    "examples": [
+      "新しい",
+      "新聞",
+      "新年",
+      "新幹線"
+    ]
+  },
+  {
+    "character": "古",
+    "hanViet": "CỔ",
+    "jlpt": "N5",
+    "strokes": 5,
+    "radical": "口",
+    "onyomi": [
+      "コ"
+    ],
+    "kunyomi": [
+      "ふる.い"
+    ],
+    "meanings": {
+      "vi": [
+        "Cũ",
+        "Cổ xưa"
+      ],
+      "en": [
+        "old",
+        "ancient"
+      ]
+    },
+    "examples": [
+      "古い",
+      "中古",
+      "古典"
+    ]
+  },
+  {
+    "character": "多",
+    "hanViet": "ĐA",
+    "jlpt": "N5",
+    "strokes": 6,
+    "radical": "夕",
+    "onyomi": [
+      "タ"
+    ],
+    "kunyomi": [
+      "おお.い"
+    ],
+    "meanings": {
+      "vi": [
+        "Nhiều",
+        "Đông đảo"
+      ],
+      "en": [
+        "many",
+        "much",
+        "frequent"
+      ]
+    },
+    "examples": [
+      "多い",
+      "多分",
+      "多数"
+    ]
+  },
+  {
+    "character": "少",
+    "hanViet": "THIỂU",
+    "jlpt": "N5",
+    "strokes": 4,
+    "radical": "小",
+    "onyomi": [
+      "ショウ"
+    ],
+    "kunyomi": [
+      "すく.ない",
+      "すこ.し"
+    ],
+    "meanings": {
+      "vi": [
+        "Ít",
+        "Một chút"
+      ],
+      "en": [
+        "few",
+        "little",
+        "a bit"
+      ]
+    },
+    "examples": [
+      "少ない",
+      "少し",
+      "少年",
+      "少女"
+    ]
+  },
+  {
+    "character": "白",
+    "hanViet": "BẠCH",
+    "jlpt": "N5",
+    "strokes": 5,
+    "radical": "白",
+    "onyomi": [
+      "ハク",
+      "ビャク"
+    ],
+    "kunyomi": [
+      "しろ",
+      "しろ.い"
+    ],
+    "meanings": {
+      "vi": [
+        "Màu trắng",
+        "Trong sáng"
+      ],
+      "en": [
+        "white",
+        "clear"
+      ]
+    },
+    "examples": [
+      "白い",
+      "白",
+      "面白い"
+    ]
+  },
+  {
+    "character": "赤",
+    "hanViet": "XÍCH",
+    "jlpt": "N5",
+    "strokes": 7,
+    "radical": "赤",
+    "onyomi": [
+      "セキ",
+      "シャク"
+    ],
+    "kunyomi": [
+      "あか",
+      "あか.い"
+    ],
+    "meanings": {
+      "vi": [
+        "Màu đỏ"
+      ],
+      "en": [
+        "red"
+      ]
+    },
+    "examples": [
+      "赤い",
+      "赤",
+      "赤ちゃん"
+    ]
+  },
+  {
+    "character": "青",
+    "hanViet": "THANH",
+    "jlpt": "N5",
+    "strokes": 8,
+    "radical": "靑",
+    "onyomi": [
+      "セイ",
+      "ショウ"
+    ],
+    "kunyomi": [
+      "あお",
+      "あお.い"
+    ],
+    "meanings": {
+      "vi": [
+        "Màu xanh dương",
+        "Trẻ trung"
+      ],
+      "en": [
+        "blue",
+        "green",
+        "youth"
+      ]
+    },
+    "examples": [
+      "青い",
+      "青空",
+      "青年"
+    ]
+  },
+  {
+    "character": "学",
+    "hanViet": "HỌC",
+    "jlpt": "N5",
+    "strokes": 8,
+    "radical": "子",
+    "onyomi": [
+      "ガク"
+    ],
+    "kunyomi": [
+      "まな.ぶ"
+    ],
+    "meanings": {
+      "vi": [
+        "Học tập",
+        "Trường học",
+        "Khoa học"
+      ],
+      "en": [
+        "study",
+        "learning",
+        "science"
+      ]
+    },
+    "examples": [
+      "学生",
+      "学校",
+      "大学",
+      "留学"
+    ]
+  },
+  {
+    "character": "校",
+    "hanViet": "HIỆU",
+    "jlpt": "N5",
+    "strokes": 10,
+    "radical": "木",
+    "onyomi": [
+      "コウ"
+    ],
+    "kunyomi": [],
+    "meanings": {
+      "vi": [
+        "Trường học"
+      ],
+      "en": [
+        "school",
+        "exam"
+      ]
+    },
+    "examples": [
+      "学校",
+      "高校",
+      "小学校",
+      "校長"
+    ]
+  },
+  {
+    "character": "生",
+    "hanViet": "SINH",
+    "jlpt": "N5",
+    "strokes": 5,
+    "radical": "生",
+    "onyomi": [
+      "セイ",
+      "ショウ"
+    ],
+    "kunyomi": [
+      "い.きる",
+      "う.まれる",
+      "なま"
+    ],
+    "meanings": {
+      "vi": [
+        "Sống",
+        "Sinh ra",
+        "Học sinh",
+        "Tươi"
+      ],
+      "en": [
+        "life",
+        "birth",
+        "student",
+        "raw"
+      ]
+    },
+    "examples": [
+      "先生",
+      "学生",
+      "生活",
+      "生まれる"
+    ]
+  },
+  {
+    "character": "本",
+    "hanViet": "BẢN",
+    "jlpt": "N5",
+    "strokes": 5,
+    "radical": "木",
+    "onyomi": [
+      "ホン"
+    ],
+    "kunyomi": [
+      "もと"
+    ],
+    "meanings": {
+      "vi": [
+        "Sách",
+        "Gốc",
+        "Bản chất",
+        "Nhật Bản"
+      ],
+      "en": [
+        "book",
+        "origin",
+        "main",
+        "counter for long things"
+      ]
+    },
+    "examples": [
+      "本",
+      "日本",
+      "日本語",
+      "三本"
+    ]
+  },
+  {
+    "character": "名",
+    "hanViet": "DANH",
+    "jlpt": "N5",
+    "strokes": 6,
+    "radical": "口",
+    "onyomi": [
+      "メイ",
+      "ミョウ"
+    ],
+    "kunyomi": [
+      "な"
+    ],
+    "meanings": {
+      "vi": [
+        "Tên",
+        "Danh tiếng"
+      ],
+      "en": [
+        "name",
+        "noted",
+        "reputation"
+      ]
+    },
+    "examples": [
+      "名前",
+      "有名",
+      "名刺",
+      "氏名"
+    ]
+  },
+  {
+    "character": "字",
+    "hanViet": "TỰ",
+    "jlpt": "N5",
+    "strokes": 6,
+    "radical": "子",
+    "onyomi": [
+      "ジ"
+    ],
+    "kunyomi": [
+      "あざ"
+    ],
+    "meanings": {
+      "vi": [
+        "Chữ viết",
+        "Ký tự"
+      ],
+      "en": [
+        "character",
+        "letter",
+        "word"
+      ]
+    },
+    "examples": [
+      "漢字",
+      "文字",
+      "名字",
+      "数字"
+    ]
+  },
+  {
+    "character": "語",
+    "hanViet": "NGỮ",
+    "jlpt": "N5",
+    "strokes": 14,
+    "radical": "言",
+    "onyomi": [
+      "ゴ"
+    ],
+    "kunyomi": [
+      "かた.る"
+    ],
+    "meanings": {
+      "vi": [
+        "Ngôn ngữ",
+        "Từ ngữ",
+        "Kể"
+      ],
+      "en": [
+        "word",
+        "speech",
+        "language"
+      ]
+    },
+    "examples": [
+      "日本語",
+      "英語",
+      "物語",
+      "単語"
+    ]
+  },
+  {
+    "character": "文",
+    "hanViet": "VĂN",
+    "jlpt": "N5",
+    "strokes": 4,
+    "radical": "文",
+    "onyomi": [
+      "ブン",
+      "モン"
+    ],
+    "kunyomi": [
+      "ふみ"
+    ],
+    "meanings": {
+      "vi": [
+        "Câu văn",
+        "Văn hóa",
+        "Văn học"
+      ],
+      "en": [
+        "sentence",
+        "literature",
+        "culture"
+      ]
+    },
+    "examples": [
+      "作文",
+      "文化",
+      "文学",
+      "文字"
+    ]
+  },
+  {
+    "character": "国",
+    "hanViet": "QUỐC",
+    "jlpt": "N5",
+    "strokes": 8,
+    "radical": "囗",
+    "onyomi": [
+      "コク"
+    ],
+    "kunyomi": [
+      "くに"
+    ],
+    "meanings": {
+      "vi": [
+        "Đất nước",
+        "Quốc gia"
+      ],
+      "en": [
+        "country",
+        "nation"
+      ]
+    },
+    "examples": [
+      "国",
+      "外国",
+      "中国",
+      "国際"
+    ]
+  },
+  {
+    "character": "社",
+    "hanViet": "XÃ",
+    "jlpt": "N5",
+    "strokes": 7,
+    "radical": "示",
+    "onyomi": [
+      "シャ"
+    ],
+    "kunyomi": [
+      "やしろ"
+    ],
+    "meanings": {
+      "vi": [
+        "Công ty",
+        "Xã hội",
+        "Đền thần"
+      ],
+      "en": [
+        "company",
+        "society",
+        "shrine"
+      ]
+    },
+    "examples": [
+      "会社",
+      "社会",
+      "神社",
+      "社長"
+    ]
+  },
+  {
+    "character": "会",
+    "hanViet": "HỘI",
+    "jlpt": "N5",
+    "strokes": 6,
+    "radical": "人",
+    "onyomi": [
+      "カイ",
+      "エ"
+    ],
+    "kunyomi": [
+      "あ.う"
+    ],
+    "meanings": {
+      "vi": [
+        "Gặp gỡ",
+        "Hội họp",
+        "Công ty"
+      ],
+      "en": [
+        "meet",
+        "society",
+        "association"
+      ]
+    },
+    "examples": [
+      "会う",
+      "会社",
+      "会話",
+      "会議"
+    ]
+  },
+  {
+    "character": "店",
+    "hanViet": "ĐIẾM",
+    "jlpt": "N5",
+    "strokes": 8,
+    "radical": "广",
+    "onyomi": [
+      "テン"
+    ],
+    "kunyomi": [
+      "みせ"
+    ],
+    "meanings": {
+      "vi": [
+        "Cửa hàng",
+        "Tiệm"
+      ],
+      "en": [
+        "store",
+        "shop"
+      ]
+    },
+    "examples": [
+      "店",
+      "喫茶店",
+      "店員",
+      "売店"
+    ]
+  },
+  {
+    "character": "駅",
+    "hanViet": "DỊCH",
+    "jlpt": "N5",
+    "strokes": 14,
+    "radical": "馬",
+    "onyomi": [
+      "エキ"
+    ],
+    "kunyomi": [],
+    "meanings": {
+      "vi": [
+        "Nhà ga tàu hỏa"
+      ],
+      "en": [
+        "station"
+      ]
+    },
+    "examples": [
+      "駅",
+      "駅前",
+      "駅員",
+      "東京駅"
+    ]
+  },
+  {
+    "character": "道",
+    "hanViet": "ĐẠO",
+    "jlpt": "N5",
+    "strokes": 12,
+    "radical": "辵",
+    "onyomi": [
+      "ドウ",
+      "トウ"
+    ],
+    "kunyomi": [
+      "みち"
+    ],
+    "meanings": {
+      "vi": [
+        "Con đường",
+        "Đạo lý",
+        "Võ đạo"
+      ],
+      "en": [
+        "road",
+        "street",
+        "way"
+      ]
+    },
+    "examples": [
+      "道",
+      "水道",
+      "北海道",
+      "柔道"
+    ]
+  },
+  {
+    "character": "車",
+    "hanViet": "XA",
+    "jlpt": "N5",
+    "strokes": 7,
+    "radical": "車",
+    "onyomi": [
+      "シャ"
+    ],
+    "kunyomi": [
+      "くるま"
+    ],
+    "meanings": {
+      "vi": [
+        "Xe",
+        "Ô tô"
+      ],
+      "en": [
+        "car",
+        "vehicle",
+        "wheel"
+      ]
+    },
+    "examples": [
+      "車",
+      "電車",
+      "自転車",
+      "自動車"
+    ]
+  },
+  {
+    "character": "電",
+    "hanViet": "ĐIỆN",
+    "jlpt": "N5",
+    "strokes": 13,
+    "radical": "雨",
+    "onyomi": [
+      "デン"
+    ],
+    "kunyomi": [],
+    "meanings": {
+      "vi": [
+        "Điện",
+        "Điện lực"
+      ],
+      "en": [
+        "electricity"
+      ]
+    },
+    "examples": [
+      "電車",
+      "電話",
+      "電気",
+      "電池"
+    ]
+  },
+  {
+    "character": "行",
+    "hanViet": "HÀNH",
+    "jlpt": "N5",
+    "strokes": 6,
+    "radical": "行",
+    "onyomi": [
+      "コウ",
+      "ギョウ",
+      "アン"
+    ],
+    "kunyomi": [
+      "い.く",
+      "ゆ.く",
+      "おこな.う"
+    ],
+    "meanings": {
+      "vi": [
+        "Đi",
+        "Thực hiện",
+        "Dòng",
+        "Ngân hàng"
+      ],
+      "en": [
+        "go",
+        "journey",
+        "carry out",
+        "line"
+      ]
+    },
+    "examples": [
+      "行く",
+      "旅行",
+      "銀行",
+      "行事"
+    ]
+  },
+  {
+    "character": "見",
+    "hanViet": "KIẾN",
+    "jlpt": "N5",
+    "strokes": 7,
+    "radical": "見",
+    "onyomi": [
+      "ケン"
+    ],
+    "kunyomi": [
+      "み.る",
+      "み.える",
+      "み.せる"
+    ],
+    "meanings": {
+      "vi": [
+        "Nhìn",
+        "Xem",
+        "Trông thấy"
+      ],
+      "en": [
+        "see",
+        "look at",
+        "visible"
+      ]
+    },
+    "examples": [
+      "見る",
+      "見せる",
+      "意見",
+      "花見"
+    ]
+  },
+  {
+    "character": "聞",
+    "hanViet": "VĂN",
+    "jlpt": "N5",
+    "strokes": 14,
+    "radical": "耳",
+    "onyomi": [
+      "ブン",
+      "モン"
+    ],
+    "kunyomi": [
+      "き.く",
+      "き.こえる"
+    ],
+    "meanings": {
+      "vi": [
+        "Nghe",
+        "Hỏi",
+        "Tin tức"
+      ],
+      "en": [
+        "hear",
+        "listen",
+        "ask"
+      ]
+    },
+    "examples": [
+      "聞く",
+      "新聞",
+      "聞こえる"
+    ]
+  },
+  {
+    "character": "書",
+    "hanViet": "THƯ",
+    "jlpt": "N5",
+    "strokes": 10,
+    "radical": "曰",
+    "onyomi": [
+      "ショ"
+    ],
+    "kunyomi": [
+      "か.く"
+    ],
+    "meanings": {
+      "vi": [
+        "Viết",
+        "Sách vở",
+        "Tài liệu"
+      ],
+      "en": [
+        "write",
+        "book",
+        "document"
+      ]
+    },
+    "examples": [
+      "書く",
+      "辞書",
+      "図書館",
+      "読書"
+    ]
+  },
+  {
+    "character": "読",
+    "hanViet": "ĐỘC",
+    "jlpt": "N5",
+    "strokes": 14,
+    "radical": "言",
+    "onyomi": [
+      "ドク",
+      "トク",
+      "トウ"
+    ],
+    "kunyomi": [
+      "よ.む"
+    ],
+    "meanings": {
+      "vi": [
+        "Đọc"
+      ],
+      "en": [
+        "read"
+      ]
+    },
+    "examples": [
+      "読む",
+      "読書",
+      "読み方"
+    ]
+  },
+  {
+    "character": "話",
+    "hanViet": "THOẠI",
+    "jlpt": "N5",
+    "strokes": 13,
+    "radical": "言",
+    "onyomi": [
+      "ワ"
+    ],
+    "kunyomi": [
+      "はな.す",
+      "はなし"
+    ],
+    "meanings": {
+      "vi": [
+        "Nói chuyện",
+        "Câu chuyện"
+      ],
+      "en": [
+        "talk",
+        "speak",
+        "conversation"
+      ]
+    },
+    "examples": [
+      "話す",
+      "電話",
+      "会話",
+      "話"
+    ]
+  },
+  {
+    "character": "食",
+    "hanViet": "THỰC",
+    "jlpt": "N5",
+    "strokes": 9,
+    "radical": "食",
+    "onyomi": [
+      "ショク",
+      "ジキ"
+    ],
+    "kunyomi": [
+      "た.べる",
+      "く.う"
+    ],
+    "meanings": {
+      "vi": [
+        "Ăn",
+        "Thức ăn",
+        "Bữa ăn"
+      ],
+      "en": [
+        "eat",
+        "food",
+        "meal"
+      ]
+    },
+    "examples": [
+      "食べる",
+      "食事",
+      "食堂",
+      "食べ物"
+    ]
+  },
+  {
+    "character": "飲",
+    "hanViet": "ẨM",
+    "jlpt": "N5",
+    "strokes": 12,
+    "radical": "食",
+    "onyomi": [
+      "イン",
+      "オン"
+    ],
+    "kunyomi": [
+      "の.む"
+    ],
+    "meanings": {
+      "vi": [
+        "Uống",
+        "Đồ uống"
+      ],
+      "en": [
+        "drink",
+        "beverage"
+      ]
+    },
+    "examples": [
+      "飲む",
+      "飲み物",
+      "飲食店"
+    ]
+  },
+  {
+    "character": "買",
+    "hanViet": "MÃI",
+    "jlpt": "N5",
+    "strokes": 12,
+    "radical": "貝",
+    "onyomi": [
+      "バイ"
+    ],
+    "kunyomi": [
+      "か.う"
+    ],
+    "meanings": {
+      "vi": [
+        "Mua",
+        "Mua sắm"
+      ],
+      "en": [
+        "buy",
+        "purchase"
+      ]
+    },
+    "examples": [
+      "買う",
+      "買い物",
+      "売買"
+    ]
+  },
+  {
+    "character": "休",
+    "hanViet": "HƯU",
+    "jlpt": "N5",
+    "strokes": 6,
+    "radical": "人",
+    "onyomi": [
+      "キュウ"
+    ],
+    "kunyomi": [
+      "やす.む",
+      "やす.まる"
+    ],
+    "meanings": {
+      "vi": [
+        "Nghỉ ngơi",
+        "Ngày nghỉ"
+      ],
+      "en": [
+        "rest",
+        "day off",
+        "holiday"
+      ]
+    },
+    "examples": [
+      "休む",
+      "休み",
+      "夏休み",
+      "休日"
+    ]
+  },
+  {
+    "character": "立",
+    "hanViet": "LẬP",
+    "jlpt": "N5",
+    "strokes": 5,
+    "radical": "立",
+    "onyomi": [
+      "リツ",
+      "リュウ"
+    ],
+    "kunyomi": [
+      "た.つ",
+      "た.てる"
+    ],
+    "meanings": {
+      "vi": [
+        "Đứng",
+        "Thành lập",
+        "Xây dựng"
+      ],
+      "en": [
+        "stand up",
+        "establish"
+      ]
+    },
+    "examples": [
+      "立つ",
+      "国立",
+      "役に立つ"
+    ]
+  },
+  {
+    "character": "出",
+    "hanViet": "XUẤT",
+    "jlpt": "N5",
+    "strokes": 5,
+    "radical": "凵",
+    "onyomi": [
+      "シュツ",
+      "スイ"
+    ],
+    "kunyomi": [
+      "で.る",
+      "だ.す"
+    ],
+    "meanings": {
+      "vi": [
+        "Ra ngoài",
+        "Xuất phát",
+        "Đưa ra"
+      ],
+      "en": [
+        "exit",
+        "leave",
+        "put out"
+      ]
+    },
+    "examples": [
+      "出る",
+      "出す",
+      "出口",
+      "出かける"
+    ]
+  },
+  {
+    "character": "入",
+    "hanViet": "NHẬP",
+    "jlpt": "N5",
+    "strokes": 2,
+    "radical": "入",
+    "onyomi": [
+      "ニュウ"
+    ],
+    "kunyomi": [
+      "はい.る",
+      "い.れる"
+    ],
+    "meanings": {
+      "vi": [
+        "Vào",
+        "Cho vào",
+        "Nhập học"
+      ],
+      "en": [
+        "enter",
+        "insert"
+      ]
+    },
+    "examples": [
+      "入る",
+      "入れる",
+      "入口",
+      "入学"
+    ]
+  },
+  {
+    "character": "家",
+    "hanViet": "GIA",
+    "jlpt": "N4",
+    "strokes": 10,
+    "radical": "宀",
+    "onyomi": [
+      "カ",
+      "ケ"
+    ],
+    "kunyomi": [
+      "いえ",
+      "や"
+    ],
+    "meanings": {
+      "vi": [
+        "Ngôi nhà",
+        "Gia đình",
+        "Chuyên gia"
+      ],
+      "en": [
+        "house",
+        "home",
+        "family"
+      ]
+    },
+    "examples": [
+      "家",
+      "家族",
+      "家賃",
+      "作家"
+    ]
+  },
+  {
+    "character": "族",
+    "hanViet": "TỘC",
+    "jlpt": "N4",
+    "strokes": 11,
+    "radical": "方",
+    "onyomi": [
+      "ゾク"
+    ],
+    "kunyomi": [],
+    "meanings": {
+      "vi": [
+        "Gia tộc",
+        "Dòng họ",
+        "Nhóm"
+      ],
+      "en": [
+        "tribe",
+        "family"
+      ]
+    },
+    "examples": [
+      "家族",
+      "親族",
+      "民族",
+      "水族館"
+    ]
+  },
+  {
+    "character": "親",
+    "hanViet": "THÂN",
+    "jlpt": "N4",
+    "strokes": 16,
+    "radical": "見",
+    "onyomi": [
+      "シン"
+    ],
+    "kunyomi": [
+      "おや",
+      "した.しい"
+    ],
+    "meanings": {
+      "vi": [
+        "Cha mẹ",
+        "Thân thiết"
+      ],
+      "en": [
+        "parent",
+        "intimacy",
+        "familiar"
+      ]
+    },
+    "examples": [
+      "親",
+      "両親",
+      "親切",
+      "親友"
+    ]
+  },
+  {
+    "character": "兄",
+    "hanViet": "HUYNH",
+    "jlpt": "N4",
+    "strokes": 5,
+    "radical": "儿",
+    "onyomi": [
+      "ケイ",
+      "キョウ"
+    ],
+    "kunyomi": [
+      "あに"
+    ],
+    "meanings": {
+      "vi": [
+        "Anh trai"
+      ],
+      "en": [
+        "older brother"
+      ]
+    },
+    "examples": [
+      "兄",
+      "お兄さん",
+      "兄弟"
+    ]
+  },
+  {
+    "character": "姉",
+    "hanViet": "TỶ",
+    "jlpt": "N4",
+    "strokes": 8,
+    "radical": "女",
+    "onyomi": [
+      "シ"
+    ],
+    "kunyomi": [
+      "あね"
+    ],
+    "meanings": {
+      "vi": [
+        "Chị gái"
+      ],
+      "en": [
+        "older sister"
+      ]
+    },
+    "examples": [
+      "姉",
+      "お姉さん",
+      "姉妹"
+    ]
+  },
+  {
+    "character": "弟",
+    "hanViet": "ĐỆ",
+    "jlpt": "N4",
+    "strokes": 7,
+    "radical": "弓",
+    "onyomi": [
+      "テイ",
+      "ダイ",
+      "デ"
+    ],
+    "kunyomi": [
+      "おとうと"
+    ],
+    "meanings": {
+      "vi": [
+        "Em trai"
+      ],
+      "en": [
+        "younger brother"
+      ]
+    },
+    "examples": [
+      "弟",
+      "兄弟",
+      "弟子"
+    ]
+  },
+  {
+    "character": "妹",
+    "hanViet": "MUỘI",
+    "jlpt": "N4",
+    "strokes": 8,
+    "radical": "女",
+    "onyomi": [
+      "マイ"
+    ],
+    "kunyomi": [
+      "いもうと"
+    ],
+    "meanings": {
+      "vi": [
+        "Em gái"
+      ],
+      "en": [
+        "younger sister"
+      ]
+    },
+    "examples": [
+      "妹",
+      "姉妹"
+    ]
+  },
+  {
+    "character": "自",
+    "hanViet": "TỰ",
+    "jlpt": "N4",
+    "strokes": 6,
+    "radical": "自",
+    "onyomi": [
+      "ジ",
+      "シ"
+    ],
+    "kunyomi": [
+      "みずか.ら"
+    ],
+    "meanings": {
+      "vi": [
+        "Bản thân",
+        "Tự mình"
+      ],
+      "en": [
+        "oneself",
+        "self"
+      ]
+    },
+    "examples": [
+      "自分",
+      "自転車",
+      "自動車",
+      "自由"
+    ]
+  },
+  {
+    "character": "体",
+    "hanViet": "THỂ",
+    "jlpt": "N4",
+    "strokes": 7,
+    "radical": "人",
+    "onyomi": [
+      "タイ",
+      "テイ"
+    ],
+    "kunyomi": [
+      "からだ"
+    ],
+    "meanings": {
+      "vi": [
+        "Cơ thể",
+        "Sức khỏe",
+        "Thể chất"
+      ],
+      "en": [
+        "body",
+        "substance",
+        "form"
+      ]
+    },
+    "examples": [
+      "体",
+      "体育館",
+      "体力",
+      "大体"
+    ]
+  },
+  {
+    "character": "頭",
+    "hanViet": "ĐẦU",
+    "jlpt": "N4",
+    "strokes": 16,
+    "radical": "頁",
+    "onyomi": [
+      "トウ",
+      "ズ",
+      "ト"
+    ],
+    "kunyomi": [
+      "あたま",
+      "かしら"
+    ],
+    "meanings": {
+      "vi": [
+        "Cái đầu",
+        "Trí óc",
+        "Đứng đầu"
+      ],
+      "en": [
+        "head",
+        "top"
+      ]
+    },
+    "examples": [
+      "頭",
+      "頭痛",
+      "先頭"
+    ]
+  },
+  {
+    "character": "顔",
+    "hanViet": "NHAN",
+    "jlpt": "N4",
+    "strokes": 18,
+    "radical": "頁",
+    "onyomi": [
+      "ガン"
+    ],
+    "kunyomi": [
+      "かお"
+    ],
+    "meanings": {
+      "vi": [
+        "Khuôn mặt",
+        "Nét mặt"
+      ],
+      "en": [
+        "face",
+        "expression"
+      ]
+    },
+    "examples": [
+      "顔",
+      "笑顔",
+      "洗顔"
+    ]
+  },
+  {
+    "character": "首",
+    "hanViet": "THỦ",
+    "jlpt": "N4",
+    "strokes": 9,
+    "radical": "首",
+    "onyomi": [
+      "シュ"
+    ],
+    "kunyomi": [
+      "くび"
+    ],
+    "meanings": {
+      "vi": [
+        "Cổ",
+        "Thủ tướng",
+        "Thủ đô"
+      ],
+      "en": [
+        "neck",
+        "head",
+        "leader"
+      ]
+    },
+    "examples": [
+      "首",
+      "手首",
+      "首都",
+      "首相"
+    ]
+  },
+  {
+    "character": "心",
+    "hanViet": "TÂM",
+    "jlpt": "N4",
+    "strokes": 4,
+    "radical": "心",
+    "onyomi": [
+      "シン"
+    ],
+    "kunyomi": [
+      "こころ"
+    ],
+    "meanings": {
+      "vi": [
+        "Trái tim",
+        "Tấm lòng",
+        "Tâm trí"
+      ],
+      "en": [
+        "heart",
+        "mind",
+        "spirit"
+      ]
+    },
+    "examples": [
+      "心",
+      "安心",
+      "心配",
+      "熱心"
+    ]
+  },
+  {
+    "character": "力",
+    "hanViet": "LỰC",
+    "jlpt": "N4",
+    "strokes": 2,
+    "radical": "力",
+    "onyomi": [
+      "リョク",
+      "リキ"
+    ],
+    "kunyomi": [
+      "ちから"
+    ],
+    "meanings": {
+      "vi": [
+        "Sức mạnh",
+        "Năng lực"
+      ],
+      "en": [
+        "power",
+        "strength",
+        "ability"
+      ]
+    },
+    "examples": [
+      "力",
+      "体力",
+      "努力",
+      "協力"
+    ]
+  },
+  {
+    "character": "声",
+    "hanViet": "THANH",
+    "jlpt": "N4",
+    "strokes": 7,
+    "radical": "士",
+    "onyomi": [
+      "セイ",
+      "ショウ"
+    ],
+    "kunyomi": [
+      "こえ"
+    ],
+    "meanings": {
+      "vi": [
+        "Giọng nói",
+        "Tiếng kêu"
+      ],
+      "en": [
+        "voice",
+        "sound"
+      ]
+    },
+    "examples": [
+      "声",
+      "大声",
+      "話し声"
+    ]
+  },
+  {
+    "character": "音",
+    "hanViet": "ÂM",
+    "jlpt": "N4",
+    "strokes": 9,
+    "radical": "音",
+    "onyomi": [
+      "オン",
+      "イン"
+    ],
+    "kunyomi": [
+      "おと",
+      "ね"
+    ],
+    "meanings": {
+      "vi": [
+        "Âm thanh",
+        "Tiếng động"
+      ],
+      "en": [
+        "sound",
+        "noise"
+      ]
+    },
+    "examples": [
+      "音楽",
+      "音",
+      "発音",
+      "足音"
+    ]
+  },
+  {
+    "character": "色",
+    "hanViet": "SẮC",
+    "jlpt": "N4",
+    "strokes": 6,
+    "radical": "色",
+    "onyomi": [
+      "ショク",
+      "シキ"
+    ],
+    "kunyomi": [
+      "いろ"
+    ],
+    "meanings": {
+      "vi": [
+        "Màu sắc",
+        "Sắc thái"
+      ],
+      "en": [
+        "color",
+        "look"
+      ]
+    },
+    "examples": [
+      "色",
+      "茶色",
+      "景色",
+      "色々"
+    ]
+  },
+  {
+    "character": "黒",
+    "hanViet": "HẮC",
+    "jlpt": "N4",
+    "strokes": 11,
+    "radical": "黒",
+    "onyomi": [
+      "コク"
+    ],
+    "kunyomi": [
+      "くろ",
+      "くろ.い"
+    ],
+    "meanings": {
+      "vi": [
+        "Màu đen"
+      ],
+      "en": [
+        "black"
+      ]
+    },
+    "examples": [
+      "黒い",
+      "黒",
+      "黒板"
+    ]
+  },
+  {
+    "character": "茶",
+    "hanViet": "TRÀ",
+    "jlpt": "N4",
+    "strokes": 9,
+    "radical": "艸",
+    "onyomi": [
+      "チャ",
+      "サ"
+    ],
+    "kunyomi": [],
+    "meanings": {
+      "vi": [
+        "Trà",
+        "Màu nâu"
+      ],
+      "en": [
+        "tea",
+        "brown"
+      ]
+    },
+    "examples": [
+      "お茶",
+      "茶色",
+      "喫茶店",
+      "紅茶"
+    ]
+  },
+  {
+    "character": "朝",
+    "hanViet": "TRIỀU",
+    "jlpt": "N4",
+    "strokes": 12,
+    "radical": "月",
+    "onyomi": [
+      "チョウ"
+    ],
+    "kunyomi": [
+      "あさ"
+    ],
+    "meanings": {
+      "vi": [
+        "Buổi sáng",
+        "Triều đại"
+      ],
+      "en": [
+        "morning",
+        "dynasty"
+      ]
+    },
+    "examples": [
+      "朝",
+      "毎朝",
+      "今朝",
+      "朝食"
+    ]
+  },
+  {
+    "character": "昼",
+    "hanViet": "TRÚ",
+    "jlpt": "N4",
+    "strokes": 9,
+    "radical": "尸",
+    "onyomi": [
+      "チュウ"
+    ],
+    "kunyomi": [
+      "ひる"
+    ],
+    "meanings": {
+      "vi": [
+        "Buổi trưa",
+        "Ban ngày"
+      ],
+      "en": [
+        "daytime",
+        "noon"
+      ]
+    },
+    "examples": [
+      "昼",
+      "昼ご飯",
+      "昼休み",
+      "昼間"
+    ]
+  },
+  {
+    "character": "夕",
+    "hanViet": "TỊCH",
+    "jlpt": "N4",
+    "strokes": 3,
+    "radical": "夕",
+    "onyomi": [
+      "セキ"
+    ],
+    "kunyomi": [
+      "ゆう"
+    ],
+    "meanings": {
+      "vi": [
+        "Buổi chiều tối"
+      ],
+      "en": [
+        "evening"
+      ]
+    },
+    "examples": [
+      "夕方",
+      "夕食",
+      "七夕"
+    ]
+  },
+  {
+    "character": "夜",
+    "hanViet": "DẠ",
+    "jlpt": "N4",
+    "strokes": 8,
+    "radical": "夕",
+    "onyomi": [
+      "ヤ"
+    ],
+    "kunyomi": [
+      "よ",
+      "よる"
+    ],
+    "meanings": {
+      "vi": [
+        "Ban đêm",
+        "Buổi tối"
+      ],
+      "en": [
+        "night",
+        "evening"
+      ]
+    },
+    "examples": [
+      "夜",
+      "今夜",
+      "夜中",
+      "毎夜"
+    ]
+  },
+  {
+    "character": "春",
+    "hanViet": "XUÂN",
+    "jlpt": "N4",
+    "strokes": 9,
+    "radical": "日",
+    "onyomi": [
+      "シュン"
+    ],
+    "kunyomi": [
+      "はる"
+    ],
+    "meanings": {
+      "vi": [
+        "Mùa xuân"
+      ],
+      "en": [
+        "spring"
+      ]
+    },
+    "examples": [
+      "春",
+      "春休み",
+      "青春"
+    ]
+  },
+  {
+    "character": "夏",
+    "hanViet": "HẠ",
+    "jlpt": "N4",
+    "strokes": 10,
+    "radical": "夂",
+    "onyomi": [
+      "カ",
+      "ゲ"
+    ],
+    "kunyomi": [
+      "なつ"
+    ],
+    "meanings": {
+      "vi": [
+        "Mùa hè"
+      ],
+      "en": [
+        "summer"
+      ]
+    },
+    "examples": [
+      "夏",
+      "夏休み",
+      "初夏"
+    ]
+  },
+  {
+    "character": "秋",
+    "hanViet": "THU",
+    "jlpt": "N4",
+    "strokes": 9,
+    "radical": "禾",
+    "onyomi": [
+      "シュウ"
+    ],
+    "kunyomi": [
+      "あき"
+    ],
+    "meanings": {
+      "vi": [
+        "Mùa thu"
+      ],
+      "en": [
+        "autumn",
+        "fall"
+      ]
+    },
+    "examples": [
+      "秋",
+      "秋分",
+      "晩秋"
+    ]
+  },
+  {
+    "character": "冬",
+    "hanViet": "ĐÔNG",
+    "jlpt": "N4",
+    "strokes": 5,
+    "radical": "冫",
+    "onyomi": [
+      "トウ"
+    ],
+    "kunyomi": [
+      "ふゆ"
+    ],
+    "meanings": {
+      "vi": [
+        "Mùa đông"
+      ],
+      "en": [
+        "winter"
+      ]
+    },
+    "examples": [
+      "冬",
+      "冬休み",
+      "真冬"
+    ]
+  },
+  {
+    "character": "風",
+    "hanViet": "PHONG",
+    "jlpt": "N4",
+    "strokes": 9,
+    "radical": "風",
+    "onyomi": [
+      "フウ",
+      "フ"
+    ],
+    "kunyomi": [
+      "かぜ",
+      "かざ-"
+    ],
+    "meanings": {
+      "vi": [
+        "Gió",
+        "Phong cách",
+        "Cảm cúm"
+      ],
+      "en": [
+        "wind",
+        "air",
+        "style",
+        "cold"
+      ]
+    },
+    "examples": [
+      "風",
+      "台風",
+      "風邪",
+      "和風"
+    ]
+  },
+  {
+    "character": "海",
+    "hanViet": "HẢI",
+    "jlpt": "N4",
+    "strokes": 9,
+    "radical": "水",
+    "onyomi": [
+      "カイ"
+    ],
+    "kunyomi": [
+      "うみ"
+    ],
+    "meanings": {
+      "vi": [
+        "Biển",
+        "Đại dương"
+      ],
+      "en": [
+        "sea",
+        "ocean"
+      ]
+    },
+    "examples": [
+      "海",
+      "海外",
+      "海岸",
+      "北海道"
+    ]
+  },
+  {
+    "character": "池",
+    "hanViet": "TRÌ",
+    "jlpt": "N4",
+    "strokes": 6,
+    "radical": "水",
+    "onyomi": [
+      "チ"
+    ],
+    "kunyomi": [
+      "いけ"
+    ],
+    "meanings": {
+      "vi": [
+        "Ao",
+        "Hồ nhỏ",
+        "Pin"
+      ],
+      "en": [
+        "pond",
+        "battery"
+      ]
+    },
+    "examples": [
+      "池",
+      "電池",
+      "乾電池"
+    ]
+  },
+  {
+    "character": "森",
+    "hanViet": "SÂM",
+    "jlpt": "N4",
+    "strokes": 12,
+    "radical": "木",
+    "onyomi": [
+      "シン"
+    ],
+    "kunyomi": [
+      "もり"
+    ],
+    "meanings": {
+      "vi": [
+        "Rừng rậm"
+      ],
+      "en": [
+        "forest",
+        "woods"
+      ]
+    },
+    "examples": [
+      "森",
+      "森林"
+    ]
+  },
+  {
+    "character": "林",
+    "hanViet": "LÂM",
+    "jlpt": "N4",
+    "strokes": 8,
+    "radical": "木",
+    "onyomi": [
+      "リン"
+    ],
+    "kunyomi": [
+      "はやし"
+    ],
+    "meanings": {
+      "vi": [
+        "Rừng thưa",
+        "Lâm nghiệp"
+      ],
+      "en": [
+        "grove",
+        "forest"
+      ]
+    },
+    "examples": [
+      "林",
+      "森林",
+      "山林"
+    ]
+  },
+  {
+    "character": "野",
+    "hanViet": "DÃ",
+    "jlpt": "N4",
+    "strokes": 11,
+    "radical": "里",
+    "onyomi": [
+      "ヤ"
+    ],
+    "kunyomi": [
+      "の"
+    ],
+    "meanings": {
+      "vi": [
+        "Cánh đồng",
+        "Tự nhiên",
+        "Lĩnh vực"
+      ],
+      "en": [
+        "plains",
+        "field",
+        "wild"
+      ]
+    },
+    "examples": [
+      "野菜",
+      "野球",
+      "分野",
+      "長野"
+    ]
+  },
+  {
+    "character": "菜",
+    "hanViet": "THÁI",
+    "jlpt": "N4",
+    "strokes": 11,
+    "radical": "艸",
+    "onyomi": [
+      "サイ"
+    ],
+    "kunyomi": [
+      "な"
+    ],
+    "meanings": {
+      "vi": [
+        "Rau củ",
+        "Món ăn"
+      ],
+      "en": [
+        "vegetable",
+        "side dish"
+      ]
+    },
+    "examples": [
+      "野菜",
+      "山菜",
+      "菜食"
+    ]
+  },
+  {
+    "character": "肉",
+    "hanViet": "NHỤC",
+    "jlpt": "N4",
+    "strokes": 6,
+    "radical": "肉",
+    "onyomi": [
+      "ニク"
+    ],
+    "kunyomi": [],
+    "meanings": {
+      "vi": [
+        "Thịt",
+        "Cơ bắp"
+      ],
+      "en": [
+        "meat",
+        "flesh"
+      ]
+    },
+    "examples": [
+      "肉",
+      "牛肉",
+      "豚肉",
+      "鶏肉"
+    ]
+  },
+  {
+    "character": "牛",
+    "hanViet": "NGƯU",
+    "jlpt": "N4",
+    "strokes": 4,
+    "radical": "牛",
+    "onyomi": [
+      "ギュウ"
+    ],
+    "kunyomi": [
+      "うし"
+    ],
+    "meanings": {
+      "vi": [
+        "Con bò",
+        "Thịt bò"
+      ],
+      "en": [
+        "cow",
+        "cattle",
+        "beef"
+      ]
+    },
+    "examples": [
+      "牛",
+      "牛肉",
+      "牛乳",
+      "子牛"
+    ]
+  },
+  {
+    "character": "鳥",
+    "hanViet": "ĐIỂU",
+    "jlpt": "N4",
+    "strokes": 11,
+    "radical": "鳥",
+    "onyomi": [
+      "チョウ"
+    ],
+    "kunyomi": [
+      "とり"
+    ],
+    "meanings": {
+      "vi": [
+        "Con chim",
+        "Gia cầm"
+      ],
+      "en": [
+        "bird",
+        "chicken"
+      ]
+    },
+    "examples": [
+      "鳥",
+      "小鳥",
+      "白鳥",
+      "焼き鳥"
+    ]
+  },
+  {
+    "character": "飯",
+    "hanViet": "PHẠN",
+    "jlpt": "N4",
+    "strokes": 12,
+    "radical": "食",
+    "onyomi": [
+      "ハン"
+    ],
+    "kunyomi": [
+      "めし"
+    ],
+    "meanings": {
+      "vi": [
+        "Cơm",
+        "Bữa ăn"
+      ],
+      "en": [
+        "meal",
+        "boiled rice"
+      ]
+    },
+    "examples": [
+      "ご飯",
+      "朝ご飯",
+      "昼ご飯",
+      "晩ご飯"
+    ]
+  },
+  {
+    "character": "味",
+    "hanViet": "VỊ",
+    "jlpt": "N4",
+    "strokes": 8,
+    "radical": "口",
+    "onyomi": [
+      "ミ"
+    ],
+    "kunyomi": [
+      "あじ",
+      "あじ.わう"
+    ],
+    "meanings": {
+      "vi": [
+        "Hương vị",
+        "Ý nghĩa",
+        "Sở thích"
+      ],
+      "en": [
+        "flavor",
+        "taste",
+        "meaning"
+      ]
+    },
+    "examples": [
+      "味",
+      "意味",
+      "趣味",
+      "味噌"
+    ]
+  },
+  {
+    "character": "料",
+    "hanViet": "LIỆU",
+    "jlpt": "N4",
+    "strokes": 10,
+    "radical": "斗",
+    "onyomi": [
+      "リョウ"
+    ],
+    "kunyomi": [],
+    "meanings": {
+      "vi": [
+        "Nguyên liệu",
+        "Chi phí",
+        "Món ăn"
+      ],
+      "en": [
+        "fee",
+        "materials"
+      ]
+    },
+    "examples": [
+      "料理",
+      "料金",
+      "資料",
+      "無料"
+    ]
+  },
+  {
+    "character": "理",
+    "hanViet": "LÝ",
+    "jlpt": "N4",
+    "strokes": 11,
+    "radical": "玉",
+    "onyomi": [
+      "リ"
+    ],
+    "kunyomi": [],
+    "meanings": {
+      "vi": [
+        "Lý do",
+        "Nguyên lý",
+        "Chế biến"
+      ],
+      "en": [
+        "reason",
+        "logic",
+        "principle"
+      ]
+    },
+    "examples": [
+      "料理",
+      "理由",
+      "地理",
+      "無理"
+    ]
+  },
+  {
+    "character": "服",
+    "hanViet": "PHỤC",
+    "jlpt": "N4",
+    "strokes": 8,
+    "radical": "月",
+    "onyomi": [
+      "フク"
+    ],
+    "kunyomi": [],
+    "meanings": {
+      "vi": [
+        "Quần áo",
+        "Trang phục"
+      ],
+      "en": [
+        "clothing",
+        "obey"
+      ]
+    },
+    "examples": [
+      "服",
+      "洋服",
+      "着物",
+      "制服"
+    ]
+  },
+  {
+    "character": "着",
+    "hanViet": "TRƯỚC",
+    "jlpt": "N4",
+    "strokes": 12,
+    "radical": "羊",
+    "onyomi": [
+      "チャク",
+      "ジャク"
+    ],
+    "kunyomi": [
+      "き.る",
+      "き.せる",
+      "つ.く"
+    ],
+    "meanings": {
+      "vi": [
+        "Mặc (áo)",
+        "Đến nơi"
+      ],
+      "en": [
+        "wear",
+        "arrive"
+      ]
+    },
+    "examples": [
+      "着る",
+      "到着",
+      "着物",
+      "上着"
+    ]
+  },
+  {
+    "character": "紙",
+    "hanViet": "CHỈ",
+    "jlpt": "N4",
+    "strokes": 10,
+    "radical": "糸",
+    "onyomi": [
+      "シ"
+    ],
+    "kunyomi": [
+      "かみ"
+    ],
+    "meanings": {
+      "vi": [
+        "Giấy",
+        "Tờ giấy"
+      ],
+      "en": [
+        "paper"
+      ]
+    },
+    "examples": [
+      "紙",
+      "手紙",
+      "折り紙",
+      "表紙"
+    ]
+  },
+  {
+    "character": "図",
+    "hanViet": "ĐỒ",
+    "jlpt": "N4",
+    "strokes": 7,
+    "radical": "囗",
+    "onyomi": [
+      "ズ",
+      "ト"
+    ],
+    "kunyomi": [
+      "はか.る"
+    ],
+    "meanings": {
+      "vi": [
+        "Bản đồ",
+        "Hình vẽ",
+        "Dự tính"
+      ],
+      "en": [
+        "map",
+        "drawing",
+        "plan"
+      ]
+    },
+    "examples": [
+      "地図",
+      "図書館",
+      "図書",
+      "合図"
+    ]
+  },
+  {
+    "character": "館",
+    "hanViet": "QUÁN",
+    "jlpt": "N4",
+    "strokes": 16,
+    "radical": "食",
+    "onyomi": [
+      "カン"
+    ],
+    "kunyomi": [
+      "やかた"
+    ],
+    "meanings": {
+      "vi": [
+        "Tòa nhà lớn",
+        "Hội quán"
+      ],
+      "en": [
+        "building",
+        "hall",
+        "museum"
+      ]
+    },
+    "examples": [
+      "図書館",
+      "映画館",
+      "旅館",
+      "大使館"
+    ]
+  },
+  {
+    "character": "室",
+    "hanViet": "THẤT",
+    "jlpt": "N4",
+    "strokes": 9,
+    "radical": "宀",
+    "onyomi": [
+      "シツ"
+    ],
+    "kunyomi": [
+      "むろ"
+    ],
+    "meanings": {
+      "vi": [
+        "Căn phòng"
+      ],
+      "en": [
+        "room",
+        "chamber"
+      ]
+    },
+    "examples": [
+      "教室",
+      "部屋",
+      "会議室",
+      "和室"
+    ]
+  },
+  {
+    "character": "屋",
+    "hanViet": "ỐC",
+    "jlpt": "N4",
+    "strokes": 9,
+    "radical": "尸",
+    "onyomi": [
+      "オク"
+    ],
+    "kunyomi": [
+      "や"
+    ],
+    "meanings": {
+      "vi": [
+        "Ngôi nhà",
+        "Cửa hiệu",
+        "Mái nhà"
+      ],
+      "en": [
+        "roof",
+        "house",
+        "shop"
+      ]
+    },
+    "examples": [
+      "部屋",
+      "本屋",
+      "花屋",
+      "屋上"
+    ]
+  },
+  {
+    "character": "堂",
+    "hanViet": "ĐƯỜNG",
+    "jlpt": "N4",
+    "strokes": 11,
+    "radical": "土",
+    "onyomi": [
+      "ドウ"
+    ],
+    "kunyomi": [],
+    "meanings": {
+      "vi": [
+        "Hội trường",
+        "Nhà ăn",
+        "Đền đài"
+      ],
+      "en": [
+        "hall",
+        "temple"
+      ]
+    },
+    "examples": [
+      "食堂",
+      "講堂",
+      "教会堂"
+    ]
+  },
+  {
+    "character": "場",
+    "hanViet": "TRƯỜNG",
+    "jlpt": "N4",
+    "strokes": 12,
+    "radical": "土",
+    "onyomi": [
+      "ジョウ"
+    ],
+    "kunyomi": [
+      "ば"
+    ],
+    "meanings": {
+      "vi": [
+        "Nơi chốn",
+        "Địa điểm",
+        "Quảng trường"
+      ],
+      "en": [
+        "location",
+        "place"
+      ]
+    },
+    "examples": [
+      "場所",
+      "工場",
+      "会場",
+      "売り場"
+    ]
+  },
+  {
+    "character": "所",
+    "hanViet": "SỞ",
+    "jlpt": "N4",
+    "strokes": 8,
+    "radical": "戸",
+    "onyomi": [
+      "ショ"
+    ],
+    "kunyomi": [
+      "ところ"
+    ],
+    "meanings": {
+      "vi": [
+        "Nơi chốn",
+        "Địa điểm",
+        "Cơ sở"
+      ],
+      "en": [
+        "place",
+        "spot"
+      ]
+    },
+    "examples": [
+      "場所",
+      "台所",
+      "近所",
+      "住所"
+    ]
+  },
+  {
+    "character": "地",
+    "hanViet": "ĐỊA",
+    "jlpt": "N4",
+    "strokes": 6,
+    "radical": "土",
+    "onyomi": [
+      "チ",
+      "ジ"
+    ],
+    "kunyomi": [],
+    "meanings": {
+      "vi": [
+        "Mặt đất",
+        "Địa lý",
+        "Vùng đất"
+      ],
+      "en": [
+        "ground",
+        "earth",
+        "land"
+      ]
+    },
+    "examples": [
+      "地図",
+      "地下鉄",
+      "地震",
+      "土地"
+    ]
+  },
+  {
+    "character": "鉄",
+    "hanViet": "THIẾT",
+    "jlpt": "N4",
+    "strokes": 13,
+    "radical": "金",
+    "onyomi": [
+      "テツ"
+    ],
+    "kunyomi": [
+      "くろがね"
+    ],
+    "meanings": {
+      "vi": [
+        "Sắt",
+        "Đường sắt"
+      ],
+      "en": [
+        "iron",
+        "steel",
+        "railway"
+      ]
+    },
+    "examples": [
+      "地下鉄",
+      "鉄道",
+      "鉄橋"
+    ]
+  },
+  {
+    "character": "銀",
+    "hanViet": "NGÂN",
+    "jlpt": "N4",
+    "strokes": 14,
+    "radical": "金",
+    "onyomi": [
+      "ギン"
+    ],
+    "kunyomi": [],
+    "meanings": {
+      "vi": [
+        "Bạc",
+        "Ngân hàng"
+      ],
+      "en": [
+        "silver",
+        "bank"
+      ]
+    },
+    "examples": [
+      "銀行",
+      "銀行員",
+      "銀色"
+    ]
+  },
+  {
+    "character": "院",
+    "hanViet": "VIỆN",
+    "jlpt": "N4",
+    "strokes": 10,
+    "radical": "阜",
+    "onyomi": [
+      "イン"
+    ],
+    "kunyomi": [],
+    "meanings": {
+      "vi": [
+        "Bệnh viện",
+        "Học viện",
+        "Cơ sở"
+      ],
+      "en": [
+        "institution",
+        "hospital"
+      ]
+    },
+    "examples": [
+      "病院",
+      "入院",
+      "退院",
+      "大学院"
+    ]
+  },
+  {
+    "character": "病",
+    "hanViet": "BỆNH",
+    "jlpt": "N4",
+    "strokes": 10,
+    "radical": "疒",
+    "onyomi": [
+      "ビョウ",
+      "ヘイ"
+    ],
+    "kunyomi": [
+      "や.む",
+      "やまい"
+    ],
+    "meanings": {
+      "vi": [
+        "Bệnh tật",
+        "Ốm đau"
+      ],
+      "en": [
+        "ill",
+        "sick",
+        "disease"
+      ]
+    },
+    "examples": [
+      "病気",
+      "病院",
+      "看病"
+    ]
+  },
+  {
+    "character": "薬",
+    "hanViet": "DƯỢC",
+    "jlpt": "N4",
+    "strokes": 16,
+    "radical": "艸",
+    "onyomi": [
+      "ヤク"
+    ],
+    "kunyomi": [
+      "くすり"
+    ],
+    "meanings": {
+      "vi": [
+        "Thuốc chữa bệnh",
+        "Dược phẩm"
+      ],
+      "en": [
+        "medicine",
+        "chemical"
+      ]
+    },
+    "examples": [
+      "薬",
+      "目薬",
+      "薬局"
+    ]
+  },
+  {
+    "character": "医",
+    "hanViet": "Y",
+    "jlpt": "N4",
+    "strokes": 7,
+    "radical": "匚",
+    "onyomi": [
+      "イ"
+    ],
+    "kunyomi": [],
+    "meanings": {
+      "vi": [
+        "Y học",
+        "Bác sĩ"
+      ],
+      "en": [
+        "doctor",
+        "medicine"
+      ]
+    },
+    "examples": [
+      "医者",
+      "医学",
+      "歯医者",
+      "医院"
+    ]
+  },
+  {
+    "character": "者",
+    "hanViet": "GIẢ",
+    "jlpt": "N4",
+    "strokes": 8,
+    "radical": "老",
+    "onyomi": [
+      "シャ"
+    ],
+    "kunyomi": [
+      "もの"
+    ],
+    "meanings": {
+      "vi": [
+        "Người (chuyên môn)"
+      ],
+      "en": [
+        "person",
+        "someone"
+      ]
+    },
+    "examples": [
+      "医者",
+      "学者",
+      "若者",
+      "記者"
+    ]
+  },
+  {
+    "character": "員",
+    "hanViet": "VIÊN",
+    "jlpt": "N4",
+    "strokes": 10,
+    "radical": "口",
+    "onyomi": [
+      "イン"
+    ],
+    "kunyomi": [],
+    "meanings": {
+      "vi": [
+        "Nhân viên",
+        "Thành viên"
+      ],
+      "en": [
+        "employee",
+        "member"
+      ]
+    },
+    "examples": [
+      "会社員",
+      "店員",
+      "駅員",
+      "全員"
+    ]
+  },
+  {
+    "character": "工",
+    "hanViet": "CÔNG",
+    "jlpt": "N4",
+    "strokes": 3,
+    "radical": "工",
+    "onyomi": [
+      "コウ",
+      "ク"
+    ],
+    "kunyomi": [],
+    "meanings": {
+      "vi": [
+        "Công nghiệp",
+        "Chế tạo",
+        "Thợ"
+      ],
+      "en": [
+        "craft",
+        "construction"
+      ]
+    },
+    "examples": [
+      "工場",
+      "工事",
+      "工業",
+      "大工"
+    ]
+  },
+  {
+    "character": "産",
+    "hanViet": "SẢN",
+    "jlpt": "N4",
+    "strokes": 11,
+    "radical": "生",
+    "onyomi": [
+      "サン"
+    ],
+    "kunyomi": [
+      "う.む",
+      "う.まれる"
+    ],
+    "meanings": {
+      "vi": [
+        "Sản xuất",
+        "Sinh sản",
+        "Tài sản"
+      ],
+      "en": [
+        "products",
+        "bear",
+        "give birth"
+      ]
+    },
+    "examples": [
+      "お土産",
+      "産業",
+      "生産",
+      "不動産"
+    ]
+  },
+  {
+    "character": "市",
+    "hanViet": "THỊ",
+    "jlpt": "N4",
+    "strokes": 5,
+    "radical": "巾",
+    "onyomi": [
+      "シ"
+    ],
+    "kunyomi": [
+      "いち"
+    ],
+    "meanings": {
+      "vi": [
+        "Thành phố",
+        "Chợ"
+      ],
+      "en": [
+        "market",
+        "city",
+        "town"
+      ]
+    },
+    "examples": [
+      "市",
+      "市長",
+      "市民",
+      "市場"
+    ]
+  },
+  {
+    "character": "町",
+    "hanViet": "ĐINH",
+    "jlpt": "N4",
+    "strokes": 7,
+    "radical": "田",
+    "onyomi": [
+      "チョウ"
+    ],
+    "kunyomi": [
+      "まち"
+    ],
+    "meanings": {
+      "vi": [
+        "Thị trấn",
+        "Khu phố"
+      ],
+      "en": [
+        "town",
+        "block",
+        "street"
+      ]
+    },
+    "examples": [
+      "町",
+      "下町",
+      "町長"
+    ]
+  },
+  {
+    "character": "村",
+    "hanViet": "THÔN",
+    "jlpt": "N4",
+    "strokes": 7,
+    "radical": "木",
+    "onyomi": [
+      "ソン"
+    ],
+    "kunyomi": [
+      "むら"
+    ],
+    "meanings": {
+      "vi": [
+        "Ngôi làng",
+        "Nông thôn"
+      ],
+      "en": [
+        "village",
+        "town"
+      ]
+    },
+    "examples": [
+      "村",
+      "農村",
+      "木村"
+    ]
+  },
+  {
+    "character": "京",
+    "hanViet": "KINH",
+    "jlpt": "N4",
+    "strokes": 8,
+    "radical": "亠",
+    "onyomi": [
+      "キョウ",
+      "ケイ"
+    ],
+    "kunyomi": [],
+    "meanings": {
+      "vi": [
+        "Kinh đô",
+        "Thủ đô"
+      ],
+      "en": [
+        "capital"
+      ]
+    },
+    "examples": [
+      "東京",
+      "京都",
+      "上京"
+    ]
+  },
+  {
+    "character": "都",
+    "hanViet": "ĐÔ",
+    "jlpt": "N4",
+    "strokes": 11,
+    "radical": "邑",
+    "onyomi": [
+      "ト",
+      "ツ"
+    ],
+    "kunyomi": [
+      "みやこ"
+    ],
+    "meanings": {
+      "vi": [
+        "Thủ đô",
+        "Đô thị"
+      ],
+      "en": [
+        "metropolis",
+        "capital"
+      ]
+    },
+    "examples": [
+      "都合",
+      "京都",
+      "都会",
+      "東京都"
+    ]
+  },
+  {
+    "character": "県",
+    "hanViet": "HUYỆN",
+    "jlpt": "N4",
+    "strokes": 9,
+    "radical": "目",
+    "onyomi": [
+      "ケン"
+    ],
+    "kunyomi": [],
+    "meanings": {
+      "vi": [
+        "Tỉnh (của Nhật Bản)"
+      ],
+      "en": [
+        "prefecture"
+      ]
+    },
+    "examples": [
+      "県",
+      "県庁",
+      "山口県"
+    ]
+  },
+  {
+    "character": "区",
+    "hanViet": "KHU",
+    "jlpt": "N4",
+    "strokes": 4,
+    "radical": "匚",
+    "onyomi": [
+      "ク"
+    ],
+    "kunyomi": [],
+    "meanings": {
+      "vi": [
+        "Quận",
+        "Khu vực"
+      ],
+      "en": [
+        "ward",
+        "district"
+      ]
+    },
+    "examples": [
+      "区",
+      "区別",
+      "地区",
+      "新宿区"
+    ]
+  },
+  {
+    "character": "門",
+    "hanViet": "MÔN",
+    "jlpt": "N4",
+    "strokes": 8,
+    "radical": "門",
+    "onyomi": [
+      "モン"
+    ],
+    "kunyomi": [
+      "かど"
+    ],
+    "meanings": {
+      "vi": [
+        "Cổng",
+        "Chuyên môn"
+      ],
+      "en": [
+        "gate",
+        "specialty"
+      ]
+    },
+    "examples": [
+      "門",
+      "専門",
+      "正門"
+    ]
+  },
+  {
+    "character": "開",
+    "hanViet": "KHAI",
+    "jlpt": "N4",
+    "strokes": 12,
+    "radical": "門",
+    "onyomi": [
+      "カイ"
+    ],
+    "kunyomi": [
+      "ひら.く",
+      "あ.ける",
+      "あ.く"
+    ],
+    "meanings": {
+      "vi": [
+        "Mở ra",
+        "Bắt đầu",
+        "Khai mạc"
+      ],
+      "en": [
+        "open",
+        "unfold"
+      ]
+    },
+    "examples": [
+      "開ける",
+      "開く",
+      "開始"
+    ]
+  },
+  {
+    "character": "閉",
+    "hanViet": "BẾ",
+    "jlpt": "N4",
+    "strokes": 11,
+    "radical": "門",
+    "onyomi": [
+      "ヘイ"
+    ],
+    "kunyomi": [
+      "と.じる",
+      "し.める",
+      "し.まる"
+    ],
+    "meanings": {
+      "vi": [
+        "Đóng lại",
+        "Khép lại",
+        "Bế mạc"
+      ],
+      "en": [
+        "closed",
+        "shut"
+      ]
+    },
+    "examples": [
+      "閉める",
+      "閉まる",
+      "閉店"
+    ]
+  },
+  {
+    "character": "建",
+    "hanViet": "KIẾN",
+    "jlpt": "N4",
+    "strokes": 9,
+    "radical": "廴",
+    "onyomi": [
+      "ケン",
+      "コン"
+    ],
+    "kunyomi": [
+      "た.てる",
+      "た.つ"
+    ],
+    "meanings": {
+      "vi": [
+        "Xây dựng",
+        "Kiến trúc"
+      ],
+      "en": [
+        "build",
+        "construct"
+      ]
+    },
+    "examples": [
+      "建物",
+      "建てる",
+      "建築"
+    ]
+  },
+  {
+    "character": "物",
+    "hanViet": "VẬT",
+    "jlpt": "N4",
+    "strokes": 8,
+    "radical": "牛",
+    "onyomi": [
+      "ブツ",
+      "モツ"
+    ],
+    "kunyomi": [
+      "もの"
+    ],
+    "meanings": {
+      "vi": [
+        "Đồ vật",
+        "Sự vật"
+      ],
+      "en": [
+        "thing",
+        "object",
+        "matter"
+      ]
+    },
+    "examples": [
+      "買い物",
+      "建物",
+      "動物",
+      "荷物"
+    ]
+  },
+  {
+    "character": "品",
+    "hanViet": "PHẨM",
+    "jlpt": "N4",
+    "strokes": 9,
+    "radical": "口",
+    "onyomi": [
+      "ヒン"
+    ],
+    "kunyomi": [
+      "しな"
+    ],
+    "meanings": {
+      "vi": [
+        "Hàng hóa",
+        "Sản phẩm"
+      ],
+      "en": [
+        "goods",
+        "refinement",
+        "article"
+      ]
+    },
+    "examples": [
+      "品物",
+      "商品",
+      "作品",
+      "食品"
+    ]
+  },
+  {
+    "character": "事",
+    "hanViet": "SỰ",
+    "jlpt": "N4",
+    "strokes": 8,
+    "radical": "亅",
+    "onyomi": [
+      "ジ",
+      "ズ"
+    ],
+    "kunyomi": [
+      "こと"
+    ],
+    "meanings": {
+      "vi": [
+        "Sự việc",
+        "Công việc"
+      ],
+      "en": [
+        "matter",
+        "thing",
+        "business"
+      ]
+    },
+    "examples": [
+      "仕事",
+      "食事",
+      "火事",
+      "大事"
+    ]
+  },
+  {
+    "character": "仕",
+    "hanViet": "SĨ",
+    "jlpt": "N4",
+    "strokes": 5,
+    "radical": "人",
+    "onyomi": [
+      "シ",
+      "ジ"
+    ],
+    "kunyomi": [
+      "つか.える"
+    ],
+    "meanings": {
+      "vi": [
+        "Phục vụ",
+        "Làm việc"
+      ],
+      "en": [
+        "attend",
+        "doing",
+        "official"
+      ]
+    },
+    "examples": [
+      "仕事",
+      "仕方",
+      "仕上げる"
+    ]
+  },
+  {
+    "character": "働",
+    "hanViet": "ĐỘNG",
+    "jlpt": "N4",
+    "strokes": 13,
+    "radical": "人",
+    "onyomi": [
+      "ドウ"
+    ],
+    "kunyomi": [
+      "はたら.く"
+    ],
+    "meanings": {
+      "vi": [
+        "Làm việc",
+        "Lao động"
+      ],
+      "en": [
+        "work",
+        "labor"
+      ]
+    },
+    "examples": [
+      "働く",
+      "労働"
+    ]
+  },
+  {
+    "character": "作",
+    "hanViet": "TÁC",
+    "jlpt": "N4",
+    "strokes": 7,
+    "radical": "人",
+    "onyomi": [
+      "サク",
+      "サ"
+    ],
+    "kunyomi": [
+      "つく.る"
+    ],
+    "meanings": {
+      "vi": [
+        "Làm",
+        "Chế tạo",
+        "Sáng tác"
+      ],
+      "en": [
+        "make",
+        "production",
+        "prepare"
+      ]
+    },
+    "examples": [
+      "作る",
+      "作文",
+      "作品",
+      "作家"
+    ]
+  },
+  {
+    "character": "使",
+    "hanViet": "SỬ",
+    "jlpt": "N4",
+    "strokes": 8,
+    "radical": "人",
+    "onyomi": [
+      "シ"
+    ],
+    "kunyomi": [
+      "つか.う"
+    ],
+    "meanings": {
+      "vi": [
+        "Sử dụng",
+        "Dùng",
+        "Sứ giả"
+      ],
+      "en": [
+        "use",
+        "messenger"
+      ]
+    },
+    "examples": [
+      "使う",
+      "大使館",
+      "使い方"
+    ]
+  },
+  {
+    "character": "用",
+    "hanViet": "DỤNG",
+    "jlpt": "N4",
+    "strokes": 5,
+    "radical": "用",
+    "onyomi": [
+      "ヨウ"
+    ],
+    "kunyomi": [
+      "もち.いる"
+    ],
+    "meanings": {
+      "vi": [
+        "Công việc",
+        "Sử dụng",
+        "Dành cho"
+      ],
+      "en": [
+        "utilize",
+        "business",
+        "service"
+      ]
+    },
+    "examples": [
+      "用事",
+      "用意",
+      "利用",
+      "子供用"
+    ]
+  },
+  {
+    "character": "借",
+    "hanViet": "TÁ",
+    "jlpt": "N4",
+    "strokes": 10,
+    "radical": "人",
+    "onyomi": [
+      "シャク"
+    ],
+    "kunyomi": [
+      "か.りる"
+    ],
+    "meanings": {
+      "vi": [
+        "Mượn",
+        "Vay"
+      ],
+      "en": [
+        "borrow",
+        "rent"
+      ]
+    },
+    "examples": [
+      "借りる",
+      "借金"
+    ]
+  },
+  {
+    "character": "貸",
+    "hanViet": "THẢI",
+    "jlpt": "N4",
+    "strokes": 12,
+    "radical": "貝",
+    "onyomi": [
+      "タイ"
+    ],
+    "kunyomi": [
+      "か.す"
+    ],
+    "meanings": {
+      "vi": [
+        "Cho mượn",
+        "Cho thuê"
+      ],
+      "en": [
+        "lend",
+        "rent out"
+      ]
+    },
+    "examples": [
+      "貸す",
+      "賃貸",
+      "貸出"
+    ]
+  },
+  {
+    "character": "返",
+    "hanViet": "PHẢN",
+    "jlpt": "N4",
+    "strokes": 7,
+    "radical": "辵",
+    "onyomi": [
+      "ヘン"
+    ],
+    "kunyomi": [
+      "かえ.す",
+      "かえ.る"
+    ],
+    "meanings": {
+      "vi": [
+        "Trả lại",
+        "Đáp lại"
+      ],
+      "en": [
+        "return",
+        "answer"
+      ]
+    },
+    "examples": [
+      "返す",
+      "返事",
+      "返品"
+    ]
+  },
+  {
+    "character": "送",
+    "hanViet": "TỐNG",
+    "jlpt": "N4",
+    "strokes": 9,
+    "radical": "辵",
+    "onyomi": [
+      "ソウ"
+    ],
+    "kunyomi": [
+      "おく.る"
+    ],
+    "meanings": {
+      "vi": [
+        "Gửi đi",
+        "Tiễn đưa"
+      ],
+      "en": [
+        "escort",
+        "send"
+      ]
+    },
+    "examples": [
+      "送る",
+      "放送",
+      "見送る"
+    ]
+  },
+  {
+    "character": "切",
+    "hanViet": "THIẾT",
+    "jlpt": "N4",
+    "strokes": 4,
+    "radical": "刀",
+    "onyomi": [
+      "セツ",
+      "サイ"
+    ],
+    "kunyomi": [
+      "き.る",
+      "き.れる"
+    ],
+    "meanings": {
+      "vi": [
+        "Cắt",
+        "Quan trọng",
+        "Hết hạn"
+      ],
+      "en": [
+        "cut",
+        "cutoff",
+        "be sharp"
+      ]
+    },
+    "examples": [
+      "切る",
+      "切手",
+      "大切",
+      "親切"
+    ]
+  },
+  {
+    "character": "売",
+    "hanViet": "MẠI",
+    "jlpt": "N4",
+    "strokes": 7,
+    "radical": "士",
+    "onyomi": [
+      "バイ"
+    ],
+    "kunyomi": [
+      "う.る",
+      "う.れる"
+    ],
+    "meanings": {
+      "vi": [
+        "Bán",
+        "Kinh doanh"
+      ],
+      "en": [
+        "sell"
+      ]
+    },
+    "examples": [
+      "売る",
+      "売り場",
+      "発売",
+      "売店"
+    ]
+  },
+  {
+    "character": "知",
+    "hanViet": "TRI",
+    "jlpt": "N4",
+    "strokes": 8,
+    "radical": "矢",
+    "onyomi": [
+      "チ"
+    ],
+    "kunyomi": [
+      "し.る"
+    ],
+    "meanings": {
+      "vi": [
+        "Biết",
+        "Trí thức"
+      ],
+      "en": [
+        "know",
+        "wisdom"
+      ]
+    },
+    "examples": [
+      "知る",
+      "知らせる",
+      "知識",
+      "知人"
+    ]
+  },
+  {
+    "character": "思",
+    "hanViet": "TƯ",
+    "jlpt": "N4",
+    "strokes": 9,
+    "radical": "心",
+    "onyomi": [
+      "シ"
+    ],
+    "kunyomi": [
+      "おも.う"
+    ],
+    "meanings": {
+      "vi": [
+        "Suy nghĩ",
+        "Nhớ tưởng"
+      ],
+      "en": [
+        "think"
+      ]
+    },
+    "examples": [
+      "思う",
+      "思い出す",
+      "不思議"
+    ]
+  },
+  {
+    "character": "考",
+    "hanViet": "KHẢO",
+    "jlpt": "N4",
+    "strokes": 6,
+    "radical": "老",
+    "onyomi": [
+      "コウ"
+    ],
+    "kunyomi": [
+      "かんが.える"
+    ],
+    "meanings": {
+      "vi": [
+        "Suy nghĩ",
+        "Cân nhắc",
+        "Tham khảo"
+      ],
+      "en": [
+        "consider",
+        "think over"
+      ]
+    },
+    "examples": [
+      "考える",
+      "考え方",
+      "参考"
+    ]
+  },
+  {
+    "character": "教",
+    "hanViet": "GIÁO",
+    "jlpt": "N4",
+    "strokes": 11,
+    "radical": "攴",
+    "onyomi": [
+      "キョウ"
+    ],
+    "kunyomi": [
+      "おし.える",
+      "おそ.わる"
+    ],
+    "meanings": {
+      "vi": [
+        "Dạy học",
+        "Chỉ bảo",
+        "Tôn giáo"
+      ],
+      "en": [
+        "teach",
+        "faith",
+        "doctrine"
+      ]
+    },
+    "examples": [
+      "教える",
+      "教室",
+      "教師",
+      "教会"
+    ]
+  },
+  {
+    "character": "習",
+    "hanViet": "TẬP",
+    "jlpt": "N4",
+    "strokes": 11,
+    "radical": "羽",
+    "onyomi": [
+      "シュウ"
+    ],
+    "kunyomi": [
+      "なら.う"
+    ],
+    "meanings": {
+      "vi": [
+        "Học tập",
+        "Luyện tập",
+        "Thói quen"
+      ],
+      "en": [
+        "learn",
+        "practice"
+      ]
+    },
+    "examples": [
+      "習う",
+      "練習",
+      "復習",
+      "予習"
+    ]
+  },
+  {
+    "character": "勉",
+    "hanViet": "MIỄN",
+    "jlpt": "N4",
+    "strokes": 10,
+    "radical": "力",
+    "onyomi": [
+      "ベン"
+    ],
+    "kunyomi": [
+      "つと.める"
+    ],
+    "meanings": {
+      "vi": [
+        "Cố gắng",
+        "Học hành chăm chỉ"
+      ],
+      "en": [
+        "exertion",
+        "study hard"
+      ]
+    },
+    "examples": [
+      "勉強",
+      "勤勉"
+    ]
+  },
+  {
+    "character": "強",
+    "hanViet": "CƯỜNG",
+    "jlpt": "N4",
+    "strokes": 11,
+    "radical": "弓",
+    "onyomi": [
+      "キョウ",
+      "ゴウ"
+    ],
+    "kunyomi": [
+      "つよ.い",
+      "し.いる"
+    ],
+    "meanings": {
+      "vi": [
+        "Mạnh mẽ",
+        "Học tập"
+      ],
+      "en": [
+        "strong",
+        "force"
+      ]
+    },
+    "examples": [
+      "勉強",
+      "強い",
+      "強調"
+    ]
+  },
+  {
+    "character": "試",
+    "hanViet": "THÍ",
+    "jlpt": "N4",
+    "strokes": 13,
+    "radical": "言",
+    "onyomi": [
+      "シ"
+    ],
+    "kunyomi": [
+      "こころ.みる",
+      "ため.す"
+    ],
+    "meanings": {
+      "vi": [
+        "Thử nghiệm",
+        "Kỳ thi"
+      ],
+      "en": [
+        "test",
+        "try",
+        "attempt"
+      ]
+    },
+    "examples": [
+      "試験",
+      "試合",
+      "試着"
+    ]
+  },
+  {
+    "character": "験",
+    "hanViet": "NGHIỆM",
+    "jlpt": "N4",
+    "strokes": 18,
+    "radical": "馬",
+    "onyomi": [
+      "ケン",
+      "ゲン"
+    ],
+    "kunyomi": [
+      "ため.す"
+    ],
+    "meanings": {
+      "vi": [
+        "Kiểm tra",
+        "Kinh nghiệm",
+        "Hiệu nghiệm"
+      ],
+      "en": [
+        "verification",
+        "effect",
+        "testing"
+      ]
+    },
+    "examples": [
+      "試験",
+      "経験",
+      "実験"
+    ]
+  },
+  {
+    "character": "質",
+    "hanViet": "CHẤT",
+    "jlpt": "N4",
+    "strokes": 15,
+    "radical": "貝",
+    "onyomi": [
+      "シツ",
+      "シチ"
+    ],
+    "kunyomi": [],
+    "meanings": {
+      "vi": [
+        "Chất lượng",
+        "Câu hỏi",
+        "Bản chất"
+      ],
+      "en": [
+        "substance",
+        "quality",
+        "question"
+      ]
+    },
+    "examples": [
+      "質問",
+      "品質",
+      "性質"
+    ]
+  },
+  {
+    "character": "問",
+    "hanViet": "VẤN",
+    "jlpt": "N4",
+    "strokes": 11,
+    "radical": "口",
+    "onyomi": [
+      "モン"
+    ],
+    "kunyomi": [
+      "と.う",
+      "と.い"
+    ],
+    "meanings": {
+      "vi": [
+        "Hỏi",
+        "Vấn đề",
+        "Câu hỏi"
+      ],
+      "en": [
+        "question",
+        "ask",
+        "problem"
+      ]
+    },
+    "examples": [
+      "質問",
+      "問題",
+      "訪問"
+    ]
+  },
+  {
+    "character": "題",
+    "hanViet": "ĐỀ",
+    "jlpt": "N4",
+    "strokes": 18,
+    "radical": "頁",
+    "onyomi": [
+      "ダイ"
+    ],
+    "kunyomi": [],
+    "meanings": {
+      "vi": [
+        "Đề tài",
+        "Chủ đề",
+        "Bài tập"
+      ],
+      "en": [
+        "topic",
+        "subject"
+      ]
+    },
+    "examples": [
+      "宿題",
+      "問題",
+      "話題",
+      "タイトル"
+    ]
+  },
+  {
+    "character": "答",
+    "hanViet": "ĐÁP",
+    "jlpt": "N4",
+    "strokes": 12,
+    "radical": "竹",
+    "onyomi": [
+      "トウ"
+    ],
+    "kunyomi": [
+      "こた.える",
+      "こた.え"
+    ],
+    "meanings": {
+      "vi": [
+        "Trả lời",
+        "Đáp án"
+      ],
+      "en": [
+        "solution",
+        "answer"
+      ]
+    },
+    "examples": [
+      "答える",
+      "答え",
+      "回答"
+    ]
+  },
+  {
+    "character": "宿",
+    "hanViet": "TÚC",
+    "jlpt": "N4",
+    "strokes": 11,
+    "radical": "宀",
+    "onyomi": [
+      "シュク"
+    ],
+    "kunyomi": [
+      "やど",
+      "やど.る"
+    ],
+    "meanings": {
+      "vi": [
+        "Nhà trọ",
+        "Nghỉ trọ",
+        "Bài tập về nhà"
+      ],
+      "en": [
+        "inn",
+        "lodging"
+      ]
+    },
+    "examples": [
+      "宿題",
+      "旅館",
+      "下宿",
+      "新宿"
+    ]
+  },
+  {
+    "character": "漢",
+    "hanViet": "HÁN",
+    "jlpt": "N4",
+    "strokes": 13,
+    "radical": "水",
+    "onyomi": [
+      "カン"
+    ],
+    "kunyomi": [],
+    "meanings": {
+      "vi": [
+        "Chữ Hán",
+        "Trung Hoa"
+      ],
+      "en": [
+        "Sino-",
+        "China"
+      ]
+    },
+    "examples": [
+      "漢字",
+      "漢和辞典"
+    ]
+  },
+  {
+    "character": "英",
+    "hanViet": "ANH",
+    "jlpt": "N4",
+    "strokes": 8,
+    "radical": "艸",
+    "onyomi": [
+      "エイ"
+    ],
+    "kunyomi": [],
+    "meanings": {
+      "vi": [
+        "Nước Anh",
+        "Anh hùng",
+        "Tài hoa"
+      ],
+      "en": [
+        "England",
+        "English",
+        "hero"
+      ]
+    },
+    "examples": [
+      "英語",
+      "英国",
+      "英会話"
+    ]
+  },
+  {
+    "character": "研",
+    "hanViet": "NGHIÊN",
+    "jlpt": "N4",
+    "strokes": 9,
+    "radical": "石",
+    "onyomi": [
+      "ケン"
+    ],
+    "kunyomi": [
+      "と.ぐ"
+    ],
+    "meanings": {
+      "vi": [
+        "Nghiên cứu",
+        "Mài giũa"
+      ],
+      "en": [
+        "polish",
+        "study",
+        "sharpen"
+      ]
+    },
+    "examples": [
+      "研究",
+      "研究室",
+      "研修"
+    ]
+  },
+  {
+    "character": "究",
+    "hanViet": "CỨU",
+    "jlpt": "N4",
+    "strokes": 7,
+    "radical": "穴",
+    "onyomi": [
+      "キュウ"
+    ],
+    "kunyomi": [
+      "きわ.める"
+    ],
+    "meanings": {
+      "vi": [
+        "Nghiên cứu sâu",
+        "Tìm tòi"
+      ],
+      "en": [
+        "research",
+        "study"
+      ]
+    },
+    "examples": [
+      "研究",
+      "研究者",
+      "究明"
+    ]
+  },
+  {
+    "character": "歩",
+    "hanViet": "BỘ",
+    "jlpt": "N4",
+    "strokes": 8,
+    "radical": "止",
+    "onyomi": [
+      "ホ",
+      "ブ",
+      "フ"
+    ],
+    "kunyomi": [
+      "ある.く",
+      "あゆ.む"
+    ],
+    "meanings": {
+      "vi": [
+        "Đi bộ",
+        "Bước đi",
+        "Tiến bộ"
+      ],
+      "en": [
+        "walk",
+        "step"
+      ]
+    },
+    "examples": [
+      "歩く",
+      "散歩",
+      "歩道",
+      "進歩"
+    ]
+  },
+  {
+    "character": "走",
+    "hanViet": "TẨU",
+    "jlpt": "N4",
+    "strokes": 7,
+    "radical": "走",
+    "onyomi": [
+      "ソウ"
+    ],
+    "kunyomi": [
+      "はし.る"
+    ],
+    "meanings": {
+      "vi": [
+        "Chạy"
+      ],
+      "en": [
+        "run"
+      ]
+    },
+    "examples": [
+      "走る",
+      "ご馳走"
+    ]
+  },
+  {
+    "character": "起",
+    "hanViet": "KHỞI",
+    "jlpt": "N4",
+    "strokes": 10,
+    "radical": "走",
+    "onyomi": [
+      "キ"
+    ],
+    "kunyomi": [
+      "お.きる",
+      "お.こる",
+      "お.こす"
+    ],
+    "meanings": {
+      "vi": [
+        "Thức dậy",
+        "Xảy ra",
+        "Đánh thức"
+      ],
+      "en": [
+        "rouse",
+        "wake up",
+        "get up"
+      ]
+    },
+    "examples": [
+      "起きる",
+      "起こす",
+      "起こる"
+    ]
+  },
+  {
+    "character": "寝",
+    "hanViet": "TẨM",
+    "jlpt": "N4",
+    "strokes": 13,
+    "radical": "宀",
+    "onyomi": [
+      "シン"
+    ],
+    "kunyomi": [
+      "ね.る",
+      "ね.かす"
+    ],
+    "meanings": {
+      "vi": [
+        "Ngủ",
+        "Đi ngủ",
+        "Phòng ngủ"
+      ],
+      "en": [
+        "lie down",
+        "sleep"
+      ]
+    },
+    "examples": [
+      "寝る",
+      "寝室",
+      "昼寝"
+    ]
+  },
+  {
+    "character": "待",
+    "hanViet": "ĐÃI",
+    "jlpt": "N4",
+    "strokes": 9,
+    "radical": "彳",
+    "onyomi": [
+      "タイ"
+    ],
+    "kunyomi": [
+      "ま.つ"
+    ],
+    "meanings": {
+      "vi": [
+        "Chờ đợi",
+        "Chiêu đãi"
+      ],
+      "en": [
+        "wait",
+        "depend on"
+      ]
+    },
+    "examples": [
+      "待つ",
+      "招待",
+      "期待"
+    ]
+  },
+  {
+    "character": "持",
+    "hanViet": "TRÌ",
+    "jlpt": "N4",
+    "strokes": 9,
+    "radical": "手",
+    "onyomi": [
+      "ジ"
+    ],
+    "kunyomi": [
+      "も.つ"
+    ],
+    "meanings": {
+      "vi": [
+        "Cầm",
+        "Mang",
+        "Sở hữu"
+      ],
+      "en": [
+        "hold",
+        "have"
+      ]
+    },
+    "examples": [
+      "持つ",
+      "気持ち",
+      "金持ち"
+    ]
+  },
+  {
+    "character": "運",
+    "hanViet": "VẬN",
+    "jlpt": "N4",
+    "strokes": 12,
+    "radical": "辵",
+    "onyomi": [
+      "ウン"
+    ],
+    "kunyomi": [
+      "はこ.ぶ"
+    ],
+    "meanings": {
+      "vi": [
+        "Vận chuyển",
+        "Lái xe",
+        "Vận may"
+      ],
+      "en": [
+        "carry",
+        "luck",
+        "destiny",
+        "drive"
+      ]
+    },
+    "examples": [
+      "運転",
+      "運動",
+      "運ぶ",
+      "運命"
+    ]
+  },
+  {
+    "character": "転",
+    "hanViet": "CHUYỂN",
+    "jlpt": "N4",
+    "strokes": 11,
+    "radical": "車",
+    "onyomi": [
+      "テン"
+    ],
+    "kunyomi": [
+      "ころ.がる",
+      "ころ.ぶ"
+    ],
+    "meanings": {
+      "vi": [
+        "Lăn",
+        "Xoay chuyển",
+        "Ngã"
+      ],
+      "en": [
+        "revolve",
+        "turn around"
+      ]
+    },
+    "examples": [
+      "自転車",
+      "運転",
+      "転ぶ"
+    ]
+  },
+  {
+    "character": "乗",
+    "hanViet": "THỪA",
+    "jlpt": "N4",
+    "strokes": 9,
+    "radical": "丿",
+    "onyomi": [
+      "ジョウ"
+    ],
+    "kunyomi": [
+      "の.る",
+      "の.せる"
+    ],
+    "meanings": {
+      "vi": [
+        "Lên xe",
+        "Đi tàu/xe"
+      ],
+      "en": [
+        "ride",
+        "board",
+        "get on"
+      ]
+    },
+    "examples": [
+      "乗る",
+      "乗り場",
+      "乗り換え"
+    ]
+  },
+  {
+    "character": "降",
+    "hanViet": "GIÁNG",
+    "jlpt": "N4",
+    "strokes": 10,
+    "radical": "阜",
+    "onyomi": [
+      "コウ"
+    ],
+    "kunyomi": [
+      "お.りる",
+      "ふ.る"
+    ],
+    "meanings": {
+      "vi": [
+        "Xuống xe",
+        "Rơi (mưa",
+        "tuyết)"
+      ],
+      "en": [
+        "descend",
+        "precipitate",
+        "get off"
+      ]
+    },
+    "examples": [
+      "降りる",
+      "降る",
+      "以降"
+    ]
+  },
+  {
+    "character": "帰",
+    "hanViet": "QUY",
+    "jlpt": "N4",
+    "strokes": 10,
+    "radical": "止",
+    "onyomi": [
+      "キ"
+    ],
+    "kunyomi": [
+      "かえ.る",
+      "かえ.す"
+    ],
+    "meanings": {
+      "vi": [
+        "Trở về",
+        "Về nhà"
+      ],
+      "en": [
+        "homecoming",
+        "return"
+      ]
+    },
+    "examples": [
+      "帰る",
+      "帰国",
+      "日帰り"
+    ]
+  },
+  {
+    "character": "始",
+    "hanViet": "THỦY",
+    "jlpt": "N4",
+    "strokes": 8,
+    "radical": "女",
+    "onyomi": [
+      "シ"
+    ],
+    "kunyomi": [
+      "はじ.める",
+      "はじ.まる"
+    ],
+    "meanings": {
+      "vi": [
+        "Bắt đầu",
+        "Khởi đầu"
+      ],
+      "en": [
+        "commence",
+        "begin"
+      ]
+    },
+    "examples": [
+      "始める",
+      "始まる",
+      "開始"
+    ]
+  },
+  {
+    "character": "終",
+    "hanViet": "CHUNG",
+    "jlpt": "N4",
+    "strokes": 11,
+    "radical": "糸",
+    "onyomi": [
+      "シュウ"
+    ],
+    "kunyomi": [
+      "お.わる",
+      "お.える"
+    ],
+    "meanings": {
+      "vi": [
+        "Kết thúc",
+        "Cuối cùng"
+      ],
+      "en": [
+        "end",
+        "finish"
+      ]
+    },
+    "examples": [
+      "終わる",
+      "終電",
+      "最終",
+      "最後"
+    ]
+  },
+  {
+    "character": "住",
+    "hanViet": "TRÚ",
+    "jlpt": "N4",
+    "strokes": 7,
+    "radical": "人",
+    "onyomi": [
+      "ジュウ"
+    ],
+    "kunyomi": [
+      "す.む",
+      "す.まう"
+    ],
+    "meanings": {
+      "vi": [
+        "Sinh sống",
+        "Cư trú"
+      ],
+      "en": [
+        "dwell",
+        "reside",
+        "live"
+      ]
+    },
+    "examples": [
+      "住む",
+      "住所",
+      "住民"
+    ]
+  },
+  {
+    "character": "死",
+    "hanViet": "TỬ",
+    "jlpt": "N4",
+    "strokes": 6,
+    "radical": "歹",
+    "onyomi": [
+      "シ"
+    ],
+    "kunyomi": [
+      "し.ぬ"
+    ],
+    "meanings": {
+      "vi": [
+        "Chết",
+        "Qua đời"
+      ],
+      "en": [
+        "death",
+        "die"
+      ]
+    },
+    "examples": [
+      "死ぬ",
+      "必死",
+      "死亡"
+    ]
+  },
+  {
+    "character": "動",
+    "hanViet": "ĐỘNG",
+    "jlpt": "N4",
+    "strokes": 11,
+    "radical": "力",
+    "onyomi": [
+      "ドウ"
+    ],
+    "kunyomi": [
+      "うご.く",
+      "うご.かす"
+    ],
+    "meanings": {
+      "vi": [
+        "Chuyển động",
+        "Vận động"
+      ],
+      "en": [
+        "move",
+        "motion",
+        "change"
+      ]
+    },
+    "examples": [
+      "動物",
+      "運動",
+      "自動車",
+      "動く"
+    ]
+  },
+  {
+    "character": "止",
+    "hanViet": "CHỈ",
+    "jlpt": "N4",
+    "strokes": 4,
+    "radical": "止",
+    "onyomi": [
+      "シ"
+    ],
+    "kunyomi": [
+      "と.まる",
+      "と.める",
+      "や.める"
+    ],
+    "meanings": {
+      "vi": [
+        "Dừng lại",
+        "Ngừng",
+        "Cấm"
+      ],
+      "en": [
+        "stop",
+        "halt"
+      ]
+    },
+    "examples": [
+      "止まる",
+      "止める",
+      "中止",
+      "禁止"
+    ]
+  },
+  {
+    "character": "通",
+    "hanViet": "THÔNG",
+    "jlpt": "N4",
+    "strokes": 10,
+    "radical": "辵",
+    "onyomi": [
+      "ツウ",
+      "ツ"
+    ],
+    "kunyomi": [
+      "とお.る",
+      "かよ.う"
+    ],
+    "meanings": {
+      "vi": [
+        "Đi qua",
+        "Đi học/làm",
+        "Thông suốt"
+      ],
+      "en": [
+        "traffic",
+        "pass through",
+        "commute"
+      ]
+    },
+    "examples": [
+      "通る",
+      "通う",
+      "交通",
+      "普通"
+    ]
+  },
+  {
+    "character": "進",
+    "hanViet": "TIẾN",
+    "jlpt": "N4",
+    "strokes": 11,
+    "radical": "辵",
+    "onyomi": [
+      "シン"
+    ],
+    "kunyomi": [
+      "すす.む",
+      "すす.める"
+    ],
+    "meanings": {
+      "vi": [
+        "Tiến lên",
+        "Tiến bộ"
+      ],
+      "en": [
+        "advance",
+        "proceed"
+      ]
+    },
+    "examples": [
+      "進む",
+      "進学",
+      "進歩"
+    ]
+  },
+  {
+    "character": "集",
+    "hanViet": "TẬP",
+    "jlpt": "N4",
+    "strokes": 12,
+    "radical": "隹",
+    "onyomi": [
+      "シュウ"
+    ],
+    "kunyomi": [
+      "あつ.まる",
+      "あつ.める"
+    ],
+    "meanings": {
+      "vi": [
+        "Tập hợp",
+        "Sưu tầm"
+      ],
+      "en": [
+        "gather",
+        "meet",
+        "collect"
+      ]
+    },
+    "examples": [
+      "集まる",
+      "集める",
+      "集合"
+    ]
+  },
+  {
+    "character": "別",
+    "hanViet": "BIỆT",
+    "jlpt": "N4",
+    "strokes": 7,
+    "radical": "刀",
+    "onyomi": [
+      "ベツ"
+    ],
+    "kunyomi": [
+      "わか.れる"
+    ],
+    "meanings": {
+      "vi": [
+        "Chia tay",
+        "Riêng biệt",
+        "Đặc biệt"
+      ],
+      "en": [
+        "separate",
+        "another",
+        "specially"
+      ]
+    },
+    "examples": [
+      "特別",
+      "別れる",
+      "区別",
+      "別に"
+    ]
+  },
+  {
+    "character": "洗",
+    "hanViet": "TẨY",
+    "jlpt": "N4",
+    "strokes": 9,
+    "radical": "水",
+    "onyomi": [
+      "セン"
+    ],
+    "kunyomi": [
+      "あら.う"
+    ],
+    "meanings": {
+      "vi": [
+        "Rửa",
+        "Giặt"
+      ],
+      "en": [
+        "wash"
+      ]
+    },
+    "examples": [
+      "洗う",
+      "洗濯",
+      "洗面所"
+    ]
+  },
+  {
+    "character": "歌",
+    "hanViet": "CA",
+    "jlpt": "N4",
+    "strokes": 14,
+    "radical": "欠",
+    "onyomi": [
+      "カ"
+    ],
+    "kunyomi": [
+      "うた",
+      "うた.う"
+    ],
+    "meanings": {
+      "vi": [
+        "Bài hát",
+        "Ca hát"
+      ],
+      "en": [
+        "song",
+        "sing"
+      ]
+    },
+    "examples": [
+      "歌",
+      "歌う",
+      "歌手",
+      "国歌"
+    ]
+  },
+  {
+    "character": "写",
+    "hanViet": "TẢ",
+    "jlpt": "N4",
+    "strokes": 5,
+    "radical": "冖",
+    "onyomi": [
+      "シャ"
+    ],
+    "kunyomi": [
+      "うつ.す",
+      "うつ.る"
+    ],
+    "meanings": {
+      "vi": [
+        "Chụp ảnh",
+        "Sao chép"
+      ],
+      "en": [
+        "copy",
+        "be photographed"
+      ]
+    },
+    "examples": [
+      "写真",
+      "写す",
+      "写る"
+    ]
+  },
+  {
+    "character": "真",
+    "hanViet": "CHÂN",
+    "jlpt": "N4",
+    "strokes": 10,
+    "radical": "目",
+    "onyomi": [
+      "シン"
+    ],
+    "kunyomi": [
+      "ま"
+    ],
+    "meanings": {
+      "vi": [
+        "Chân thật",
+        "Chính giữa"
+      ],
+      "en": [
+        "true",
+        "reality"
+      ]
+    },
+    "examples": [
+      "写真",
+      "真ん中",
+      "真面目"
+    ]
+  },
+  {
+    "character": "映",
+    "hanViet": "ÁNH",
+    "jlpt": "N4",
+    "strokes": 9,
+    "radical": "日",
+    "onyomi": [
+      "エイ"
+    ],
+    "kunyomi": [
+      "うつ.る",
+      "は.える"
+    ],
+    "meanings": {
+      "vi": [
+        "Phản chiếu",
+        "Chiếu phim"
+      ],
+      "en": [
+        "reflect",
+        "projection"
+      ]
+    },
+    "examples": [
+      "映画",
+      "映画館",
+      "映る"
+    ]
+  },
+  {
+    "character": "画",
+    "hanViet": "HỌA",
+    "jlpt": "N4",
+    "strokes": 8,
+    "radical": "田",
+    "onyomi": [
+      "ガ",
+      "カク"
+    ],
+    "kunyomi": [],
+    "meanings": {
+      "vi": [
+        "Bức tranh",
+        "Kế hoạch",
+        "Nét chữ"
+      ],
+      "en": [
+        "brush-stroke",
+        "picture",
+        "plan"
+      ]
+    },
+    "examples": [
+      "映画",
+      "計画",
+      "漫画",
+      "画家"
+    ]
+  },
+  {
+    "character": "楽",
+    "hanViet": "LẠC",
+    "jlpt": "N4",
+    "strokes": 13,
+    "radical": "木",
+    "onyomi": [
+      "ガク",
+      "ラク"
+    ],
+    "kunyomi": [
+      "たの.しい",
+      "たの.しむ"
+    ],
+    "meanings": {
+      "vi": [
+        "Vui vẻ",
+        "Âm nhạc",
+        "Thoải mái"
+      ],
+      "en": [
+        "music",
+        "comfort",
+        "楽しく"
+      ]
+    },
+    "examples": [
+      "音楽",
+      "楽しい",
+      "楽しむ",
+      "楽"
+    ]
+  },
+  {
+    "character": "旅",
+    "hanViet": "LỮ",
+    "jlpt": "N4",
+    "strokes": 10,
+    "radical": "方",
+    "onyomi": [
+      "リョ"
+    ],
+    "kunyomi": [
+      "たび"
+    ],
+    "meanings": {
+      "vi": [
+        "Du lịch",
+        "Chuyến đi"
+      ],
+      "en": [
+        "trip",
+        "travel"
+      ]
+    },
+    "examples": [
+      "旅行",
+      "旅館",
+      "旅"
+    ]
+  },
+  {
+    "character": "発",
+    "hanViet": "PHÁT",
+    "jlpt": "N4",
+    "strokes": 9,
+    "radical": "癶",
+    "onyomi": [
+      "ハツ",
+      "ホツ"
+    ],
+    "kunyomi": [],
+    "meanings": {
+      "vi": [
+        "Xuất phát",
+        "Phát biểu",
+        "Phát minh"
+      ],
+      "en": [
+        "departure",
+        "discharge",
+        "publish"
+      ]
+    },
+    "examples": [
+      "出発",
+      "発表",
+      "発音",
+      "発見"
+    ]
+  },
+  {
+    "character": "急",
+    "hanViet": "CẤP",
+    "jlpt": "N4",
+    "strokes": 9,
+    "radical": "心",
+    "onyomi": [
+      "キュウ"
+    ],
+    "kunyomi": [
+      "いそ.ぐ"
+    ],
+    "meanings": {
+      "vi": [
+        "Gấp gáp",
+        "Vội vàng",
+        "Tốc hành"
+      ],
+      "en": [
+        "hurry",
+        "emergency",
+        "sudden"
+      ]
+    },
+    "examples": [
+      "急ぐ",
+      "急行",
+      "急に",
+      "救急車"
+    ]
+  },
+  {
+    "character": "早",
+    "hanViet": "TẢO",
+    "jlpt": "N4",
+    "strokes": 6,
+    "radical": "日",
+    "onyomi": [
+      "ソウ",
+      "サッ"
+    ],
+    "kunyomi": [
+      "はや.い"
+    ],
+    "meanings": {
+      "vi": [
+        "Sớm",
+        "Nhanh"
+      ],
+      "en": [
+        "early",
+        "fast"
+      ]
+    },
+    "examples": [
+      "早い",
+      "早く",
+      "早朝"
+    ]
+  },
+  {
+    "character": "速",
+    "hanViet": "TỐC",
+    "jlpt": "N4",
+    "strokes": 10,
+    "radical": "辵",
+    "onyomi": [
+      "ソク"
+    ],
+    "kunyomi": [
+      "はや.い",
+      "すみ.やか"
+    ],
+    "meanings": {
+      "vi": [
+        "Nhanh chóng",
+        "Tốc độ"
+      ],
+      "en": [
+        "quick",
+        "fast",
+        "speed"
+      ]
+    },
+    "examples": [
+      "速い",
+      "速度",
+      "高速"
+    ]
+  },
+  {
+    "character": "遅",
+    "hanViet": "TRÌ",
+    "jlpt": "N4",
+    "strokes": 12,
+    "radical": "辵",
+    "onyomi": [
+      "チ"
+    ],
+    "kunyomi": [
+      "おく.れる",
+      "おそ.い"
+    ],
+    "meanings": {
+      "vi": [
+        "Muộn",
+        "Trễ",
+        "Chậm"
+      ],
+      "en": [
+        "slow",
+        "late"
+      ]
+    },
+    "examples": [
+      "遅い",
+      "遅れる",
+      "遅刻"
+    ]
+  },
+  {
+    "character": "近",
+    "hanViet": "CẬN",
+    "jlpt": "N4",
+    "strokes": 7,
+    "radical": "辵",
+    "onyomi": [
+      "キン"
+    ],
+    "kunyomi": [
+      "ちか.い"
+    ],
+    "meanings": {
+      "vi": [
+        "Gần",
+        "Dạo gần đây"
+      ],
+      "en": [
+        "near",
+        "recent"
+      ]
+    },
+    "examples": [
+      "近い",
+      "近く",
+      "最近",
+      "近所"
+    ]
+  },
+  {
+    "character": "遠",
+    "hanViet": "VIỄN",
+    "jlpt": "N4",
+    "strokes": 13,
+    "radical": "辵",
+    "onyomi": [
+      "エン",
+      "オン"
+    ],
+    "kunyomi": [
+      "とお.い"
+    ],
+    "meanings": {
+      "vi": [
+        "Xa xôi"
+      ],
+      "en": [
+        "distant",
+        "far"
+      ]
+    },
+    "examples": [
+      "遠い",
+      "遠足",
+      "永遠"
+    ]
+  },
+  {
+    "character": "広",
+    "hanViet": "QUẢNG",
+    "jlpt": "N4",
+    "strokes": 5,
+    "radical": "广",
+    "onyomi": [
+      "コウ"
+    ],
+    "kunyomi": [
+      "ひろ.い",
+      "ひろ.がる"
+    ],
+    "meanings": {
+      "vi": [
+        "Rộng rãi",
+        "Mở rộng"
+      ],
+      "en": [
+        "wide",
+        "broad",
+        "spacious"
+      ]
+    },
+    "examples": [
+      "広い",
+      "広場",
+      "広告"
+    ]
+  },
+  {
+    "character": "明",
+    "hanViet": "MINH",
+    "jlpt": "N4",
+    "strokes": 8,
+    "radical": "日",
+    "onyomi": [
+      "メイ",
+      "ミョウ"
+    ],
+    "kunyomi": [
+      "あか.るい",
+      "あ.ける"
+    ],
+    "meanings": {
+      "vi": [
+        "Sáng sủa",
+        "Ngày mai",
+        "Giải thích"
+      ],
+      "en": [
+        "bright",
+        "light",
+        "clear"
+      ]
+    },
+    "examples": [
+      "明るい",
+      "明日",
+      "説明",
+      "発明"
+    ]
+  },
+  {
+    "character": "暗",
+    "hanViet": "ÁM",
+    "jlpt": "N4",
+    "strokes": 13,
+    "radical": "日",
+    "onyomi": [
+      "アン"
+    ],
+    "kunyomi": [
+      "くら.い"
+    ],
+    "meanings": {
+      "vi": [
+        "Tối tăm",
+        "Ghi nhớ thuộc lòng"
+      ],
+      "en": [
+        "darkness",
+        "dark"
+      ]
+    },
+    "examples": [
+      "暗い",
+      "暗記",
+      "暗証番号"
+    ]
+  },
+  {
+    "character": "重",
+    "hanViet": "TRỌNG",
+    "jlpt": "N4",
+    "strokes": 9,
+    "radical": "里",
+    "onyomi": [
+      "ジュウ",
+      "チョウ"
+    ],
+    "kunyomi": [
+      "おも.い",
+      "かさ.ねる"
+    ],
+    "meanings": {
+      "vi": [
+        "Nặng",
+        "Quan trọng",
+        "Chồng chất"
+      ],
+      "en": [
+        "heavy",
+        "important"
+      ]
+    },
+    "examples": [
+      "重い",
+      "重要",
+      "体重"
+    ]
+  },
+  {
+    "character": "軽",
+    "hanViet": "KHINH",
+    "jlpt": "N4",
+    "strokes": 12,
+    "radical": "車",
+    "onyomi": [
+      "ケイ"
+    ],
+    "kunyomi": [
+      "かる.い"
+    ],
+    "meanings": {
+      "vi": [
+        "Nhẹ nhàng"
+      ],
+      "en": [
+        "lightly",
+        "trifling"
+      ]
+    },
+    "examples": [
+      "軽い",
+      "軽食",
+      "気軽"
+    ]
+  },
+  {
+    "character": "太",
+    "hanViet": "THÁI",
+    "jlpt": "N4",
+    "strokes": 4,
+    "radical": "大",
+    "onyomi": [
+      "タイ",
+      "タ"
+    ],
+    "kunyomi": [
+      "ふと.い",
+      "ふと.る"
+    ],
+    "meanings": {
+      "vi": [
+        "To béo",
+        "Dày",
+        "Mặt trời"
+      ],
+      "en": [
+        "plump",
+        "thick",
+        "big"
+      ]
+    },
+    "examples": [
+      "太い",
+      "太る",
+      "太陽"
+    ]
+  },
+  {
+    "character": "細",
+    "hanViet": "TẾ",
+    "jlpt": "N4",
+    "strokes": 11,
+    "radical": "糸",
+    "onyomi": [
+      "サイ"
+    ],
+    "kunyomi": [
+      "ほそ.い",
+      "こま.かい"
+    ],
+    "meanings": {
+      "vi": [
+        "Thon nhỏ",
+        "Chi tiết"
+      ],
+      "en": [
+        "dainty",
+        "get thin",
+        "detailed"
+      ]
+    },
+    "examples": [
+      "細い",
+      "細かい",
+      "詳細"
+    ]
+  },
+  {
+    "character": "短",
+    "hanViet": "ĐOẢN",
+    "jlpt": "N4",
+    "strokes": 12,
+    "radical": "矢",
+    "onyomi": [
+      "タン"
+    ],
+    "kunyomi": [
+      "みじか.い"
+    ],
+    "meanings": {
+      "vi": [
+        "Ngắn",
+        "Ngắn ngủi"
+      ],
+      "en": [
+        "short",
+        "brevity"
+      ]
+    },
+    "examples": [
+      "短い",
+      "短所",
+      "短期"
+    ]
+  },
+  {
+    "character": "低",
+    "hanViet": "ĐÊ",
+    "jlpt": "N4",
+    "strokes": 7,
+    "radical": "人",
+    "onyomi": [
+      "テイ"
+    ],
+    "kunyomi": [
+      "ひく.い",
+      "ひく.める"
+    ],
+    "meanings": {
+      "vi": [
+        "Thấp",
+        "Hạ thấp"
+      ],
+      "en": [
+        "lower",
+        "short",
+        "humble"
+      ]
+    },
+    "examples": [
+      "低い",
+      "最低",
+      "低下"
+    ]
+  },
+  {
+    "character": "弱",
+    "hanViet": "NHƯỢC",
+    "jlpt": "N4",
+    "strokes": 10,
+    "radical": "弓",
+    "onyomi": [
+      "ジャク"
+    ],
+    "kunyomi": [
+      "よわ.い"
+    ],
+    "meanings": {
+      "vi": [
+        "Yếu ớt",
+        "Nhược điểm"
+      ],
+      "en": [
+        "weak",
+        "frail"
+      ]
+    },
+    "examples": [
+      "弱い",
+      "弱点"
+    ]
+  },
+  {
+    "character": "悪",
+    "hanViet": "ÁC",
+    "jlpt": "N4",
+    "strokes": 11,
+    "radical": "心",
+    "onyomi": [
+      "アク",
+      "オ"
+    ],
+    "kunyomi": [
+      "わる.い"
+    ],
+    "meanings": {
+      "vi": [
+        "Xấu",
+        "Tồi tệ",
+        "Ác"
+      ],
+      "en": [
+        "bad",
+        "evil",
+        "wrong"
+      ]
+    },
+    "examples": [
+      "悪い",
+      "最悪",
+      "悪魔"
+    ]
+  },
+  {
+    "character": "正",
+    "hanViet": "CHÍNH",
+    "jlpt": "N4",
+    "strokes": 5,
+    "radical": "止",
+    "onyomi": [
+      "セイ",
+      "ショウ"
+    ],
+    "kunyomi": [
+      "ただ.しい",
+      "まさ"
+    ],
+    "meanings": {
+      "vi": [
+        "Đúng đắn",
+        "Chính xác",
+        "Năm mới"
+      ],
+      "en": [
+        "correct",
+        "justice",
+        "righteous"
+      ]
+    },
+    "examples": [
+      "正しい",
+      "お正月",
+      "正午"
+    ]
+  },
+  {
+    "character": "同",
+    "hanViet": "ĐỒNG",
+    "jlpt": "N4",
+    "strokes": 6,
+    "radical": "口",
+    "onyomi": [
+      "ドウ"
+    ],
+    "kunyomi": [
+      "おな.じ"
+    ],
+    "meanings": {
+      "vi": [
+        "Giống nhau",
+        "Cùng nhau"
+      ],
+      "en": [
+        "same",
+        "agree",
+        "equal"
+      ]
+    },
+    "examples": [
+      "同じ",
+      "同時",
+      "同僚"
+    ]
+  },
+  {
+    "character": "特",
+    "hanViet": "ĐẶC",
+    "jlpt": "N4",
+    "strokes": 10,
+    "radical": "牛",
+    "onyomi": [
+      "トク"
+    ],
+    "kunyomi": [],
+    "meanings": {
+      "vi": [
+        "Đặc biệt"
+      ],
+      "en": [
+        "special"
+      ]
+    },
+    "examples": [
+      "特別",
+      "特に",
+      "特急",
+      "特徴"
+    ]
+  },
+  {
+    "character": "便",
+    "hanViet": "TIỆN",
+    "jlpt": "N4",
+    "strokes": 9,
+    "radical": "人",
+    "onyomi": [
+      "ベン",
+      "ビン"
+    ],
+    "kunyomi": [
+      "たよ.り"
+    ],
+    "meanings": {
+      "vi": [
+        "Tiện lợi",
+        "Chuyến bay",
+        "Bưu phẩm"
+      ],
+      "en": [
+        "convenience",
+        "mail",
+        "flight"
+      ]
+    },
+    "examples": [
+      "便利",
+      "不便",
+      "郵便局",
+      "航空便"
+    ]
+  },
+  {
+    "character": "利",
+    "hanViet": "LỢI",
+    "jlpt": "N4",
+    "strokes": 7,
+    "radical": "刀",
+    "onyomi": [
+      "リ"
+    ],
+    "kunyomi": [
+      "き.く"
+    ],
+    "meanings": {
+      "vi": [
+        "Có ích",
+        "Lợi ích",
+        "Thuận lợi"
+      ],
+      "en": [
+        "profit",
+        "advantage",
+        "benefit"
+      ]
+    },
+    "examples": [
+      "便利",
+      "利用",
+      "利益"
+    ]
+  },
+  {
+    "character": "不",
+    "hanViet": "BẤT",
+    "jlpt": "N4",
+    "strokes": 4,
+    "radical": "一",
+    "onyomi": [
+      "フ",
+      "ブ"
+    ],
+    "kunyomi": [],
+    "meanings": {
+      "vi": [
+        "Không",
+        "Bất (tiền tố phủ định)"
+      ],
+      "en": [
+        "non-",
+        "negative",
+        "un-"
+      ]
+    },
+    "examples": [
+      "不便",
+      "不安",
+      "不思議",
+      "不足"
+    ]
+  },
+  {
+    "character": "有",
+    "hanViet": "HỮU",
+    "jlpt": "N4",
+    "strokes": 6,
+    "radical": "月",
+    "onyomi": [
+      "ユウ",
+      "ウ"
+    ],
+    "kunyomi": [
+      "あ.る"
+    ],
+    "meanings": {
+      "vi": [
+        "Có",
+        "Tồn tại",
+        "Nổi tiếng"
+      ],
+      "en": [
+        "possess",
+        "have",
+        "exist"
+      ]
+    },
+    "examples": [
+      "有名",
+      "有料",
+      "所有"
+    ]
+  },
+  {
+    "character": "無",
+    "hanViet": "VÔ",
+    "jlpt": "N4",
+    "strokes": 12,
+    "radical": "火",
+    "onyomi": [
+      "ム",
+      "ブ"
+    ],
+    "kunyomi": [
+      "な.い"
+    ],
+    "meanings": {
+      "vi": [
+        "Không có",
+        "Miễn phí"
+      ],
+      "en": [
+        "nothingness",
+        "none",
+        "free"
+      ]
+    },
+    "examples": [
+      "無理",
+      "無料",
+      "無事"
+    ]
+  },
+  {
+    "character": "元",
+    "hanViet": "NGUYÊN",
+    "jlpt": "N4",
+    "strokes": 4,
+    "radical": "儿",
+    "onyomi": [
+      "ゲン",
+      "ガン"
+    ],
+    "kunyomi": [
+      "もと"
+    ],
+    "meanings": {
+      "vi": [
+        "Khỏe mạnh",
+        "Nguồn gốc",
+        "Năm mới"
+      ],
+      "en": [
+        "beginning",
+        "former",
+        "healthy"
+      ]
+    },
+    "examples": [
+      "元気",
+      "元日",
+      "地元"
+    ]
+  },
+  {
+    "character": "活",
+    "hanViet": "HOẠT",
+    "jlpt": "N4",
+    "strokes": 9,
+    "radical": "水",
+    "onyomi": [
+      "カツ"
+    ],
+    "kunyomi": [
+      "い.きる"
+    ],
+    "meanings": {
+      "vi": [
+        "Sinh hoạt",
+        "Năng động",
+        "Cuộc sống"
+      ],
+      "en": [
+        "livelihood",
+        "resuscitation",
+        "active"
+      ]
+    },
+    "examples": [
+      "生活",
+      "活動",
+      "活用"
+    ]
+  },
+  {
+    "character": "意",
+    "hanViet": "Ý",
+    "jlpt": "N4",
+    "strokes": 13,
+    "radical": "心",
+    "onyomi": [
+      "イ"
+    ],
+    "kunyomi": [],
+    "meanings": {
+      "vi": [
+        "Ý nghĩa",
+        "Ý kiến",
+        "Chú ý"
+      ],
+      "en": [
+        "idea",
+        "mind",
+        "meaning"
+      ]
+    },
+    "examples": [
+      "意味",
+      "意見",
+      "注意",
+      "用意"
+    ]
+  },
+  {
+    "character": "注",
+    "hanViet": "CHÚ",
+    "jlpt": "N4",
+    "strokes": 8,
+    "radical": "水",
+    "onyomi": [
+      "チュウ"
+    ],
+    "kunyomi": [
+      "そそ.ぐ"
+    ],
+    "meanings": {
+      "vi": [
+        "Chú ý",
+        "Đặt hàng",
+        "Rót"
+      ],
+      "en": [
+        "pour",
+        "Concentrate",
+        "order"
+      ]
+    },
+    "examples": [
+      "注意",
+      "注文",
+      "注目"
+    ]
+  },
+  {
+    "character": "約",
+    "hanViet": "ƯỚC",
+    "jlpt": "N4",
+    "strokes": 9,
+    "radical": "糸",
+    "onyomi": [
+      "ヤク"
+    ],
+    "kunyomi": [],
+    "meanings": {
+      "vi": [
+        "Lời hứa",
+        "Cuộc hẹn",
+        "Khoảng chừng"
+      ],
+      "en": [
+        "promise",
+        "approximately"
+      ]
+    },
+    "examples": [
+      "約束",
+      "予約",
+      "節約"
+    ]
+  },
+  {
+    "character": "束",
+    "hanViet": "THÚC",
+    "jlpt": "N4",
+    "strokes": 7,
+    "radical": "木",
+    "onyomi": [
+      "ソク"
+    ],
+    "kunyomi": [
+      "たば"
+    ],
+    "meanings": {
+      "vi": [
+        "Bó",
+        "Ràng buộc",
+        "Cuộc hẹn"
+      ],
+      "en": [
+        "bundle",
+        "束",
+        "promise"
+      ]
+    },
+    "examples": [
+      "約束",
+      "花束",
+      "結束"
+    ]
+  },
+  {
+    "character": "予",
+    "hanViet": "DỰ",
+    "jlpt": "N4",
+    "strokes": 4,
+    "radical": "亅",
+    "onyomi": [
+      "ヨ"
+    ],
+    "kunyomi": [
+      "あらかじ.め"
+    ],
+    "meanings": {
+      "vi": [
+        "Dự định",
+        "Đặt trước",
+        "Dự báo"
+      ],
+      "en": [
+        "beforehand",
+        "previous"
+      ]
+    },
+    "examples": [
+      "予定",
+      "予約",
+      "天気予報",
+      "予習"
+    ]
+  },
+  {
+    "character": "定",
+    "hanViet": "ĐỊNH",
+    "jlpt": "N4",
+    "strokes": 8,
+    "radical": "宀",
+    "onyomi": [
+      "テイ",
+      "ジョウ"
+    ],
+    "kunyomi": [
+      "さだ.める",
+      "き.める"
+    ],
+    "meanings": {
+      "vi": [
+        "Quyết định",
+        "Dự định",
+        "Ổn định"
+      ],
+      "en": [
+        "determine",
+        "fix",
+        "establish"
+      ]
+    },
+    "examples": [
+      "予定",
+      "決定",
+      "定食",
+      "安定"
+    ]
+  },
+  {
+    "character": "準",
+    "hanViet": "CHUẨN",
+    "jlpt": "N4",
+    "strokes": 13,
+    "radical": "水",
+    "onyomi": [
+      "ジュン"
+    ],
+    "kunyomi": [],
+    "meanings": {
+      "vi": [
+        "Chuẩn bị",
+        "Tiêu chuẩn"
+      ],
+      "en": [
+        "semi-",
+        "correspond to",
+        "prepare"
+      ]
+    },
+    "examples": [
+      "準備",
+      "基準",
+      "水準"
+    ]
+  },
+  {
+    "character": "備",
+    "hanViet": "BỊ",
+    "jlpt": "N4",
+    "strokes": 12,
+    "radical": "人",
+    "onyomi": [
+      "ビ"
+    ],
+    "kunyomi": [
+      "そな.える",
+      "そな.わる"
+    ],
+    "meanings": {
+      "vi": [
+        "Chuẩn bị",
+        "Trang bị"
+      ],
+      "en": [
+        "equip",
+        "provision",
+        "preparation"
+      ]
+    },
+    "examples": [
+      "準備",
+      "設備",
+      "警備"
+    ]
+  },
+  {
+    "character": "必",
+    "hanViet": "TẤT",
+    "jlpt": "N4",
+    "strokes": 5,
+    "radical": "心",
+    "onyomi": [
+      "ヒツ"
+    ],
+    "kunyomi": [
+      "かなら.ず"
+    ],
+    "meanings": {
+      "vi": [
+        "Nhất định",
+        "Tất yếu"
+      ],
+      "en": [
+        "invariably",
+        "certain",
+        "inevitable"
+      ]
+    },
+    "examples": [
+      "必要",
+      "必ず",
+      "必死"
+    ]
+  },
+  {
+    "character": "要",
+    "hanViet": "YẾU",
+    "jlpt": "N4",
+    "strokes": 9,
+    "radical": "襾",
+    "onyomi": [
+      "ヨウ"
+    ],
+    "kunyomi": [
+      "い.る"
+    ],
+    "meanings": {
+      "vi": [
+        "Cần thiết",
+        "Trọng yếu"
+      ],
+      "en": [
+        "need",
+        "main point",
+        "essential"
+      ]
+    },
+    "examples": [
+      "必要",
+      "重要",
+      "要点"
+    ]
+  },
+  {
+    "character": "説",
+    "hanViet": "THUYẾT",
+    "jlpt": "N4",
+    "strokes": 14,
+    "radical": "言",
+    "onyomi": [
+      "セツ",
+      "ゼイ"
+    ],
+    "kunyomi": [
+      "と.く"
+    ],
+    "meanings": {
+      "vi": [
+        "Giải thích",
+        "Thuyết minh",
+        "Tiểu thuyết"
+      ],
+      "en": [
+        "explanation",
+        "theory",
+        "novel"
+      ]
+    },
+    "examples": [
+      "説明",
+      "小説",
+      "解説"
+    ]
+  },
+  {
+    "character": "練",
+    "hanViet": "LUYỆN",
+    "jlpt": "N4",
+    "strokes": 14,
+    "radical": "糸",
+    "onyomi": [
+      "レン"
+    ],
+    "kunyomi": [
+      "ね.る"
+    ],
+    "meanings": {
+      "vi": [
+        "Luyện tập",
+        "Rèn luyện"
+      ],
+      "en": [
+        "practice",
+        "gloss",
+        "train"
+      ]
+    },
+    "examples": [
+      "練習",
+      "訓練",
+      "洗練"
+    ]
+  },
+  {
+    "character": "経",
+    "hanViet": "KINH",
+    "jlpt": "N4",
+    "strokes": 11,
+    "radical": "糸",
+    "onyomi": [
+      "ケイ",
+      "キョウ"
+    ],
+    "kunyomi": [
+      "へ.る",
+      "た.つ"
+    ],
+    "meanings": {
+      "vi": [
+        "Trải qua",
+        "Kinh nghiệm",
+        "Kinh tế"
+      ],
+      "en": [
+        "pass through",
+        "experience",
+        "economy"
+      ]
+    },
+    "examples": [
+      "経験",
+      "経済",
+      "経営"
+    ]
+  },
+  {
+    "character": "化",
+    "hanViet": "HÓA",
+    "jlpt": "N4",
+    "strokes": 4,
+    "radical": "匕",
+    "onyomi": [
+      "カ",
+      "ケ"
+    ],
+    "kunyomi": [
+      "ば.ける"
+    ],
+    "meanings": {
+      "vi": [
+        "Biến đổi",
+        "Văn hóa",
+        "Hóa học"
+      ],
+      "en": [
+        "change",
+        "take the form of",
+        "-ization"
+      ]
+    },
+    "examples": [
+      "文化",
+      "化学",
+      "変化",
+      "化粧"
+    ]
+  },
+  {
+    "character": "暑",
+    "hanViet": "THỬ",
+    "jlpt": "N4",
+    "strokes": 12,
+    "radical": "日",
+    "onyomi": [
+      "ショ"
+    ],
+    "kunyomi": [
+      "あつ.い"
+    ],
+    "meanings": {
+      "vi": [
+        "Nóng (thời tiết)",
+        "Mùa hè nóng"
+      ],
+      "en": [
+        "sultry",
+        "hot",
+        "summer heat"
+      ]
+    },
+    "examples": [
+      "暑い",
+      "暑さ",
+      "猛暑"
+    ]
+  },
+  {
+    "character": "寒",
+    "hanViet": "HÀN",
+    "jlpt": "N4",
+    "strokes": 12,
+    "radical": "宀",
+    "onyomi": [
+      "カン"
+    ],
+    "kunyomi": [
+      "さむ.い"
+    ],
+    "meanings": {
+      "vi": [
+        "Lạnh (thời tiết)"
+      ],
+      "en": [
+        "cold",
+        "winter"
+      ]
+    },
+    "examples": [
+      "寒い",
+      "寒さ",
+      "寒気"
+    ]
+  },
+  {
+    "character": "暖",
+    "hanViet": "NOÃN",
+    "jlpt": "N4",
+    "strokes": 13,
+    "radical": "日",
+    "onyomi": [
+      "ダン"
+    ],
+    "kunyomi": [
+      "あたた.かい"
+    ],
+    "meanings": {
+      "vi": [
+        "Ấm áp (khí hậu)"
+      ],
+      "en": [
+        "warmth",
+        "warm"
+      ]
+    },
+    "examples": [
+      "暖かい",
+      "暖房",
+      "温暖"
+    ]
+  },
+  {
+    "character": "涼",
+    "hanViet": "LƯƠNG",
+    "jlpt": "N4",
+    "strokes": 11,
+    "radical": "水",
+    "onyomi": [
+      "リョウ"
+    ],
+    "kunyomi": [
+      "すず.しい"
+    ],
+    "meanings": {
+      "vi": [
+        "Mát mẻ"
+      ],
+      "en": [
+        "refreshing",
+        "cool"
+      ]
+    },
+    "examples": [
+      "涼しい",
+      "納涼"
+    ]
+  },
+  {
+    "character": "静",
+    "hanViet": "TĨNH",
+    "jlpt": "N4",
+    "strokes": 14,
+    "radical": "靑",
+    "onyomi": [
+      "セイ",
+      "ジョウ"
+    ],
+    "kunyomi": [
+      "しず.か",
+      "しず.まる"
+    ],
+    "meanings": {
+      "vi": [
+        "Yên tĩnh",
+        "Tĩnh lặng"
+      ],
+      "en": [
+        "quiet",
+        "calm"
+      ]
+    },
+    "examples": [
+      "静か",
+      "静まる",
+      "冷静"
+    ]
+  },
+  {
+    "character": "連",
+    "hanViet": "LIÊN",
+    "jlpt": "N4",
+    "strokes": 10,
+    "radical": "辵",
+    "onyomi": [
+      "レン"
+    ],
+    "kunyomi": [
+      "つ.れる",
+      "つら.なる"
+    ],
+    "meanings": {
+      "vi": [
+        "Dẫn theo",
+        "Liên lạc",
+        "Liên tiếp"
+      ],
+      "en": [
+        "take along",
+        "lead",
+        "connect"
+      ]
+    },
+    "examples": [
+      "連絡",
+      "連れて行く",
+      "連休"
+    ]
+  },
+  {
+    "character": "絡",
+    "hanViet": "LẠC",
+    "jlpt": "N4",
+    "strokes": 12,
+    "radical": "糸",
+    "onyomi": [
+      "ラク"
+    ],
+    "kunyomi": [
+      "から.む"
+    ],
+    "meanings": {
+      "vi": [
+        "Liên lạc",
+        "Kết nối"
+      ],
+      "en": [
+        "entwine",
+        "contact"
+      ]
+    },
+    "examples": [
+      "連絡",
+      "連絡先"
+    ]
+  },
+  {
+    "character": "相",
+    "hanViet": "TƯƠNG",
+    "jlpt": "N4",
+    "strokes": 9,
+    "radical": "目",
+    "onyomi": [
+      "ソウ",
+      "ショウ"
+    ],
+    "kunyomi": [
+      "あい"
+    ],
+    "meanings": {
+      "vi": [
+        "Lẫn nhau",
+        "Thảo luận",
+        "Đối phương"
+      ],
+      "en": [
+        "inter-",
+        "mutual",
+        "partner"
+      ]
+    },
+    "examples": [
+      "相談",
+      "相手",
+      "首相"
+    ]
+  },
+  {
+    "character": "談",
+    "hanViet": "ĐÀM",
+    "jlpt": "N4",
+    "strokes": 15,
+    "radical": "言",
+    "onyomi": [
+      "ダン"
+    ],
+    "kunyomi": [],
+    "meanings": {
+      "vi": [
+        "Trò chuyện",
+        "Trao đổi",
+        "Thảo luận"
+      ],
+      "en": [
+        "discuss",
+        "talk"
+      ]
+    },
+    "examples": [
+      "相談",
+      "冗談",
+      "会談"
+    ]
+  },
+  {
+    "character": "選",
+    "hanViet": "TUYỂN",
+    "jlpt": "N4",
+    "strokes": 15,
+    "radical": "辵",
+    "onyomi": [
+      "セン"
+    ],
+    "kunyomi": [
+      "えら.ぶ"
+    ],
+    "meanings": {
+      "vi": [
+        "Lựa chọn",
+        "Tuyển chọn"
+      ],
+      "en": [
+        "elect",
+        "select",
+        "choose"
+      ]
+    },
+    "examples": [
+      "選ぶ",
+      "選手",
+      "選挙"
+    ]
+  },
+  {
+    "character": "決",
+    "hanViet": "QUYẾT",
+    "jlpt": "N4",
+    "strokes": 7,
+    "radical": "水",
+    "onyomi": [
+      "ケツ"
+    ],
+    "kunyomi": [
+      "き.める",
+      "き.まる"
+    ],
+    "meanings": {
+      "vi": [
+        "Quyết định"
+      ],
+      "en": [
+        "decide",
+        "fix",
+        "agree upon"
+      ]
+    },
+    "examples": [
+      "決める",
+      "決まる",
+      "決定"
+    ]
+  },
+  {
+    "character": "変",
+    "hanViet": "BIẾN",
+    "jlpt": "N4",
+    "strokes": 9,
+    "radical": "言",
+    "onyomi": [
+      "ヘン"
+    ],
+    "kunyomi": [
+      "か.わる",
+      "か.える"
+    ],
+    "meanings": {
+      "vi": [
+        "Thay đổi",
+        "Kỳ lạ"
+      ],
+      "en": [
+        "unusual",
+        "change",
+        "strange"
+      ]
+    },
+    "examples": [
+      "変わる",
+      "変える",
+      "大変",
+      "変化"
+    ]
+  },
+  {
+    "character": "計",
+    "hanViet": "KẾ",
+    "jlpt": "N4",
+    "strokes": 9,
+    "radical": "言",
+    "onyomi": [
+      "ケイ"
+    ],
+    "kunyomi": [
+      "はか.る"
+    ],
+    "meanings": {
+      "vi": [
+        "Đo lường",
+        "Kế hoạch",
+        "Đồng hồ"
+      ],
+      "en": [
+        "plot",
+        "plan",
+        "scheme",
+        "measure"
+      ]
+    },
+    "examples": [
+      "時計",
+      "計画",
+      "合計",
+      "計算"
+    ]
+  },
+  {
+    "character": "信",
+    "hanViet": "TÍN",
+    "jlpt": "N4",
+    "strokes": 9,
+    "radical": "人",
+    "onyomi": [
+      "シン"
+    ],
+    "kunyomi": [],
+    "meanings": {
+      "vi": [
+        "Tin tưởng",
+        "Tín hiệu",
+        "Thư tín"
+      ],
+      "en": [
+        "faith",
+        "truth",
+        "trust",
+        "signal"
+      ]
+    },
+    "examples": [
+      "信号",
+      "信じる",
+      "自信",
+      "送信"
+    ]
+  },
+  {
+    "character": "号",
+    "hanViet": "HIỆU",
+    "jlpt": "N4",
+    "strokes": 5,
+    "radical": "口",
+    "onyomi": [
+      "ゴウ"
+    ],
+    "kunyomi": [],
+    "meanings": {
+      "vi": [
+        "Số hiệu",
+        "Tín hiệu",
+        "Con số"
+      ],
+      "en": [
+        "number",
+        "item",
+        "signal"
+      ]
+    },
+    "examples": [
+      "信号",
+      "番号",
+      "一号車"
+    ]
+  },
+  {
+    "character": "番",
+    "hanViet": "PHIÊN",
+    "jlpt": "N4",
+    "strokes": 12,
+    "radical": "田",
+    "onyomi": [
+      "バン"
+    ],
+    "kunyomi": [],
+    "meanings": {
+      "vi": [
+        "Thứ tự",
+        "Số",
+        "Lượt trực"
+      ],
+      "en": [
+        "turn",
+        "number in a series"
+      ]
+    },
+    "examples": [
+      "番号",
+      "一番",
+      "番組",
+      "交番"
+    ]
+  }
+]

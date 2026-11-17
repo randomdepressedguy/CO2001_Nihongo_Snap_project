@@ -3,6 +3,7 @@ import React, { createContext, useContext, useEffect, useRef, useState } from 'r
 import { defaultState, type State, type Word, type Card, makeCard, normalize, validateState } from '@/lib/study/core';
 import { importCollection } from '@/lib/study/collection';
 import { selectInitialState, type SyncMeta } from '@/lib/study/sync';
+import { initDictionaryDb } from '@/src/services/dictionaryDbService';
 
 export type PublicAccount = { id: string; name: string; email: string; createdAt: string };
 export type StudyStatus = { ai: boolean; cloud: boolean; user: PublicAccount | null; localKey?: string; legacyKey?: string | null };
@@ -86,6 +87,7 @@ export function StudyProvider({ children, initialStatus }: { children: React.Rea
   }
   useEffect(() => {
     let active = true;
+    void initDictionaryDb();
     (async () => {
       let st = initialStatus ?? emptyStatus;
       if (!initialStatus) { try { const response = await fetch('/api/status', { signal: AbortSignal.timeout(8000) }); if (response.ok) st = await response.json() as StudyStatus; } catch {} }

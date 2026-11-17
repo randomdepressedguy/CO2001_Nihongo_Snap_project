@@ -6627,3 +6627,313 @@ h1,h2,h3 {
     padding: 6px 4px;
   }
 }
+
+/* ==========================================================================
+   JLPT N5–N4 Unified Database, Hán Việt Badges, Kanji & Grammar Explorer
+   ========================================================================== */
+.dictionary-filter-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 28px;
+}
+.hanviet-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: #f5ebe1;
+  border: 1px solid #d7bfa6;
+  color: #7d4727;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+.jlpt-badge.jlpt-n5 {
+  background: #e6efe0;
+  color: #2f5b28;
+  border: 1px solid #bfd2b3;
+}
+.jlpt-badge.jlpt-n4 {
+  background: #eae8f6;
+  color: #42387a;
+  border: 1px solid #c6c1e6;
+}
+.pos-tag {
+  background: #f2f1e8;
+  color: #656b5e;
+}
+.search-latency-badge {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 8px;
+  padding: 1px 7px;
+  border-radius: 999px;
+  background: #e5efe0;
+  color: #365c2d;
+  font-weight: 600;
+  font-size: 10px;
+}
+.online-fallback-banner {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  background: #eef4ec;
+  border: 1px solid #bfd0b8;
+  color: #2f5229;
+  font-size: 12px;
+}
+.dict-result-block {
+  margin-bottom: 36px;
+}
+.kanji-dict-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 14px;
+  margin-top: 16px;
+}
+.kanji-dict-card {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #fffef9;
+  transition: border-color 0.15s, transform 0.15s;
+}
+.kanji-dict-card:hover {
+  border-color: #96a488;
+}
+.kanji-dict-card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  gap: 6px;
+  flex: 1;
+  min-width: 0;
+  padding: 0;
+  background: transparent;
+}
+.kanji-dict-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.kanji-dict-top > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+.kanji-dict-char {
+  font-size: 38px;
+  line-height: 1.1;
+  color: #24352c;
+}
+.kanji-hero-row {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  margin-bottom: 18px;
+}
+.kanji-big-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 96px;
+  height: 96px;
+  border: 1px solid #c9bfaa;
+  border-radius: 10px;
+  background: #fbf8ef;
+  font-size: 56px;
+  flex-shrink: 0;
+}
+.kanji-hero-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.kanji-example-chips {
+  gap: 8px;
+  margin-top: 10px;
+}
+.kanji-compound-chip {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 6px 11px;
+  border: 1px solid #c6ccb9;
+  border-radius: 6px;
+  background: #fffef9;
+  text-align: left;
+}
+.kanji-compound-chip:hover {
+  border-color: #6c845f;
+  background: #f2f6ec;
+}
+.kanji-breakdown-row {
+  gap: 8px;
+  margin-top: 8px;
+}
+.kanji-breakdown-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 10px;
+  border-radius: 6px;
+  background: #fffef9;
+  border: 1px solid #cfd5c3;
+  font-size: 12px;
+}
+.kanji-breakdown-pill > strong {
+  font-size: 18px;
+  color: #31493c;
+}
+
+/* Grammar Explorer & Detail Modal */
+.grammar-explorer-bar {
+  margin-bottom: 18px;
+}
+.grammar-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+.grammar-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 18px 20px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #fffef9;
+  gap: 12px;
+}
+.grammar-card:hover {
+  border-color: #93a384;
+}
+.grammar-card-main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  gap: 6px;
+  padding: 0;
+  background: transparent;
+  width: 100%;
+}
+.grammar-card-main > h3 {
+  font-size: 21px;
+  color: #213429;
+  margin: 0;
+}
+.grammar-card-meaning {
+  font-size: 14px;
+  color: #2f4236;
+  line-height: 1.5;
+}
+.grammar-card-formation {
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 5px;
+  background: #f1f2e8;
+  border-left: 2px solid #7f9471;
+  color: #3f5238;
+  width: 100%;
+}
+.grammar-card-example {
+  font-size: 12px;
+  color: var(--muted);
+  border-top: 1px dashed #dcdacf;
+  padding-top: 8px;
+  width: 100%;
+}
+.grammar-card-example > p {
+  margin: 0 0 2px;
+  color: #36473d;
+}
+.grammar-card-footer {
+  border-top: 1px solid var(--line);
+  padding-top: 10px;
+  width: 100%;
+  justify-content: flex-start;
+}
+.grammar-detail-modal {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.grammar-detail-title {
+  font-size: 28px;
+  margin: 6px 0 2px;
+}
+.grammar-detail-reading {
+  font-size: 14px;
+  color: var(--muted);
+  margin: 0;
+}
+.grammar-meaning-box {
+  padding: 14px 18px;
+  border-radius: 8px;
+  background: #f5f4ea;
+  border: 1px solid #dfdecb;
+}
+.grammar-meaning-box > h4 {
+  font-size: 17px;
+  margin: 4px 0;
+}
+.grammar-formation-box {
+  padding: 14px 18px;
+  border-radius: 8px;
+  background: #eef2e8;
+  border-left: 3px solid #5f7a52;
+}
+.grammar-formation-list {
+  margin: 8px 0 0;
+  padding-left: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+}
+.grammar-explanation-box > p {
+  font-size: 14px;
+  line-height: 1.8;
+  margin: 6px 0 10px;
+}
+.grammar-note-callout {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px 14px;
+  border-radius: 6px;
+  background: #fbf3e6;
+  border: 1px solid #e6cfa8;
+  color: #6e4820;
+  font-size: 13px;
+}
+.grammar-ex-ja {
+  font-size: 18px;
+  margin: 0 0 2px;
+}
+.grammar-ex-furigana {
+  display: block;
+  color: #5b6d52;
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+.grammar-ex-vi {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 2px 0;
+}

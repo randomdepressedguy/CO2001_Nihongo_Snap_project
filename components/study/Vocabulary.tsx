@@ -1,12 +1,26 @@
 'use client';
-import { useEffect, useRef, useState } from 'react';
-import { ArrowLeft, ArrowRight, ArrowUpRight, BookOpen, Check, ChevronLeft, ChevronRight, Download, Layers, MoreHorizontal, Pencil, PenTool, Plus, Search, Star, Trash2, Upload, Volume2, X } from 'lucide-react';
+import { useEffect, useMemo, useRef, useState } from 'react';
+import { ArrowLeft, ArrowRight, ArrowUpRight, BookOpen, Check, ChevronLeft, ChevronRight, Database, Download, Globe, Layers, MoreHorizontal, Pencil, PenTool, Plus, Search, Sparkles, Star, Trash2, Upload, Volume2, X } from 'lucide-react';
 import { WORDS } from '@/lib/study/data';
 import { type Card, type Word, makeCard, mergeWords, searchWords, validateWord } from '@/lib/study/core';
-import { dueCards, importCollection, sameWord, topicNames, removeDeck } from '@/lib/study/collection';
+import { dueCards, importCollection, sameWord, removeDeck } from '@/lib/study/collection';
+import {
+    type DictionaryCategory,
+    type GrammarEntry,
+    type JlptLevelFilter,
+    type KanjiEntry,
+    type VocabEntry,
+    getDatabaseStats,
+    initDictionaryDb,
+    kanjiEntryToStudyWord,
+    searchDictionary,
+    searchWithOnlineFallback,
+    vocabEntryToStudyWord
+} from '@/src/services/dictionaryDbService';
 import { useStudy, useStudyNow } from './context';
 import { Empty, Modal, PageHead, WordCard } from './shared';
 import { HandwritingCanvas } from './HandwritingCanvas';
+import { GrammarDetailCard, GrammarExplorer, KanjiDetailCard } from './GrammarExplorer';
 export { Review } from './FocusReview';
 const packs = [
     { title: ['Một ngày thường', 'Everyday essentials'], desc: ['Những từ gặp mỗi ngày, từ trang sách đến tách trà.', 'From a favorite book to a cup of tea.'], mark: '日', theme: 'sage', words: ['本', '水', 'お茶', '猫', '家', '学校', '友達', '今日', '食べる', '行く', '見る', '新しい'] },
@@ -221,16 +235,434 @@ export function Dictionary({ seed, detail }: {
     seed: string;
     detail: (w: Word) => void;
 }) {
-    const { s, t } = useStudy();
+    const { s, t, save } = useStudy();
     const [query, setQuery] = useState(seed);
-    const [tag, setTag] = useState('all');
+    const [category, setCategory] = useState<DictionaryCategory>('all');
+    const [jlpt, setJlpt] = useState<JlptLevelFilter>('ALL');
     const [page, setPage] = useState(0);
-    const words = searchWords(WORDS, query).filter(w => tag === 'all' || w.tag === tag);
-    const topics = [...new Set(WORDS.map(w => w.tag))];
-    return <><PageHead eyebrow="辞書 · A SMALL DICTIONARY" title={t('Từ điển tiếng Nhật', 'Japanese dictionary')} desc={t('Tra tiếng Nhật, kana, romaji hoặc nghĩa tiếng Việt.', 'Search Japanese, kana, romaji, Vietnamese or English.')}/>
-    <section className="dictionary-search"><div className="dictionary-stamp jp" lang="ja" aria-hidden="true">辞</div><div><SearchField value={query} onChange={value => { setQuery(value); setPage(0); }} label={t('Nhập từ, cách đọc hoặc nghĩa…', 'What word are you looking for?')}/><p>{t('Thử tìm:', 'Try:')} {['neko', 'お茶', 'học'].map(w => <button key={w} onClick={() => { setQuery(w); setPage(0); }}>{w}</button>)}<span className="dictionary-size">{WORDS.length} {t('từ nền tảng', 'starter entries')}</span></p></div></section>
-    <div className="dictionary-layout"><aside className="topic-list"><span className="eyebrow">{t('DẠO QUA CHỦ ĐỀ', 'BROWSE BY TOPIC')}</span><button className={tag === 'all' ? 'selected' : ''} aria-pressed={tag === 'all'} onClick={() => { setTag('all'); setPage(0); }}>{t('Tất cả từ', 'All entries')}<span>{WORDS.length}</span></button>{topics.map(topic => <button key={topic} className={tag === topic ? 'selected' : ''} aria-pressed={tag === topic} onClick={() => { setTag(topic); setPage(0); }}>{topicNames[topic] ? t(...topicNames[topic]) : topic}<span>{WORDS.filter(w => w.tag === topic).length}</span></button>)}<p className="hint">{t('Bộ từ điển nền tảng phục vụ học hằng ngày. Có thể tự thêm từ trong Sổ tay.', 'A curated starter dictionary for everyday learning. Add any word of your own in Notebook.')}</p></aside><div className="dictionary-results"><div className="results-heading"><h2>{query ? t(`Kết quả cho “${query}”`, `Results for “${query}”`) : tag === 'all' ? t('Những từ để bắt đầu', 'Words to start with') : topicNames[tag] ? t(...topicNames[tag]) : tag}</h2><span>{words.length} {t('từ', 'entries')}</span></div>{words.length ? <><div className="dictionary-entries">{words.slice(page * 15, (page + 1) * 15).map((w, i) => <article key={w.id} className="dictionary-entry"><span className="entry-number">{String(page * 15 + i + 1).padStart(2, '0')}</span><div className="entry-content"><div className="row wrap"><button className="entry-word jp" lang="ja" onClick={() => detail(w)}>{w.jp}</button><span className="entry-reading jp" lang="ja">{w.kana}</span>{s.settings.romaji && <span className="entry-romaji">{w.romaji}</span>}<span className="tag">{w.level}</span></div><strong>{t(w.vi, w.en)}</strong><p className="jp" lang="ja">{w.example}</p><small>{t(w.exampleVi, w.exampleEn)}</small></div><button className={`icon-btn bordered ${s.cards.some(c => sameWord(c, w)) ? 'saved' : ''}`} aria-label={t('Xem và lưu ', 'View and save ') + w.jp} onClick={() => detail(w)}>{s.cards.some(c => sameWord(c, w)) ? <Check size={18}/> : <Plus size={18}/>}</button></article>)}</div><Pagination page={page} total={words.length} size={15} change={setPage}/></> : <Empty title={t('Chưa có từ này trong từ điển nhỏ.', 'This word isn’t in our little dictionary.')} desc={t('Thử cách đọc khác, bỏ bộ lọc chủ đề, hoặc tự thêm từ vào Sổ tay.', 'Try another reading, remove the topic filter, or add your own word in Notebook.')}><button className="btn secondary" onClick={() => { setQuery(''); setTag('all'); setPage(0); }}>{t('Xem tất cả từ', 'Show all entries')}</button></Empty>}</div></div>
-  </>;
+    const [selectedKanji, setSelectedKanji] = useState<KanjiEntry | null>(null);
+    const [selectedGrammar, setSelectedGrammar] = useState<GrammarEntry | null>(null);
+    const [onlineLoading, setOnlineLoading] = useState(false);
+    const [onlineResults, setOnlineResults] = useState<{ vocab: VocabEntry[]; kanji: KanjiEntry[] } | null>(null);
+
+    useEffect(() => {
+        void initDictionaryDb();
+    }, []);
+
+    const stats = useMemo(() => getDatabaseStats(), []);
+
+    const searchReport = useMemo(() => {
+        return searchDictionary(query, { category, jlpt, limit: 2500 });
+    }, [query, category, jlpt]);
+
+    // Trigger hybrid online fallback when query has no local matches
+    useEffect(() => {
+        const trimmed = query.trim();
+        if (!trimmed || searchReport.results.length > 0) {
+            return;
+        }
+        let cancelled = false;
+        const timer = setTimeout(async () => {
+            if (!cancelled) setOnlineLoading(true);
+            try {
+                const fallback = await searchWithOnlineFallback(trimmed, { category, jlpt });
+                if (!cancelled) {
+                    if (fallback.vocab.length > 0 || fallback.kanji.length > 0) {
+                        setOnlineResults({ vocab: fallback.vocab, kanji: fallback.kanji });
+                    } else {
+                        setOnlineResults(null);
+                    }
+                }
+            } finally {
+                if (!cancelled) setOnlineLoading(false);
+            }
+        }, 250);
+        return () => {
+            cancelled = true;
+            clearTimeout(timer);
+        };
+    }, [query, category, jlpt, searchReport.results.length]);
+
+    const activeOnlineResults = query.trim() && searchReport.results.length === 0 ? onlineResults : null;
+    const vocabList = activeOnlineResults?.vocab.length ? activeOnlineResults.vocab : searchReport.vocab;
+    const kanjiList = activeOnlineResults?.kanji.length ? activeOnlineResults.kanji : searchReport.kanji;
+    const grammarList = searchReport.grammar;
+
+    const pageSize = 15;
+    const visibleVocab = vocabList.slice(page * pageSize, (page + 1) * pageSize);
+    const visibleKanji = kanjiList.slice(page * 24, (page + 1) * 24);
+
+    const categoryTabs: Array<[DictionaryCategory, string, string, number]> = [
+        ['all', 'Tất cả', 'All', vocabList.length + kanjiList.length + grammarList.length],
+        ['vocab', 'Từ vựng', 'Vocabulary', vocabList.length],
+        ['kanji', 'Kanji (Hán Việt)', 'Kanji', kanjiList.length],
+        ['grammar', 'Ngữ pháp', 'Grammar', grammarList.length]
+    ];
+
+    return <>
+        <PageHead
+            eyebrow="辞書 · JLPT N5–N4 UNIFIED DICTIONARY"
+            title={t('Từ điển & Ngữ pháp JLPT N5–N4', 'JLPT N5–N4 Dictionary & Grammar')}
+            desc={t(
+                'Tra cứu tức thì Từ vựng, Kanji (Âm Hán Việt) và Ngữ pháp bằng chữ Nhật, Kana, Romaji hoặc nghĩa tiếng Việt.',
+                'Instant lookup across Vocabulary, Kanji (Sino-Vietnamese) and Grammar by Kanji, Kana, Romaji, or meaning.'
+            )}
+        />
+
+        <section className="dictionary-search">
+            <div className="dictionary-stamp jp" lang="ja" aria-hidden="true">辞</div>
+            <div>
+                <SearchField
+                    value={query}
+                    onChange={value => { setQuery(value); setOnlineResults(null); setOnlineLoading(false); setPage(0); }}
+                    label={t(
+                        'Tra Kanji (約束), Kana (やくそく), Romaji (yakusoku), Hán Việt (ước thúc), Ngữ pháp (ようになる)…',
+                        'Search Kanji (約束), Kana (やくそく), Romaji (yakusoku), Hán Việt, or Grammar (ようになる)…'
+                    )}
+                />
+                <p className="dictionary-quick-try">
+                    {t('Thử tìm:', 'Try:')}{' '}
+                    {['約束', 'やくそく', 'yakusoku', 'ước thúc', 'ようになる', '学'].map(w => (
+                        <button key={w} type="button" onClick={() => { setQuery(w); setOnlineResults(null); setPage(0); }}>
+                            {w}
+                        </button>
+                    ))}
+                    <span className="dictionary-size">
+                        <Database size={13} />{' '}
+                        {t(
+                            `${stats.vocabTotal} từ · ${stats.kanjiTotal} Kanji · ${stats.grammarTotal} ngữ pháp`,
+                            `${stats.vocabTotal} words · ${stats.kanjiTotal} Kanji · ${stats.grammarTotal} grammar`
+                        )}
+                        {query.trim() && (
+                            <span className="search-latency-badge">
+                                ⚡ {searchReport.elapsedMs.toFixed(1)}ms
+                            </span>
+                        )}
+                    </span>
+                </p>
+            </div>
+        </section>
+
+        <div className="dictionary-filter-bar">
+            <div className="filter-tabs" role="group" aria-label={t('Danh mục tra cứu', 'Search category')}>
+                {categoryTabs.map(([id, vi, en, count]) => (
+                    <button
+                        key={id}
+                        type="button"
+                        aria-pressed={category === id}
+                        onClick={() => { setCategory(id); setPage(0); }}
+                    >
+                        {t(vi, en)}
+                        <span>{count}</span>
+                    </button>
+                ))}
+            </div>
+
+            <div className="filter-tabs jlpt-level-pills" role="group" aria-label={t('Cấp độ JLPT', 'JLPT Level')}>
+                {(['ALL', 'N5', 'N4'] as const).map(lvl => (
+                    <button
+                        key={lvl}
+                        type="button"
+                        aria-pressed={jlpt === lvl}
+                        onClick={() => { setJlpt(lvl); setPage(0); }}
+                    >
+                        {lvl === 'ALL' ? t('Tất cả (All)', 'All Levels') : lvl}
+                    </button>
+                ))}
+            </div>
+        </div>
+
+        <div className="dictionary-layout">
+            <aside className="topic-list">
+                <span className="eyebrow">{t('THỐNG KÊ CƠ SỞ DỮ LIỆU', 'DATABASE OVERVIEW')}</span>
+                <button
+                    type="button"
+                    className={category === 'all' && jlpt === 'ALL' ? 'selected' : ''}
+                    onClick={() => { setCategory('all'); setJlpt('ALL'); setPage(0); }}
+                >
+                    {t('Tất cả mục N5–N4', 'All N5–N4 entries')}
+                    <span>{stats.vocabTotal + stats.kanjiTotal + stats.grammarTotal}</span>
+                </button>
+                <button
+                    type="button"
+                    className={category === 'vocab' && jlpt === 'N5' ? 'selected' : ''}
+                    onClick={() => { setCategory('vocab'); setJlpt('N5'); setPage(0); }}
+                >
+                    {t('Từ vựng JLPT N5', 'JLPT N5 Vocabulary')}
+                    <span>{stats.vocabN5}</span>
+                </button>
+                <button
+                    type="button"
+                    className={category === 'vocab' && jlpt === 'N4' ? 'selected' : ''}
+                    onClick={() => { setCategory('vocab'); setJlpt('N4'); setPage(0); }}
+                >
+                    {t('Từ vựng JLPT N4', 'JLPT N4 Vocabulary')}
+                    <span>{stats.vocabN4}</span>
+                </button>
+                <button
+                    type="button"
+                    className={category === 'kanji' && jlpt === 'N5' ? 'selected' : ''}
+                    onClick={() => { setCategory('kanji'); setJlpt('N5'); setPage(0); }}
+                >
+                    {t('Kanji N5 (Hán Việt)', 'JLPT N5 Kanji')}
+                    <span>{stats.kanjiN5}</span>
+                </button>
+                <button
+                    type="button"
+                    className={category === 'kanji' && jlpt === 'N4' ? 'selected' : ''}
+                    onClick={() => { setCategory('kanji'); setJlpt('N4'); setPage(0); }}
+                >
+                    {t('Kanji N4 (Hán Việt)', 'JLPT N4 Kanji')}
+                    <span>{stats.kanjiN4}</span>
+                </button>
+                <button
+                    type="button"
+                    className={category === 'grammar' && jlpt === 'N5' ? 'selected' : ''}
+                    onClick={() => { setCategory('grammar'); setJlpt('N5'); setPage(0); }}
+                >
+                    {t('Ngữ pháp JLPT N5', 'JLPT N5 Grammar')}
+                    <span>{stats.grammarN5}</span>
+                </button>
+                <button
+                    type="button"
+                    className={category === 'grammar' && jlpt === 'N4' ? 'selected' : ''}
+                    onClick={() => { setCategory('grammar'); setJlpt('N4'); setPage(0); }}
+                >
+                    {t('Ngữ pháp JLPT N4', 'JLPT N4 Grammar')}
+                    <span>{stats.grammarN4}</span>
+                </button>
+                <p className="hint">
+                    {t(
+                        'Đã đồng bộ IndexedDB (nihongo_snap_db). Hỗ trợ tìm mờ Romaji, Hán Việt không dấu và tự động tra cứu Online cho từ N3–N1.',
+                        'Synced with local IndexedDB (nihongo_snap_db). Supports Romaji, accent-free Hán Việt, and online fallback for N3–N1.'
+                    )}
+                </p>
+            </aside>
+
+            <div className="dictionary-results">
+                {activeOnlineResults && (
+                    <div className="online-fallback-banner">
+                        <Globe size={16} />
+                        <span>
+                            {t(
+                                'Đã tìm thấy từ nâng cao (N3–N1) qua tra cứu trực tuyến và lưu đệm vào IndexedDB.',
+                                'Found advanced (N3–N1) entry via online fallback and cached in IndexedDB.'
+                            )}
+                        </span>
+                    </div>
+                )}
+
+                {/* GRAMMAR SECTION (when category === 'grammar' or 'all' with matching grammar) */}
+                {(category === 'grammar' || (category === 'all' && grammarList.length > 0 && query.trim() !== '')) && (
+                    <section className="dict-result-block">
+                        <div className="results-heading">
+                            <h2>
+                                <Sparkles size={18} />{' '}
+                                {query
+                                    ? t(`Cấu trúc ngữ pháp cho “${query}”`, `Grammar structures for “${query}”`)
+                                    : t('Ngữ pháp JLPT N5–N4', 'JLPT N5–N4 Grammar Structures')}
+                            </h2>
+                            <span>{grammarList.length} {t('cấu trúc', 'structures')}</span>
+                        </div>
+                        <GrammarExplorer
+                            items={category === 'all' ? grammarList.slice(0, 6) : grammarList}
+                            jlptFilter={jlpt}
+                            onSelectGrammar={setSelectedGrammar}
+                        />
+                        {category === 'all' && grammarList.length > 6 && (
+                            <button
+                                type="button"
+                                className="text-btn"
+                                onClick={() => { setCategory('grammar'); setPage(0); }}
+                            >
+                                {t(`Xem tất cả ${grammarList.length} cấu trúc ngữ pháp`, `View all ${grammarList.length} grammar points`)}
+                                <ArrowRight size={16} />
+                            </button>
+                        )}
+                    </section>
+                )}
+
+                {/* KANJI SECTION (when category === 'kanji' or 'all' with matching kanji) */}
+                {(category === 'kanji' || (category === 'all' && kanjiList.length > 0 && query.trim() !== '')) && (
+                    <section className="dict-result-block">
+                        <div className="results-heading">
+                            <h2>
+                                {query
+                                    ? t(`Chữ Kanji & Âm Hán Việt cho “${query}”`, `Kanji matches for “${query}”`)
+                                    : t('Bảng chữ Hán (Kanji) N5–N4', 'JLPT N5–N4 Kanji Characters')}
+                            </h2>
+                            <span>{kanjiList.length} {t('chữ Kanji', 'Kanji')}</span>
+                        </div>
+                        <div className="kanji-dict-grid">
+                            {(category === 'all' ? kanjiList.slice(0, 8) : visibleKanji).map(k => {
+                                const studyW = kanjiEntryToStudyWord(k);
+                                const saved = s.cards.some(c => sameWord(c, studyW));
+                                return (
+                                    <article key={k.character} className="kanji-dict-card">
+                                        <button
+                                            type="button"
+                                            className="kanji-dict-card-body"
+                                            onClick={() => setSelectedKanji(k)}
+                                        >
+                                            <div className="kanji-dict-top">
+                                                <span className="jp kanji-dict-char" lang="ja">{k.character}</span>
+                                                <div>
+                                                    <span className="hanviet-badge">{k.hanViet}</span>
+                                                    <span className={`tag jlpt-badge jlpt-${k.jlpt.toLowerCase()}`}>{k.jlpt}</span>
+                                                </div>
+                                            </div>
+                                            <strong>{t(k.meanings.vi.join(', '), k.meanings.en.join(', '))}</strong>
+                                            <small className="jp muted" lang="ja">
+                                                {[...k.onyomi.slice(0, 2), ...k.kunyomi.slice(0, 2)].join(' · ')}
+                                            </small>
+                                            <small className="muted">
+                                                {k.strokes} {t('nét', 'strokes')} · {k.examples.slice(0, 3).join(' ')}
+                                            </small>
+                                        </button>
+                                        <button
+                                            type="button"
+                                            className={`icon-btn bordered ${saved ? 'saved' : ''}`}
+                                            aria-label={t('Lưu Kanji ', 'Save Kanji ') + k.character}
+                                            onClick={() => save(studyW, s.decks[0])}
+                                        >
+                                            {saved ? <Check size={16} /> : <Plus size={16} />}
+                                        </button>
+                                    </article>
+                                );
+                            })}
+                        </div>
+                        {category === 'kanji' && kanjiList.length > 24 && (
+                            <Pagination page={page} total={kanjiList.length} size={24} change={setPage} />
+                        )}
+                    </section>
+                )}
+
+                {/* VOCABULARY SECTION */}
+                {(category === 'vocab' || category === 'all') && (
+                    <section className="dict-result-block">
+                        <div className="results-heading">
+                            <h2>
+                                {query
+                                    ? t(`Từ vựng cho “${query}”`, `Vocabulary for “${query}”`)
+                                    : jlpt === 'ALL'
+                                        ? t('Kho từ vựng JLPT N5–N4', 'JLPT N5–N4 Vocabulary')
+                                        : t(`Từ vựng trình độ ${jlpt}`, `JLPT ${jlpt} Vocabulary`)}
+                            </h2>
+                            <span>{vocabList.length} {t('từ', 'entries')}</span>
+                        </div>
+
+                        {vocabList.length > 0 ? (
+                            <>
+                                <div className="dictionary-entries">
+                                    {visibleVocab.map((v, i) => {
+                                        const w = vocabEntryToStudyWord(v);
+                                        const isSaved = s.cards.some(c => sameWord(c, w));
+                                        const ex = v.examples[0];
+                                        return (
+                                            <article key={v.id} className="dictionary-entry">
+                                                <span className="entry-number">
+                                                    {String(page * pageSize + i + 1).padStart(2, '0')}
+                                                </span>
+                                                <div className="entry-content">
+                                                    <div className="row wrap">
+                                                        <button
+                                                            type="button"
+                                                            className="entry-word jp"
+                                                            lang="ja"
+                                                            onClick={() => detail(w)}
+                                                        >
+                                                            {v.word}
+                                                        </button>
+                                                        <span className="entry-reading jp" lang="ja">
+                                                            {v.reading}
+                                                        </span>
+                                                        {s.settings.romaji && (
+                                                            <span className="entry-romaji">{v.romaji}</span>
+                                                        )}
+                                                        {v.hanViet && (
+                                                            <span className="hanviet-badge" title={t('Âm Hán Việt', 'Sino-Vietnamese')}>
+                                                                {v.hanViet}
+                                                            </span>
+                                                        )}
+                                                        <span className={`tag jlpt-badge jlpt-${v.jlpt.toLowerCase()}`}>
+                                                            {v.jlpt}
+                                                        </span>
+                                                        {v.pos[0] && (
+                                                            <span className="tag pos-tag">{v.pos[0]}</span>
+                                                        )}
+                                                    </div>
+                                                    <strong>
+                                                        {t(
+                                                            v.meanings.vi.join('; '),
+                                                            v.meanings.en.join('; ')
+                                                        )}
+                                                    </strong>
+                                                    {ex && (
+                                                        <>
+                                                            <p className="jp" lang="ja">
+                                                                {ex.ja}
+                                                            </p>
+                                                            <small>{t(ex.vi, ex.en)}</small>
+                                                        </>
+                                                    )}
+                                                </div>
+                                                <button
+                                                    type="button"
+                                                    className={`icon-btn bordered ${isSaved ? 'saved' : ''}`}
+                                                    aria-label={t('Xem và lưu ', 'View and save ') + v.word}
+                                                    onClick={() => detail(w)}
+                                                >
+                                                    {isSaved ? <Check size={18} /> : <Plus size={18} />}
+                                                </button>
+                                            </article>
+                                        );
+                                    })}
+                                </div>
+                                <Pagination
+                                    page={page}
+                                    total={vocabList.length}
+                                    size={pageSize}
+                                    change={setPage}
+                                />
+                            </>
+                        ) : onlineLoading ? (
+                            <Empty
+                                title={t('Đang tra cứu mở rộng N3–N1 trực tuyến…', 'Searching N3–N1 online fallback…')}
+                                desc={t('Đang kết nối KanjiAPI / Jisho để tìm từ ngoài phạm vi N5–N4.', 'Querying KanjiAPI / Jisho for words beyond local N5–N4 database.')}
+                            />
+                        ) : (
+                            <Empty
+                                title={t('Không tìm thấy mục phù hợp.', 'No matching entries found.')}
+                                desc={t('Thử tìm bằng Kanji, Hiragana, Romaji, Âm Hán Việt hoặc chuyển sang tab Tất cả.', 'Try searching by Kanji, Hiragana, Romaji, Sino-Vietnamese, or switch to All.')}
+                            >
+                                <button
+                                    type="button"
+                                    className="btn secondary"
+                                    onClick={() => { setQuery(''); setCategory('all'); setJlpt('ALL'); setPage(0); }}
+                                >
+                                    {t('Xem toàn bộ cơ sở dữ liệu', 'Show all entries')}
+                                </button>
+                            </Empty>
+                        )}
+                    </section>
+                )}
+            </div>
+        </div>
+
+        {selectedKanji && (
+            <KanjiDetailCard
+                kanji={selectedKanji}
+                close={() => setSelectedKanji(null)}
+                onSelectWord={detail}
+            />
+        )}
+        {selectedGrammar && (
+            <GrammarDetailCard
+                grammar={selectedGrammar}
+                close={() => setSelectedGrammar(null)}
+            />
+        )}
+    </>;
 }
 function Pagination({ page, total, size, change }: {
     page: number;
