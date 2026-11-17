@@ -1,12 +1,13 @@
 'use client';
 import { useEffect, useRef, useState } from 'react';
-import { ArrowLeft, ArrowRight, ArrowUpRight, BookOpen, Check, ChevronLeft, ChevronRight, Download, Layers, MoreHorizontal, Pencil, PenTool, Plus, Search, Star, Trash2, Upload, Volume2, X } from 'lucide-react';
+import { ArrowLeft, ArrowRight, ArrowUpRight, BookOpen, Camera, Check, ChevronLeft, ChevronRight, Download, Layers, MoreHorizontal, Pencil, PenTool, Plus, Search, Star, Trash2, Upload, Volume2, X } from 'lucide-react';
 import { WORDS } from '@/lib/study/data';
 import { type Card, type Word, makeCard, mergeWords, searchWords, validateWord } from '@/lib/study/core';
 import { dueCards, importCollection, sameWord, topicNames, removeDeck } from '@/lib/study/collection';
 import { useStudy, useStudyNow } from './context';
 import { Empty, Modal, PageHead, WordCard } from './shared';
 import { HandwritingCanvas } from './HandwritingCanvas';
+import { SnapOcrModal } from './SnapOcrModal';
 export { Review } from './FocusReview';
 const packs = [
     { title: ['Một ngày thường', 'Everyday essentials'], desc: ['Những từ gặp mỗi ngày, từ trang sách đến tách trà.', 'From a favorite book to a cup of tea.'], mark: '日', theme: 'sage', words: ['本', '水', 'お茶', '猫', '家', '学校', '友達', '今日', '食べる', '行く', '見る', '新しい'] },
@@ -60,6 +61,7 @@ export function SearchField({ value, onChange, label }: {
 }) {
     const { t } = useStudy();
     const [drawOpen, setDrawOpen] = useState(false);
+    const [snapOpen, setSnapOpen] = useState(false);
     const wrapRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
@@ -83,46 +85,67 @@ export function SearchField({ value, onChange, label }: {
     }, [drawOpen]);
 
     return (
-        <div ref={wrapRef} className={`search-field ${drawOpen ? 'handwriting-open' : ''}`}>
-            <Search size={19} />
-            <input
-                value={value}
-                onChange={e => onChange(e.target.value)}
-                placeholder={label}
-                aria-label={label}
-            />
-            {value && (
+        <>
+            <div ref={wrapRef} className={`search-field ${drawOpen ? 'handwriting-open' : ''}`}>
+                <Search size={19} />
+                <input
+                    value={value}
+                    onChange={e => onChange(e.target.value)}
+                    placeholder={label}
+                    aria-label={label}
+                />
+                {value && (
+                    <button
+                        type="button"
+                        className="icon-btn search-clear-btn"
+                        onClick={() => onChange('')}
+                        aria-label={t('Xóa tìm kiếm', 'Clear search')}
+                        title={t('Xóa tìm kiếm', 'Clear search')}
+                    >
+                        <X size={17} />
+                    </button>
+                )}
                 <button
                     type="button"
-                    className="icon-btn search-clear-btn"
-                    onClick={() => onChange('')}
-                    aria-label={t('Xóa tìm kiếm', 'Clear search')}
-                    title={t('Xóa tìm kiếm', 'Clear search')}
+                    className={`icon-btn handwriting-trigger-btn snap-trigger-btn ${snapOpen ? 'active' : ''}`}
+                    onClick={() => {
+                        setDrawOpen(false);
+                        setSnapOpen(true);
+                    }}
+                    aria-label={t('Quét ảnh OCR chữ Nhật (Snap / OCR)', 'Snap / OCR Japanese text lookup')}
+                    title={t('Chụp hoặc tải ảnh để quét chữ Nhật (Snap / OCR)', 'Snap or upload image for Japanese OCR')}
                 >
-                    <X size={17} />
+                    <Camera size={16} />
+                    <span className="handwriting-trigger-label">OCR</span>
                 </button>
-            )}
-            <button
-                type="button"
-                className={`icon-btn handwriting-trigger-btn ${drawOpen ? 'active' : ''}`}
-                onClick={() => setDrawOpen(open => !open)}
-                aria-label={t('Viết tay chữ Nhật (Kanji/Kana)', 'Handwriting search (Kanji/Kana)')}
-                aria-expanded={drawOpen}
-                title={t('Vẽ chữ Kanji / Kana để tra cứu', 'Draw Kanji / Kana to search')}
-            >
-                <PenTool size={16} />
-                <span className="handwriting-trigger-label jp" lang="ja" aria-hidden="true">
-                    手書
-                </span>
-            </button>
-            {drawOpen && (
-                <HandwritingCanvas
-                    value={value}
-                    onChange={onChange}
-                    onClose={() => setDrawOpen(false)}
+                <button
+                    type="button"
+                    className={`icon-btn handwriting-trigger-btn ${drawOpen ? 'active' : ''}`}
+                    onClick={() => setDrawOpen(open => !open)}
+                    aria-label={t('Viết tay chữ Nhật (Kanji/Kana)', 'Handwriting search (Kanji/Kana)')}
+                    aria-expanded={drawOpen}
+                    title={t('Vẽ chữ Kanji / Kana để tra cứu', 'Draw Kanji / Kana to search')}
+                >
+                    <PenTool size={16} />
+                    <span className="handwriting-trigger-label jp" lang="ja" aria-hidden="true">
+                        手書
+                    </span>
+                </button>
+                {drawOpen && (
+                    <HandwritingCanvas
+                        value={value}
+                        onChange={onChange}
+                        onClose={() => setDrawOpen(false)}
+                    />
+                )}
+            </div>
+            {snapOpen && (
+                <SnapOcrModal
+                    onClose={() => setSnapOpen(false)}
+                    onSelectWord={word => onChange(word)}
                 />
             )}
-        </div>
+        </>
     );
 }
 export function CardEditor({ card, initial, close }: {
