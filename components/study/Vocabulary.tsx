@@ -4,10 +4,62 @@ import { ArrowLeft, ArrowRight, ArrowUpRight, BookOpen, Check, ChevronLeft, Chev
 import { WORDS } from '@/lib/study/data';
 import { type Card, type Word, makeCard, mergeWords, searchWords, validateWord } from '@/lib/study/core';
 import { dueCards, importCollection, sameWord, topicNames, removeDeck } from '@/lib/study/collection';
+import {
+    extractKanjiCharacters,
+    getKanjiRadicals,
+    getKanjiSummary,
+    getLocalKanjiMetadata,
+} from '@/src/services/kanjiService';
 import { useStudy, useStudyNow } from './context';
-import { Empty, Modal, PageHead, WordCard } from './shared';
+import { Empty, Modal, PageHead, WordCard, WordDetail } from './shared';
 import { HandwritingCanvas } from './HandwritingCanvas';
+import { RadicalSearchModal } from './RadicalSearchModal';
 export { Review } from './FocusReview';
+
+export function buildKanjiWordEntry(kanji: string): Word {
+    const exactWord = WORDS.find(w => w.jp === kanji);
+    if (exactWord) return exactWord;
+    const localMeta = getLocalKanjiMetadata(kanji);
+    const summary = getKanjiSummary(kanji);
+    const radicals = getKanjiRadicals(kanji);
+    const reading =
+        localMeta?.kun_readings[0]?.replace(/\./g, '') ||
+        localMeta?.on_readings[0] ||
+        kanji;
+    const compoundWord = WORDS.find(w => w.jp.includes(kanji));
+    const radicalDescVi =
+        radicals.length > 0
+            ? `Bộ thủ: ${radicals.map(r => `${r.radical} (${r.nameVi} - ${r.strokes} nét)`).join(' + ')}.`
+            : '';
+    const radicalDescEn =
+        radicals.length > 0
+            ? `Radicals: ${radicals.map(r => `${r.radical} (${r.meaning})`).join(' + ')}.`
+            : '';
+
+    return {
+        id: `kanji-${kanji}`,
+        jp: kanji,
+        kana: reading,
+        romaji: localMeta?.hanViet.toLowerCase() || '',
+        vi: `${summary.hanViet} — ${summary.meaningVi}`,
+        en: localMeta?.meanings.join('; ') || summary.meaningEn || kanji,
+        tag: 'study',
+        level: summary.jlpt || 'N5',
+        example:
+            compoundWord?.example ||
+            (localMeta?.compounds?.length
+                ? `熟語: ${localMeta.compounds.join(' ・ ')}`
+                : `${kanji}（${reading}）`),
+        exampleVi:
+            compoundWord?.exampleVi ||
+            radicalDescVi ||
+            `Chữ Hán ${kanji} (${summary.hanViet}) gồm ${summary.strokes} nét.`,
+        exampleEn:
+            compoundWord?.exampleEn ||
+            radicalDescEn ||
+            `Kanji ${kanji} (${summary.strokes} strokes).`,
+    };
+}
 const packs = [
     { title: ['Một ngày thường', 'Everyday essentials'], desc: ['Những từ gặp mỗi ngày, từ trang sách đến tách trà.', 'From a favorite book to a cup of tea.'], mark: '日', theme: 'sage', words: ['本', '水', 'お茶', '猫', '家', '学校', '友達', '今日', '食べる', '行く', '見る', '新しい'] },
     { title: ['Một chút ngon lành', 'At the table'], desc: ['Từ vựng về món ăn và đồ uống thông dụng.', 'Order something good. Talk about what you love.'], mark: '食', theme: 'peach', words: ['ご飯', 'パン', '卵', '牛乳', 'コーヒー', '肉', '野菜', '果物', '魚', 'りんご', 'お茶', '水'] },
@@ -53,25 +105,35 @@ export function Decks({ detail, go }: {
     {editDeck !== null && <DeckEditor deck={editDeck || undefined} close={() => setEditDeck(null)}/>}
   </>;
 }
-export function SearchField({ value, onChange, label }: {
+export function SearchField({
+    value,
+    onChange,
+    label,
+    onSelectKanji,
+}: {
     value: string;
     onChange: (v: string) => void;
     label: string;
+    onSelectKanji?: (kanji: string) => void;
 }) {
     const { t } = useStudy();
     const [drawOpen, setDrawOpen] = useState(false);
+    const [radicalOpen, setRadicalOpen] = useState(false);
+    const [fallbackKanjiWord, setFallbackKanjiWord] = useState<Word | null>(null);
     const wrapRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
-        if (!drawOpen) return;
+        if (!drawOpen && !radicalOpen) return;
         const onPointerDown = (e: MouseEvent) => {
             if (wrapRef.current && !wrapRef.current.contains(e.target as Node)) {
                 setDrawOpen(false);
+                setRadicalOpen(false);
             }
         };
         const onKeyDown = (e: KeyboardEvent) => {
             if (e.key === 'Escape') {
                 setDrawOpen(false);
+                setRadicalOpen(false);
             }
         };
         document.addEventListener('mousedown', onPointerDown);
@@ -80,49 +142,98 @@ export function SearchField({ value, onChange, label }: {
             document.removeEventListener('mousedown', onPointerDown);
             document.removeEventListener('keydown', onKeyDown);
         };
-    }, [drawOpen]);
+    }, [drawOpen, radicalOpen]);
+
+    const handleRadicalKanjiSelect = (kanji: string) => {
+        onChange(kanji);
+        setRadicalOpen(false);
+        if (onSelectKanji) {
+            onSelectKanji(kanji);
+        } else {
+            setFallbackKanjiWord(buildKanjiWordEntry(kanji));
+        }
+    };
 
     return (
-        <div ref={wrapRef} className={`search-field ${drawOpen ? 'handwriting-open' : ''}`}>
-            <Search size={19} />
-            <input
-                value={value}
-                onChange={e => onChange(e.target.value)}
-                placeholder={label}
-                aria-label={label}
-            />
-            {value && (
+        <>
+            <div
+                ref={wrapRef}
+                className={`search-field ${drawOpen || radicalOpen ? 'handwriting-open' : ''}`}
+            >
+                <Search size={19} />
+                <input
+                    value={value}
+                    onChange={e => onChange(e.target.value)}
+                    placeholder={label}
+                    aria-label={label}
+                />
+                {value && (
+                    <button
+                        type="button"
+                        className="icon-btn search-clear-btn"
+                        onClick={() => onChange('')}
+                        aria-label={t('Xóa tìm kiếm', 'Clear search')}
+                        title={t('Xóa tìm kiếm', 'Clear search')}
+                    >
+                        <X size={17} />
+                    </button>
+                )}
                 <button
                     type="button"
-                    className="icon-btn search-clear-btn"
-                    onClick={() => onChange('')}
-                    aria-label={t('Xóa tìm kiếm', 'Clear search')}
-                    title={t('Xóa tìm kiếm', 'Clear search')}
+                    className={`icon-btn radical-trigger-btn ${radicalOpen ? 'active' : ''}`}
+                    onClick={() => {
+                        setDrawOpen(false);
+                        setRadicalOpen(open => !open);
+                    }}
+                    aria-label={t('Bộ thủ (Radicals)', 'Radicals search')}
+                    aria-expanded={radicalOpen}
+                    title={t(
+                        'Tra cứu Kanji theo bộ thủ (Multi-Radical Search)',
+                        'Search Kanji by multiple radicals'
+                    )}
                 >
-                    <X size={17} />
+                    <Layers size={15} />
+                    <span className="radical-trigger-label">
+                        {t('Bộ thủ', 'Radicals')}
+                    </span>
                 </button>
-            )}
-            <button
-                type="button"
-                className={`icon-btn handwriting-trigger-btn ${drawOpen ? 'active' : ''}`}
-                onClick={() => setDrawOpen(open => !open)}
-                aria-label={t('Viết tay chữ Nhật (Kanji/Kana)', 'Handwriting search (Kanji/Kana)')}
-                aria-expanded={drawOpen}
-                title={t('Vẽ chữ Kanji / Kana để tra cứu', 'Draw Kanji / Kana to search')}
-            >
-                <PenTool size={16} />
-                <span className="handwriting-trigger-label jp" lang="ja" aria-hidden="true">
-                    手書
-                </span>
-            </button>
-            {drawOpen && (
-                <HandwritingCanvas
-                    value={value}
-                    onChange={onChange}
-                    onClose={() => setDrawOpen(false)}
+                <button
+                    type="button"
+                    className={`icon-btn handwriting-trigger-btn ${drawOpen ? 'active' : ''}`}
+                    onClick={() => {
+                        setRadicalOpen(false);
+                        setDrawOpen(open => !open);
+                    }}
+                    aria-label={t('Viết tay chữ Nhật (Kanji/Kana)', 'Handwriting search (Kanji/Kana)')}
+                    aria-expanded={drawOpen}
+                    title={t('Vẽ chữ Kanji / Kana để tra cứu', 'Draw Kanji / Kana to search')}
+                >
+                    <PenTool size={16} />
+                    <span className="handwriting-trigger-label jp" lang="ja" aria-hidden="true">
+                        手書
+                    </span>
+                </button>
+                {drawOpen && (
+                    <HandwritingCanvas
+                        value={value}
+                        onChange={onChange}
+                        onClose={() => setDrawOpen(false)}
+                    />
+                )}
+                {radicalOpen && (
+                    <RadicalSearchModal
+                        onSelectKanji={handleRadicalKanjiSelect}
+                        onClose={() => setRadicalOpen(false)}
+                    />
+                )}
+            </div>
+            {fallbackKanjiWord && (
+                <WordDetail
+                    word={fallbackKanjiWord}
+                    close={() => setFallbackKanjiWord(null)}
                 />
             )}
-        </div>
+        </>
     );
 }
 export function CardEditor({ card, initial, close }: {
@@ -225,10 +336,55 @@ export function Dictionary({ seed, detail }: {
     const [query, setQuery] = useState(seed);
     const [tag, setTag] = useState('all');
     const [page, setPage] = useState(0);
-    const words = searchWords(WORDS, query).filter(w => tag === 'all' || w.tag === tag);
+    const baseWords = searchWords(WORDS, query).filter(w => tag === 'all' || w.tag === tag);
+    const queryKanjiList = extractKanjiCharacters(query);
+    const words =
+        baseWords.length > 0
+            ? baseWords
+            : queryKanjiList.map(k => buildKanjiWordEntry(k));
     const topics = [...new Set(WORDS.map(w => w.tag))];
-    return <><PageHead eyebrow="辞書 · A SMALL DICTIONARY" title={t('Từ điển tiếng Nhật', 'Japanese dictionary')} desc={t('Tra tiếng Nhật, kana, romaji hoặc nghĩa tiếng Việt.', 'Search Japanese, kana, romaji, Vietnamese or English.')}/>
-    <section className="dictionary-search"><div className="dictionary-stamp jp" lang="ja" aria-hidden="true">辞</div><div><SearchField value={query} onChange={value => { setQuery(value); setPage(0); }} label={t('Nhập từ, cách đọc hoặc nghĩa…', 'What word are you looking for?')}/><p>{t('Thử tìm:', 'Try:')} {['neko', 'お茶', 'học'].map(w => <button key={w} onClick={() => { setQuery(w); setPage(0); }}>{w}</button>)}<span className="dictionary-size">{WORDS.length} {t('từ nền tảng', 'starter entries')}</span></p></div></section>
+    return <><PageHead eyebrow="辞書 · A SMALL DICTIONARY" title={t('Từ điển tiếng Nhật', 'Japanese dictionary')} desc={t('Tra tiếng Nhật, kana, romaji, nghĩa tiếng Việt hoặc bộ thủ Kanji.', 'Search Japanese, kana, romaji, Vietnamese, English, or Kanji radicals.')}/>
+    <section className="dictionary-search"><div className="dictionary-stamp jp" lang="ja" aria-hidden="true">辞</div><div><SearchField value={query} onChange={value => { setQuery(value); setPage(0); }} onSelectKanji={kanji => detail(buildKanjiWordEntry(kanji))} label={t('Nhập từ, chữ Kanji, cách đọc hoặc nghĩa…', 'What word or Kanji are you looking for?')}/><p>{t('Thử tìm:', 'Try:')} {['休', '語', '校', 'お茶', 'neko'].map(w => <button key={w} onClick={() => { setQuery(w); setPage(0); }}>{w}</button>)}<span className="dictionary-size">{WORDS.length} {t('từ nền tảng', 'starter entries')}</span></p></div></section>
+    {queryKanjiList.length > 0 && (
+        <section className="kanji-query-spotlight" aria-label={t('Chữ Hán trong tìm kiếm', 'Kanji in search query')}>
+            <div className="kanji-spotlight-label">
+                <span className="eyebrow">{t('CHỮ HÁN · KANJI & RADICALS', 'KANJI & RADICALS')}</span>
+                <small>{t('Chạm để xem thứ tự nét viết KanjiVG, luyện viết & phân tích bộ thủ:', 'Click to inspect KanjiVG stroke order, tracing practice & radical breakdown:')}</small>
+            </div>
+            <div className="kanji-spotlight-cards">
+                {queryKanjiList.map(k => {
+                    const summary = getKanjiSummary(k);
+                    const rads = getKanjiRadicals(k);
+                    return (
+                        <button
+                            key={k}
+                            type="button"
+                            className="kanji-spotlight-card"
+                            onClick={() => detail(buildKanjiWordEntry(k))}
+                        >
+                            <span className="kanji-spotlight-char jp" lang="ja">{k}</span>
+                            <div className="kanji-spotlight-info">
+                                <strong>
+                                    {summary.hanViet} · {summary.meaningVi}{' '}
+                                    <span className="tag">{summary.strokes} {t('nét', 'strokes')}</span>
+                                </strong>
+                                {rads.length > 0 && (
+                                    <small className="jp">
+                                        {t('Bộ thủ:', 'Radicals:')}{' '}
+                                        {rads.map(r => `${r.radical} (${r.nameVi} - ${r.strokes} nét)`).join(' + ')}
+                                    </small>
+                                )}
+                            </div>
+                            <span className="kanji-spotlight-cta">
+                                {t('Nét viết & Bộ thủ', 'Strokes & Radicals')}
+                                <ArrowUpRight size={15} />
+                            </span>
+                        </button>
+                    );
+                })}
+            </div>
+        </section>
+    )}
     <div className="dictionary-layout"><aside className="topic-list"><span className="eyebrow">{t('DẠO QUA CHỦ ĐỀ', 'BROWSE BY TOPIC')}</span><button className={tag === 'all' ? 'selected' : ''} aria-pressed={tag === 'all'} onClick={() => { setTag('all'); setPage(0); }}>{t('Tất cả từ', 'All entries')}<span>{WORDS.length}</span></button>{topics.map(topic => <button key={topic} className={tag === topic ? 'selected' : ''} aria-pressed={tag === topic} onClick={() => { setTag(topic); setPage(0); }}>{topicNames[topic] ? t(...topicNames[topic]) : topic}<span>{WORDS.filter(w => w.tag === topic).length}</span></button>)}<p className="hint">{t('Bộ từ điển nền tảng phục vụ học hằng ngày. Có thể tự thêm từ trong Sổ tay.', 'A curated starter dictionary for everyday learning. Add any word of your own in Notebook.')}</p></aside><div className="dictionary-results"><div className="results-heading"><h2>{query ? t(`Kết quả cho “${query}”`, `Results for “${query}”`) : tag === 'all' ? t('Những từ để bắt đầu', 'Words to start with') : topicNames[tag] ? t(...topicNames[tag]) : tag}</h2><span>{words.length} {t('từ', 'entries')}</span></div>{words.length ? <><div className="dictionary-entries">{words.slice(page * 15, (page + 1) * 15).map((w, i) => <article key={w.id} className="dictionary-entry"><span className="entry-number">{String(page * 15 + i + 1).padStart(2, '0')}</span><div className="entry-content"><div className="row wrap"><button className="entry-word jp" lang="ja" onClick={() => detail(w)}>{w.jp}</button><span className="entry-reading jp" lang="ja">{w.kana}</span>{s.settings.romaji && <span className="entry-romaji">{w.romaji}</span>}<span className="tag">{w.level}</span></div><strong>{t(w.vi, w.en)}</strong><p className="jp" lang="ja">{w.example}</p><small>{t(w.exampleVi, w.exampleEn)}</small></div><button className={`icon-btn bordered ${s.cards.some(c => sameWord(c, w)) ? 'saved' : ''}`} aria-label={t('Xem và lưu ', 'View and save ') + w.jp} onClick={() => detail(w)}>{s.cards.some(c => sameWord(c, w)) ? <Check size={18}/> : <Plus size={18}/>}</button></article>)}</div><Pagination page={page} total={words.length} size={15} change={setPage}/></> : <Empty title={t('Chưa có từ này trong từ điển nhỏ.', 'This word isn’t in our little dictionary.')} desc={t('Thử cách đọc khác, bỏ bộ lọc chủ đề, hoặc tự thêm từ vào Sổ tay.', 'Try another reading, remove the topic filter, or add your own word in Notebook.')}><button className="btn secondary" onClick={() => { setQuery(''); setTag('all'); setPage(0); }}>{t('Xem tất cả từ', 'Show all entries')}</button></Empty>}</div></div>
   </>;
 }

@@ -42,7 +42,17 @@ const rows = `バナナ|バナナ|banana|chuối|banana|food|朝、バナナを�
 薬|くすり|kusuri|thuốc|medicine|objects|食事の後で薬を飲みます。|Tôi uống thuốc sau bữa ăn.|I take medicine after a meal.
 木曜日|もくようび|mokuyoubi|thứ Năm|Thursday|time|木曜日に図書館に行きます。|Tôi đến thư viện vào thứ Năm.|I go to the library on Thursday.
 金曜日|きんようび|kinyoubi|thứ Sáu|Friday|time|金曜日に友達と会います。|Tôi gặp bạn vào thứ Sáu.|I meet a friend on Friday.
-土曜日|どようび|doyoubi|thứ Bảy|Saturday|time|土曜日は家で休みます。|Tôi nghỉ ở nhà vào thứ Bảy.|I rest at home on Saturday.`;
+土曜日|どようび|doyoubi|thứ Bảy|Saturday|time|土曜日は家で休みます。|Tôi nghỉ ở nhà vào thứ Bảy.|I rest at home on Saturday.
+休み|やすみ|yasumi|ngày nghỉ; kỳ nghỉ|holiday; rest|time|明日は学校の休みです。|Ngày mai là ngày nghỉ của trường.|Tomorrow is a school holiday.
+休む|やすむ|yasumu|nghỉ ngơi|to rest; take a day off|verbs|疲れたので少し休みます。|Vì mệt nên tôi nghỉ một chút.|I am tired, so I will rest a little.
+体|からだ|karada|cơ thể; sức khỏe|body; health|people|体に気をつけてください。|Hãy giữ gìn sức khỏe nhé.|Please take care of your health.
+何|なに|nani|cái gì|what|study|昼ご飯に何を食べますか。|Buổi trưa bạn ăn gì?|What will you eat for lunch?
+作る|つくる|tsukuru|làm; chế tạo; nấu|to make; to cook|verbs|晩ご飯にカレーを作ります。|Tôi nấu cà ri cho bữa tối.|I make curry for dinner.
+住む|すむ|sumu|sống; cư trú|to live; to reside|verbs|東京の近くに住んでいます。|Tôi đang sống gần Tokyo.|I live near Tokyo.
+仕事|しごと|shigoto|công việc; nghề nghiệp|work; job|people|母は銀行で仕事をしています。|Mẹ tôi làm việc ở ngân hàng.|My mother works at a bank.
+使う|つかう|tsukau|sử dụng; dùng|to use|verbs|毎日この辞書を使います。|Tôi dùng cuốn từ điển này mỗi ngày.|I use this dictionary every day.
+借りる|かりる|kariru|mượn; vay|to borrow; to rent|verbs|図書館で日本語の本を借りました。|Tôi đã mượn sách tiếng Nhật ở thư viện.|I borrowed a Japanese book from the library.
+働く|はたらく|hataraku|làm việc; lao động|to work|verbs|兄は日本の会社で働いています。|Anh trai tôi làm việc tại công ty Nhật.|My older brother works at a Japanese company.`;
 
 export const EXTRA_WORDS: Word[] = rows.split('\n').map((line, index) => {
   const [jp, kana, romaji, vi, en, tag, example, exampleVi, exampleEn] = line.split('|');
